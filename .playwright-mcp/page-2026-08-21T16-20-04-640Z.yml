@@ -1,0 +1,145 @@
+- generic [active] [ref=f15e1]:
+  - generic [ref=f15e2]:
+    - complementary [ref=f15e3]:
+      - generic [ref=f15e4]:
+        - link "🖥️ ERP Acto" [ref=f15e6] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=f15e7]: 🖥️
+          - generic [ref=f15e8]: ERP Acto
+        - generic [ref=f15e9]:
+          - paragraph [ref=f15e10]: Principal
+          - navigation [ref=f15e11]:
+            - link "Dashboard" [ref=f15e12] [cursor=pointer]:
+              - /url: /dashboard
+            - link "Meu Espaço" [ref=f15e19] [cursor=pointer]:
+              - /url: "#"
+            - link "Projetos" [ref=f15e24] [cursor=pointer]:
+              - /url: "#"
+            - link "Comercial" [ref=f15e28] [cursor=pointer]:
+              - /url: "#"
+            - link "Jurídico" [ref=f15e33] [cursor=pointer]:
+              - /url: /comercial/licitacoes
+            - link "Financeiro" [ref=f15e39] [cursor=pointer]:
+              - /url: "#"
+            - link "RH" [ref=f15e44] [cursor=pointer]:
+              - /url: "#"
+            - link "Inteligência" [ref=f15e51] [cursor=pointer]:
+              - /url: "#"
+            - link "Processos" [ref=f15e61] [cursor=pointer]:
+              - /url: /processos
+            - link "Patrimônio" [ref=f15e66] [cursor=pointer]:
+              - /url: "#"
+          - paragraph [ref=f15e72]: Destaque
+          - navigation [ref=f15e73]:
+            - link "Universidade Acto" [ref=f15e74] [cursor=pointer]:
+              - /url: "#"
+            - link "Hub de cadastros" [ref=f15e79] [cursor=pointer]:
+              - /url: /cadastros
+            - link "Organizações" [ref=f15e84] [cursor=pointer]:
+              - /url: /organizacoes
+        - button "AS Admin Sistema" [ref=f15e90]:
+          - generic [ref=f15e91]: AS
+          - generic [ref=f15e92]: Admin Sistema
+        - button "←" [ref=f15e93]
+    - generic [ref=f15e94]:
+      - banner [ref=f15e95]:
+        - generic [ref=f15e96]:
+          - button "☰" [ref=f15e97]
+          - navigation [ref=f15e98]:
+            - generic [ref=f15e99]: Dashboard
+        - generic [ref=f15e100]:
+          - button "Buscar no ERP… Ctrl K" [ref=f15e101]:
+            - generic [ref=f15e102]: Buscar no ERP…
+            - generic [ref=f15e103]: Ctrl K
+          - button "Caixa de entrada" [ref=f15e104]
+          - button [ref=f15e106]
+          - button [ref=f15e107]
+          - button [ref=f15e108]
+      - main [ref=f15e109]:
+        - generic [ref=f15e110]:
+          - generic [ref=f15e111]:
+            - heading "Olá, Admin Sistema" [level=1] [ref=f15e112]
+            - paragraph [ref=f15e113]: Resumo adaptado ao seu cargo e à sua rotina de uso.
+          - generic [ref=f15e114]:
+            - generic [ref=f15e115]:
+              - generic [ref=f15e116]:
+                - heading "Comunicação RH" [level=3] [ref=f15e118]
+                - generic [ref=f15e119]:
+                  - paragraph [ref=f15e120]: Nenhum comunicado no ar
+                  - paragraph [ref=f15e121]: Avisos institucionais publicados pelo RH aparecem aqui para toda a equipe.
+                  - button "Criar comunicado" [ref=f15e122]
+              - generic [ref=f15e123]:
+                - heading "Seu dia" [level=3] [ref=f15e125]
+                - generic [ref=f15e126]:
+                  - paragraph [ref=f15e127]: sexta-feira, 21 de agosto
+                  - generic [ref=f15e128]:
+                    - paragraph [ref=f15e129]: Nada pendente por aqui
+                    - paragraph [ref=f15e130]: Você está em dia com aprovações e solicitações.
+              - generic [ref=f15e131]:
+                - generic [ref=f15e132]:
+                  - heading "Aniversariantes de agosto" [level=3] [ref=f15e133]
+                  - generic [ref=f15e134]: "5"
+                - generic [ref=f15e135]:
+                  - generic [ref=f15e136]:
+                    - generic [ref=f15e137]: EO
+                    - generic [ref=f15e138]:
+                      - paragraph [ref=f15e139]: Elena Product Owner
+                      - paragraph [ref=f15e140]: 22 de agosto · amanhã · Engenharia
+                    - generic [ref=f15e141]:
+                      - button [ref=f15e142]
+                      - button [ref=f15e143]
+                  - generic [ref=f15e144]:
+                    - generic [ref=f15e145]: IR
+                    - generic [ref=f15e146]:
+                      - paragraph [ref=f15e147]: Isabela RH
+                      - paragraph [ref=f15e148]: 28 de agosto · em 7 dias · Engenharia
+                    - generic [ref=f15e149]:
+                      - button [ref=f15e150]
+                      - button [ref=f15e151]
+                  - button "Parabenizar todos (4)" [ref=f15e152]
+              - generic [ref=f15e153]:
+                - generic [ref=f15e154]:
+                  - heading "Mural de novidades" [level=3] [ref=f15e155]
+                  - generic [ref=f15e156]: "0"
+                - generic [ref=f15e157]:
+                  - button "Compartilhe uma novidade com o time..." [ref=f15e158]
+                  - generic [ref=f15e159]:
+                    - paragraph [ref=f15e160]: Nenhuma novidade ainda
+                    - paragraph [ref=f15e161]: Seja o primeiro a compartilhar algo com o time.
+            - generic [ref=f15e162]:
+              - generic [ref=f15e163]:
+                - generic [ref=f15e164]:
+                  - heading "Processos pendentes" [level=3] [ref=f15e165]
+                  - button "Ocultar" [ref=f15e166]
+                - generic [ref=f15e167]:
+                  - paragraph [ref=f15e168]: Filas de aprovação aguardando sua ação.
+                  - link "Solicitações de centro de custo Aprovação do gestor e do RH para viagens, equipamentos e capacitação. 0" [ref=f15e169] [cursor=pointer]:
+                    - /url: /backoffice/solicitacoes-centro-custo
+                    - paragraph [ref=f15e170]: Solicitações de centro de custo
+                    - paragraph [ref=f15e171]: Aprovação do gestor e do RH para viagens, equipamentos e capacitação.
+                    - generic [ref=f15e172]: "0"
+                  - link "Solicitações de recesso Recessos de prestadores PJ aguardando análise. 0" [ref=f15e173] [cursor=pointer]:
+                    - /url: /backoffice/solicitacoes-recesso
+                    - paragraph [ref=f15e174]: Solicitações de recesso
+                    - paragraph [ref=f15e175]: Recessos de prestadores PJ aguardando análise.
+                    - generic [ref=f15e176]: "0"
+                  - link "Substituições staffing Troca de colaboradores em contratos de outsourcing. 0" [ref=f15e177] [cursor=pointer]:
+                    - /url: /backoffice/substituicoes-colaborador
+                    - paragraph [ref=f15e178]: Substituições staffing
+                    - paragraph [ref=f15e179]: Troca de colaboradores em contratos de outsourcing.
+                    - generic [ref=f15e180]: "0"
+                  - link "Ver processos" [ref=f15e181] [cursor=pointer]:
+                    - /url: /processos
+              - generic [ref=f15e184]:
+                - heading "Fila de notas fiscais" [level=3] [ref=f15e186]
+                - generic [ref=f15e187]:
+                  - paragraph [ref=f15e188]: "0"
+                  - paragraph [ref=f15e189]: nota(s) aguardando análise
+                  - button "Abrir" [ref=f15e190]
+              - generic [ref=f15e191]:
+                - heading "Projetos em risco" [level=3] [ref=f15e193]
+                - generic [ref=f15e194]:
+                  - paragraph [ref=f15e195]: "0"
+                  - paragraph [ref=f15e196]: projeto(s) com risco elevado
+                  - button "Abrir" [ref=f15e197]
+  - button "Open Next.js Dev Tools" [ref=f15e203] [cursor=pointer]

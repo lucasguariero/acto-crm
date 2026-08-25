@@ -1,0 +1,167 @@
+- generic [ref=f5e2]:
+  - generic [ref=f5e3]:
+    - generic [ref=f5e7]:
+      - link "ERP Acto" [ref=f5e9] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=f5e17]:
+        - generic [ref=f5e18]:
+          - generic [ref=f5e19]: Principal
+          - list [ref=f5e20]:
+            - listitem [ref=f5e21]:
+              - link "Dashboard" [ref=f5e22] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=f5e29]:
+              - button "Meu Espaço" [ref=f5e30]
+            - listitem [ref=f5e38]:
+              - button "Projetos" [ref=f5e39]
+            - listitem [ref=f5e45]:
+              - button "Comercial" [ref=f5e46]
+            - listitem [ref=f5e53]:
+              - link "Jurídico" [ref=f5e54] [cursor=pointer]:
+                - /url: /comercial/licitacoes
+            - listitem [ref=f5e60]:
+              - button "Financeiro" [ref=f5e61]
+            - listitem [ref=f5e68]:
+              - button "RH" [ref=f5e69]
+            - listitem [ref=f5e78]:
+              - button "Inteligência" [ref=f5e79]
+            - listitem [ref=f5e88]:
+              - link "Processos" [ref=f5e89] [cursor=pointer]:
+                - /url: /processos
+            - listitem [ref=f5e95]:
+              - button "Patrimônio" [ref=f5e96]
+        - generic [ref=f5e110]:
+          - generic [ref=f5e111]: Destaque
+          - list [ref=f5e112]:
+            - listitem [ref=f5e113]:
+              - button "Universidade Acto" [ref=f5e114]
+            - listitem [ref=f5e121]:
+              - link "Hub de cadastros" [ref=f5e122] [cursor=pointer]:
+                - /url: /cadastros
+            - listitem [ref=f5e128]:
+              - link "Organizações" [ref=f5e129] [cursor=pointer]:
+                - /url: /organizacoes
+      - list [ref=f5e136]:
+        - listitem [ref=f5e137]:
+          - button "AS Admin Sistema" [ref=f5e138]:
+            - generic [ref=f5e139]: AS
+            - generic [ref=f5e141]: Admin Sistema
+      - button "Toggle sidebar" [ref=f5e146]
+    - main [ref=f5e147]:
+      - generic [ref=f5e149]:
+        - generic [ref=f5e151]:
+          - button "Alternar menu lateral" [ref=f5e152]
+          - navigation "breadcrumb" [ref=f5e154]:
+            - list [ref=f5e155]:
+              - listitem [ref=f5e156]:
+                - link "Organizações" [disabled] [ref=f5e157]
+        - button "Abrir busca global" [ref=f5e159]:
+          - generic [ref=f5e163]: Buscar no ERP…
+          - generic [ref=f5e164]:
+            - generic [ref=f5e165]: Ctrl
+            - generic [ref=f5e166]: K
+        - generic [ref=f5e169]:
+          - link "Caixa de entrada" [ref=f5e170] [cursor=pointer]:
+            - /url: /meu/caixa-entrada
+          - button "Notificações" [ref=f5e174] [cursor=pointer]
+          - generic [ref=f5e178]:
+            - 'button "Como usar: Organizações" [ref=f5e179] [cursor=pointer]'
+            - link "Documentação interna" [ref=f5e183] [cursor=pointer]:
+              - /url: /documentacao
+            - button "Pomodoro — método de foco" [ref=f5e186] [cursor=pointer]
+            - link "Configurar PIN de step-up" [ref=f5e190] [cursor=pointer]:
+              - /url: /settings/security
+      - generic [ref=f5e194]:
+        - generic [ref=f5e195]:
+          - generic [ref=f5e196]:
+            - heading "Organizações" [level=2] [ref=f5e197]
+            - paragraph [ref=f5e198]: Clientes públicos, parceiros e filiais.
+          - link "Nova organização" [ref=f5e200] [cursor=pointer]:
+            - /url: /organizacoes/create
+        - generic [ref=f5e201]:
+          - searchbox "Buscar por razão social, fantasia ou CNPJ" [ref=f5e203]
+          - combobox [ref=f5e204]:
+            - option "Todos os tipos" [selected]
+            - option "Cliente público"
+            - option "Parceiro"
+            - option "Filial"
+          - combobox [ref=f5e205]:
+            - option "Todos os status" [selected]
+            - option "Ativa"
+            - option "Inativa"
+            - option "Arquivada"
+        - table [ref=f5e208]:
+          - rowgroup [ref=f5e209]:
+            - row [ref=f5e210]:
+              - columnheader "Organização" [ref=f5e211]
+              - columnheader "CNPJ" [ref=f5e212]
+              - columnheader "Tipos" [ref=f5e213]
+              - columnheader "Status" [ref=f5e214]
+              - columnheader "Ações" [ref=f5e215]
+          - rowgroup [ref=f5e216]:
+            - row [ref=f5e217]:
+              - cell [ref=f5e218]:
+                - generic [ref=f5e219]:
+                  - paragraph [ref=f5e220]: Prefeitura Municipal Alpha
+                  - paragraph [ref=f5e221]: Prefeitura Alpha
+              - cell "19.131.243/0001-97" [ref=f5e222]
+              - cell "Cliente público" [ref=f5e223]
+              - cell "Ativa" [ref=f5e226]
+              - cell [ref=f5e228]:
+                - generic [ref=f5e229]:
+                  - link "Ver detalhes" [ref=f5e230] [cursor=pointer]:
+                    - /url: /organizacoes/2
+                  - link "Editar organização" [ref=f5e231] [cursor=pointer]:
+                    - /url: /organizacoes/2/edit
+            - row [ref=f5e232]:
+              - cell [ref=f5e233]:
+                - generic [ref=f5e234]:
+                  - paragraph [ref=f5e235]: Prefeitura Municipal Beta
+                  - paragraph [ref=f5e236]: Prefeitura Beta
+              - cell "34.028.316/0001-03" [ref=f5e237]
+              - cell "Cliente público" [ref=f5e238]
+              - cell "Ativa" [ref=f5e241]
+              - cell [ref=f5e243]:
+                - generic [ref=f5e244]:
+                  - link "Ver detalhes" [ref=f5e245] [cursor=pointer]:
+                    - /url: /organizacoes/3
+                  - link "Editar organização" [ref=f5e246] [cursor=pointer]:
+                    - /url: /organizacoes/3/edit
+            - row [ref=f5e247]:
+              - cell [ref=f5e248]:
+                - generic [ref=f5e249]:
+                  - paragraph [ref=f5e250]: Prefeitura Municipal Gamma
+                  - paragraph [ref=f5e251]: Prefeitura Gamma
+              - cell "61.695.227/0001-93" [ref=f5e252]
+              - cell "Cliente público" [ref=f5e253]
+              - cell "Ativa" [ref=f5e256]
+              - cell [ref=f5e258]:
+                - generic [ref=f5e259]:
+                  - link "Ver detalhes" [ref=f5e260] [cursor=pointer]:
+                    - /url: /organizacoes/4
+                  - link "Editar organização" [ref=f5e261] [cursor=pointer]:
+                    - /url: /organizacoes/4/edit
+    - button "Abrir assistente de IA" [ref=f5e264]
+    - button "Abrir ferramentas Acto homologadas" [ref=f5e267]
+    - dialog [ref=f5e270]:
+      - generic [ref=f5e271]:
+        - generic [ref=f5e272]:
+          - generic [ref=f5e273]:
+            - paragraph [ref=f5e274]: Ferramentas Acto
+            - paragraph [ref=f5e275]: Ações rápidas do seu cargo e links homologados
+          - button [ref=f5e276]
+        - region [ref=f5e280]:
+          - generic [ref=f5e281]:
+            - link [ref=f5e282] [cursor=pointer]:
+              - /url: /documentacao
+              - generic [ref=f5e286]: Docs
+            - link [ref=f5e287] [cursor=pointer]:
+              - /url: https://canvas.acto.com.br/
+              - generic [ref=f5e294]: Canvas
+            - link [ref=f5e295] [cursor=pointer]:
+              - /url: https://chat.acto.com.br/
+              - generic [ref=f5e299]: Chat
+            - link [ref=f5e300] [cursor=pointer]:
+              - /url: https://projetos.acto.com.br/login?back_url=https%3A%2F%2Fprojetos.acto.com.br%2F
+              - generic [ref=f5e304]: Projetos
+  - region "Notifications alt+T"

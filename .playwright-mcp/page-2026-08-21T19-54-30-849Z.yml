@@ -1,0 +1,164 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - link [ref=e6] [cursor=pointer]:
+          - /url: /dashboard
+        - navigation [ref=e11]:
+          - link [ref=e259] [cursor=pointer]:
+            - /url: /dashboard
+          - link [ref=e260] [cursor=pointer]:
+            - /url: "#"
+          - link [ref=e261] [cursor=pointer]:
+            - /url: "#"
+          - link [ref=e262] [cursor=pointer]:
+            - /url: "#"
+          - link [ref=e263] [cursor=pointer]:
+            - /url: /comercial/licitacoes
+          - link [ref=e264] [cursor=pointer]:
+            - /url: "#"
+          - link [ref=e265] [cursor=pointer]:
+            - /url: "#"
+          - link [ref=e266] [cursor=pointer]:
+            - /url: "#"
+          - link [ref=e267] [cursor=pointer]:
+            - /url: /processos
+          - link [ref=e268] [cursor=pointer]:
+            - /url: "#"
+        - button "AS" [ref=e269]
+        - button [active] [ref=e90]
+    - generic [ref=e93]:
+      - banner [ref=e94]:
+        - button [ref=e96]
+        - generic [ref=e98]:
+          - textbox "Buscar no ERP..." [ref=e101]
+          - generic [ref=e102]: Ctrl K
+        - generic [ref=e103]:
+          - button [ref=e104]
+          - button [ref=e105]
+          - button [ref=e106]
+          - button [ref=e107]
+          - generic [ref=e108]: AS
+      - main [ref=e112]:
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - heading "Ola, Admin Sistema" [level=1] [ref=e115]
+            - paragraph [ref=e116]: Resumo adaptado ao seu cargo e a sua rotina de uso.
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - generic [ref=e119]:
+                - heading "Comunicacao RH" [level=3] [ref=e121]
+                - generic [ref=e122]:
+                  - paragraph [ref=e123]: Nenhum comunicado no ar
+                  - paragraph [ref=e124]: Avisos institucionais publicados pelo RH aparecem aqui para toda a equipe.
+                  - button "Criar comunicado" [ref=e125]
+              - generic [ref=e126]:
+                - heading "Seu dia" [level=3] [ref=e128]
+                - generic [ref=e129]:
+                  - paragraph [ref=e130]: sexta-feira, 21 de agosto
+                  - generic [ref=e131]:
+                    - paragraph [ref=e132]: Nada pendente por aqui
+                    - paragraph [ref=e133]: Voce esta em dia com aprovacoes e solicitacoes.
+              - generic [ref=e134]:
+                - generic [ref=e135]:
+                  - heading "Aniversariantes de agosto" [level=3] [ref=e136]
+                  - generic [ref=e137]: "5"
+                - generic [ref=e139]:
+                  - generic [ref=e140]:
+                    - paragraph [ref=e141]: Proximos 7 dias
+                    - generic [ref=e142]:
+                      - generic [ref=e143]:
+                        - generic [ref=e144]: EO
+                        - generic [ref=e145]:
+                          - paragraph [ref=e146]: Elena Product Owner
+                          - paragraph [ref=e147]: 22 de agosto - amanha - Engenharia
+                        - generic [ref=e148]:
+                          - button [ref=e149]
+                          - button [ref=e150]
+                      - generic [ref=e151]:
+                        - generic [ref=e152]: IR
+                        - generic [ref=e153]:
+                          - paragraph [ref=e154]: Isabela RH
+                          - paragraph [ref=e155]: 28 de agosto - em 7 dias - Engenharia
+                        - generic [ref=e156]:
+                          - button [ref=e157]
+                          - button [ref=e158]
+                  - generic [ref=e159]:
+                    - paragraph [ref=e160]: Ja passou
+                    - generic [ref=e161]:
+                      - generic [ref=e162]:
+                        - generic [ref=e163]: CT
+                        - generic [ref=e164]:
+                          - paragraph [ref=e166]: Carla Lider Tecnica
+                          - paragraph [ref=e167]: 10 de agosto - ha 11 dias - Engenharia
+                        - generic [ref=e168]:
+                          - button [ref=e169]
+                          - button [ref=e170]
+                      - generic [ref=e171]:
+                        - generic [ref=e172]: BG
+                        - generic [ref=e173]:
+                          - generic [ref=e174]:
+                            - paragraph [ref=e175]: Bruno Gerente
+                            - generic [ref=e176]: 1 balao recebido
+                          - paragraph [ref=e177]: 11 de agosto - ha 10 dias - Engenharia
+                        - generic [ref=e178]:
+                          - button [ref=e179]
+                          - button [ref=e180]
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: DD
+                        - generic [ref=e183]:
+                          - paragraph [ref=e185]: Diego Desenvolvedor
+                          - paragraph [ref=e186]: 15 de agosto - ha 6 dias - Engenharia
+                        - generic [ref=e187]:
+                          - button [ref=e188]
+                          - button [ref=e189]
+                  - button "Parabenizar todos (4)" [ref=e190]
+              - generic [ref=e191]:
+                - generic [ref=e192]:
+                  - heading "Mural de novidades" [level=3] [ref=e193]
+                  - generic [ref=e194]: "0"
+                - generic [ref=e196]:
+                  - textbox "Compartilhe uma novidade com o time..." [ref=e200]
+                  - generic [ref=e201]:
+                    - paragraph [ref=e202]: Nenhuma novidade ainda
+                    - paragraph [ref=e203]: Seja o primeiro a compartilhar algo com o time.
+            - generic [ref=e204]:
+              - generic [ref=e205]:
+                - generic [ref=e206]:
+                  - heading "Processos pendentes" [level=3] [ref=e207]
+                  - button "Ocultar" [ref=e209]
+                - generic [ref=e210]:
+                  - paragraph [ref=e211]: Filas de aprovacao aguardando sua acao.
+                  - link "Solicitacoes de centro de custo Aprovacao do gestor e do RH para viagens, equipamentos e capacitacao. 0" [ref=e212] [cursor=pointer]:
+                    - /url: /backoffice/solicitacoes-centro-custo
+                    - paragraph [ref=e213]: Solicitacoes de centro de custo
+                    - paragraph [ref=e214]: Aprovacao do gestor e do RH para viagens, equipamentos e capacitacao.
+                    - generic [ref=e215]: "0"
+                  - link "Solicitacoes de recesso Recessos de prestadores PJ aguardando analise. 0" [ref=e216] [cursor=pointer]:
+                    - /url: /backoffice/solicitacoes-recesso
+                    - paragraph [ref=e217]: Solicitacoes de recesso
+                    - paragraph [ref=e218]: Recessos de prestadores PJ aguardando analise.
+                    - generic [ref=e219]: "0"
+                  - link "Substituicoes staffing Troca de colaboradores em contratos de outsourcing. 0" [ref=e220] [cursor=pointer]:
+                    - /url: /backoffice/substituicoes-colaborador
+                    - paragraph [ref=e221]: Substituicoes staffing
+                    - paragraph [ref=e222]: Troca de colaboradores em contratos de outsourcing.
+                    - generic [ref=e223]: "0"
+                  - link "Ver processos" [ref=e224] [cursor=pointer]:
+                    - /url: /processos
+              - generic [ref=e227]:
+                - heading "Fila de notas fiscais" [level=3] [ref=e229]
+                - generic [ref=e230]:
+                  - paragraph [ref=e231]: "0"
+                  - paragraph [ref=e232]: nota(s) aguardando analise
+                  - button "Abrir" [ref=e233]
+              - generic [ref=e234]:
+                - generic [ref=e235]:
+                  - heading "Projetos em risco" [level=3] [ref=e236]
+                  - button "Ocultar" [ref=e238]
+                - generic [ref=e239]:
+                  - paragraph [ref=e242]: "0"
+                  - paragraph [ref=e243]: projeto(s) com risco elevado
+                  - button "Abrir" [ref=e244]
+  - button "Open Next.js Dev Tools" [ref=e250] [cursor=pointer]
+  - alert [ref=e254]

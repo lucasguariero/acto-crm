@@ -1,0 +1,74 @@
+- generic:
+  - generic [active]:
+    - generic [ref=f22e3]:
+      - generic [ref=f22e4]:
+        - navigation [ref=f22e6]:
+          - button [disabled] [ref=f22e7]:
+            - img "previous" [ref=f22e8]
+          - generic [ref=f22e10]:
+            - generic [ref=f22e11]: 1/
+            - generic [ref=f22e12]: "1"
+          - button [disabled] [ref=f22e13]:
+            - img "next" [ref=f22e14]
+        - link "Next.js 16.3.1 (stale) Turbopack" [ref=f22e17] [cursor=pointer]:
+          - /url: https://nextjs.org/docs/messages/version-staleness
+          - generic "There is a newer version (16.3.2) available, upgrade recommended!" [ref=f22e20]: Next.js 16.3.1 (stale)
+          - generic [ref=f22e21]: Turbopack
+      - dialog "Build Error" [ref=f22e23]:
+        - generic [ref=f22e26]:
+          - generic [ref=f22e28]:
+            - generic [ref=f22e29]:
+              - generic [ref=f22e30]: Build Error
+              - generic [ref=f22e32]:
+                - button "Copy Error Info" [ref=f22e33] [cursor=pointer]
+                - button "No related documentation found" [disabled] [ref=f22e36]
+                - button "Attach Node.js inspector" [ref=f22e39] [cursor=pointer]
+            - generic [ref=f22e48]: Expression expected
+          - generic [ref=f22e51]:
+            - generic [ref=f22e53]:
+              - generic [ref=f22e58]: ./src/components/dashboard/dashboard-grid.tsx (38:3)
+              - button "Open in editor" [ref=f22e59] [cursor=pointer]
+            - generic [ref=f22e64]:
+              - generic [ref=f22e65]: "Error: Expression expected"
+              - generic [ref=f22e66]: 36 |
+              - generic [ref=f22e67]: "{ initials:"
+              - text: "\"EO\""
+              - generic [ref=f22e68]: ", name:"
+              - generic [ref=f22e69]: "\"Elena Product Owner\""
+              - generic [ref=f22e70]: ", date:"
+              - generic [ref=f22e71]: "\"22 de agosto · amanhã\""
+              - generic [ref=f22e72]: ", area:"
+              - text: "\"E..."
+              - generic [ref=f22e73]: 37 |
+              - generic [ref=f22e74]: "{ initials:"
+              - text: "\"IR\""
+              - generic [ref=f22e75]: ", name:"
+              - generic [ref=f22e76]: "\"Isabela RH\""
+              - generic [ref=f22e77]: ", date:"
+              - generic [ref=f22e78]: "\"28 de agosto · em 7 dias\""
+              - generic [ref=f22e79]: ", area:"
+              - text: "\"Engenha... >"
+              - generic [ref=f22e80]: 38 |
+              - generic [ref=f22e81]: "};"
+              - generic [ref=f22e82]: "|"
+              - text: ^
+              - generic [ref=f22e83]: 39 |
+              - generic [ref=f22e84]: 40 |
+              - text: const
+              - generic [ref=f22e85]: passedBirthdays = [
+              - generic [ref=f22e86]: 41 |
+              - generic [ref=f22e87]: "{ initials:"
+              - text: "\"CT\""
+              - generic [ref=f22e88]: ", name:"
+              - generic [ref=f22e89]: "\"Carla Líder Técnica\""
+              - generic [ref=f22e90]: ", date:"
+              - generic [ref=f22e91]: "\"10 de agosto · há 11 dias\""
+              - generic [ref=f22e92]: ", area... Parsing ecmascript source code failed Import trace: Server Component: ./src/components/dashboard/dashboard-grid.tsx ./src/app/dashboard/page.tsx"
+    - generic [ref=f22e97] [cursor=pointer]:
+      - button "Open Next.js Dev Tools" [ref=f22e98]
+      - button "Open issues overlay" [ref=f22e103]:
+        - generic [ref=f22e104]:
+          - generic [ref=f22e105]: "0"
+          - generic [ref=f22e106]: "1"
+        - generic [ref=f22e107]: Issue
+  - alert [ref=f22e108]

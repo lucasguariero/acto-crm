@@ -1,0 +1,175 @@
+- generic [ref=f4e2]:
+  - generic [ref=f4e3]:
+    - generic [ref=f4e7]:
+      - link "ERP Acto" [ref=f4e9] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=f4e17]:
+        - generic [ref=f4e18]:
+          - generic [ref=f4e19]: Principal
+          - list [ref=f4e20]:
+            - listitem [ref=f4e21]:
+              - link "Dashboard" [ref=f4e22] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=f4e29]:
+              - button "Meu Espaço" [ref=f4e30]
+            - listitem [ref=f4e38]:
+              - button "Projetos" [ref=f4e39]
+            - listitem [ref=f4e45]:
+              - button "Comercial" [ref=f4e46]
+            - listitem [ref=f4e53]:
+              - link "Jurídico" [ref=f4e54] [cursor=pointer]:
+                - /url: /comercial/licitacoes
+            - listitem [ref=f4e60]:
+              - button "Financeiro" [ref=f4e61]
+            - listitem [ref=f4e68]:
+              - button "RH" [ref=f4e69]
+            - listitem [ref=f4e78]:
+              - button "Inteligência" [ref=f4e79]
+            - listitem [ref=f4e88]:
+              - link "Processos" [ref=f4e89] [cursor=pointer]:
+                - /url: /processos
+            - listitem [ref=f4e95]:
+              - button "Patrimônio" [ref=f4e96]
+        - generic [ref=f4e110]:
+          - generic [ref=f4e111]: Destaque
+          - list [ref=f4e112]:
+            - listitem [ref=f4e113]:
+              - button "Universidade Acto" [ref=f4e114]
+            - listitem [ref=f4e121]:
+              - link "Hub de cadastros" [active] [ref=f4e122] [cursor=pointer]:
+                - /url: /cadastros
+            - listitem [ref=f4e128]:
+              - link "Organizações" [ref=f4e129] [cursor=pointer]:
+                - /url: /organizacoes
+      - list [ref=f4e136]:
+        - listitem [ref=f4e137]:
+          - button "AS Admin Sistema" [ref=f4e138]:
+            - generic [ref=f4e139]: AS
+            - generic [ref=f4e141]: Admin Sistema
+      - button "Toggle sidebar" [ref=f4e146]
+    - main [ref=f4e147]:
+      - generic [ref=f4e149]:
+        - generic [ref=f4e151]:
+          - button "Alternar menu lateral" [ref=f4e152]
+          - navigation "breadcrumb" [ref=f4e154]:
+            - list [ref=f4e155]:
+              - listitem [ref=f4e156]:
+                - link "Cadastros" [disabled] [ref=f4e497]
+        - button "Abrir busca global" [ref=f4e159]:
+          - generic [ref=f4e163]: Buscar no ERP…
+          - generic [ref=f4e164]:
+            - generic [ref=f4e165]: Ctrl
+            - generic [ref=f4e166]: K
+        - generic [ref=f4e169]:
+          - link "Caixa de entrada" [ref=f4e170] [cursor=pointer]:
+            - /url: /meu/caixa-entrada
+          - button "Notificações" [ref=f4e174] [cursor=pointer]
+          - generic [ref=f4e178]:
+            - button "Nenhum guia para esta tela" [disabled]
+            - link "Documentação interna" [ref=f4e183] [cursor=pointer]:
+              - /url: /documentacao
+            - button "Pomodoro — método de foco" [ref=f4e186] [cursor=pointer]
+            - link "Configurar PIN de step-up" [ref=f4e190] [cursor=pointer]:
+              - /url: /settings/security
+      - generic [ref=f4e498]:
+        - generic [ref=f4e500]:
+          - heading "Cadastros" [level=2] [ref=f4e501]
+          - paragraph [ref=f4e502]: "Dados mestres da empresa: plano de contas, organizações, contas bancárias e patrimônio."
+        - generic [ref=f4e503]:
+          - generic [ref=f4e504]:
+            - heading "Financeiro & contábil" [level=2] [ref=f4e505]
+            - generic [ref=f4e506]:
+              - generic [ref=f4e507]:
+                - generic [ref=f4e508]: Plano de contas
+                - generic [ref=f4e515]:
+                  - paragraph [ref=f4e516]: Categorias hierárquicas de receitas e despesas operacionais.
+                  - link "Abrir" [ref=f4e517] [cursor=pointer]:
+                    - /url: /plano-contas
+              - generic [ref=f4e518]:
+                - generic [ref=f4e519]: Centros de custo
+                - generic [ref=f4e528]:
+                  - paragraph [ref=f4e529]: Projetos e unidades de alocação de receitas e despesas.
+                  - link "Abrir" [ref=f4e530] [cursor=pointer]:
+                    - /url: /centros-custo
+              - generic [ref=f4e531]:
+                - generic [ref=f4e532]: Organizações
+                - generic [ref=f4e540]:
+                  - paragraph [ref=f4e541]: Fornecedores, clientes e parceiros vinculados a lançamentos e contratos.
+                  - link "Abrir" [ref=f4e542] [cursor=pointer]:
+                    - /url: /organizacoes
+              - generic [ref=f4e543]:
+                - generic [ref=f4e544]: Contas bancárias
+                - generic [ref=f4e550]:
+                  - paragraph [ref=f4e551]: Contas da empresa para importação de extratos e conciliação.
+                  - link "Abrir" [ref=f4e552] [cursor=pointer]:
+                    - /url: https://actosfera-dev.acto.com.br/financeiro/cadastros/contas-bancarias
+              - generic [ref=f4e553]:
+                - generic [ref=f4e554]: Alíquotas de impostos
+                - generic [ref=f4e562]:
+                  - paragraph [ref=f4e563]: Percentuais por tipo de imposto pago pela empresa (ISS, PIS, COFINS, CSLL, IRPJ, INSS).
+                  - link "Abrir" [ref=f4e564] [cursor=pointer]:
+                    - /url: https://actosfera-dev.acto.com.br/financeiro/cadastros/aliquotas-imposto
+              - generic [ref=f4e565]:
+                - generic [ref=f4e566]: Integrações bancárias
+                - generic [ref=f4e573]:
+                  - paragraph [ref=f4e574]: Credenciais de API (Sicredi, Bradesco, Itaú) em Configurações → Integrações.
+                  - link "Abrir" [ref=f4e575] [cursor=pointer]:
+                    - /url: /settings/integracoes#integracoes-empresa
+              - generic [ref=f4e576]:
+                - generic [ref=f4e577]:
+                  - generic [ref=f4e578]: Em breve
+                  - generic [ref=f4e584]: Perfis de importação
+                - generic [ref=f4e585]:
+                  - paragraph [ref=f4e586]: Mapeamento de colunas e perfis bancários para extratos.
+                  - paragraph [ref=f4e587]: Disponível em versão futura.
+              - generic [ref=f4e588]:
+                - generic [ref=f4e589]: Regras de classificação
+                - generic [ref=f4e596]:
+                  - paragraph [ref=f4e597]: Automação de categorias na importação de extrato e sync bancário.
+                  - link "Abrir" [ref=f4e598] [cursor=pointer]:
+                    - /url: https://actosfera-dev.acto.com.br/financeiro/cadastros/regras-classificacao
+          - generic [ref=f4e599]:
+            - heading "Patrimônio & ativos" [level=2] [ref=f4e600]
+            - generic [ref=f4e601]:
+              - generic [ref=f4e602]:
+                - generic [ref=f4e603]: Equipamentos
+                - generic [ref=f4e611]:
+                  - paragraph [ref=f4e612]: Cadastro de equipamentos alocados a prestadores e projetos.
+                  - link "Abrir" [ref=f4e613] [cursor=pointer]:
+                    - /url: /equipamentos
+              - generic [ref=f4e614]:
+                - generic [ref=f4e615]: Patrimônio
+                - generic [ref=f4e629]:
+                  - paragraph [ref=f4e630]: Bens patrimoniais da empresa e controle de alocação.
+                  - link "Abrir" [ref=f4e631] [cursor=pointer]:
+                    - /url: /patrimonio
+              - generic [ref=f4e632]:
+                - generic [ref=f4e633]: Estoque
+                - generic [ref=f4e641]:
+                  - paragraph [ref=f4e642]: Itens de estoque e movimentações.
+                  - link "Abrir" [ref=f4e643] [cursor=pointer]:
+                    - /url: /estoque
+    - button "Abrir assistente de IA" [ref=f4e401]
+    - button "Abrir ferramentas Acto homologadas" [ref=f4e404]
+    - dialog [ref=f4e407]:
+      - generic [ref=f4e408]:
+        - generic [ref=f4e409]:
+          - generic [ref=f4e410]:
+            - paragraph [ref=f4e411]: Ferramentas Acto
+            - paragraph [ref=f4e412]: Ações rápidas do seu cargo e links homologados
+          - button [ref=f4e413]
+        - region [ref=f4e471]:
+          - generic [ref=f4e473]:
+            - link [ref=f4e474] [cursor=pointer]:
+              - /url: /documentacao
+              - generic [ref=f4e478]: Docs
+            - link [ref=f4e479] [cursor=pointer]:
+              - /url: https://canvas.acto.com.br/
+              - generic [ref=f4e486]: Canvas
+            - link [ref=f4e487] [cursor=pointer]:
+              - /url: https://chat.acto.com.br/
+              - generic [ref=f4e491]: Chat
+            - link [ref=f4e492] [cursor=pointer]:
+              - /url: https://projetos.acto.com.br/login?back_url=https%3A%2F%2Fprojetos.acto.com.br%2F
+              - generic [ref=f4e496]: Projetos
+  - region "Notifications alt+T"

@@ -1,0 +1,357 @@
+- generic [active] [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - generic [ref=f7e3]:
+      - generic [ref=f7e7]:
+        - link "ERP Acto" [ref=f7e9] [cursor=pointer]:
+          - /url: /dashboard
+        - generic [ref=f7e17]:
+          - generic [ref=f7e18]:
+            - generic [ref=f7e19]: Principal
+            - list [ref=f7e20]:
+              - listitem [ref=f7e21]:
+                - link "Dashboard" [ref=f7e22] [cursor=pointer]:
+                  - /url: /dashboard
+              - listitem [ref=f7e29]:
+                - button "Meu Espaço" [ref=f7e30]
+              - listitem [ref=f7e38]:
+                - button "Projetos" [ref=f7e39]
+              - listitem [ref=f7e45]:
+                - button "Comercial" [ref=f7e46]
+              - listitem [ref=f7e53]:
+                - link "Jurídico" [ref=f7e54] [cursor=pointer]:
+                  - /url: /comercial/licitacoes
+              - listitem [ref=f7e60]:
+                - button "Financeiro" [expanded] [ref=f7e61]
+                - list [ref=f7e69]:
+                  - listitem [ref=f7e70]:
+                    - generic [ref=f7e71] [cursor=pointer]: Operação
+                    - list [ref=f7e76]:
+                      - generic [ref=f7e77]:
+                        - listitem [ref=f7e78]:
+                          - link "Painel Gerencial" [ref=f7e79] [cursor=pointer]:
+                            - /url: /financeiro
+                        - listitem [ref=f7e81]:
+                          - link "Importar Extratos" [ref=f7e82] [cursor=pointer]:
+                            - /url: /financeiro/importar-extratos
+                        - listitem [ref=f7e84]:
+                          - link "Classificação" [ref=f7e85] [cursor=pointer]:
+                            - /url: /financeiro/classificacao
+                        - listitem [ref=f7e87]:
+                          - link "Saúde Financeira" [ref=f7e88] [cursor=pointer]:
+                            - /url: /financeiro/centros-custo
+                        - listitem [ref=f7e90]:
+                          - link "Contratos & Projetos" [ref=f7e91] [cursor=pointer]:
+                            - /url: /financeiro/contratos-projetos
+                        - listitem [ref=f7e93]:
+                          - link "Indicadores" [ref=f7e94] [cursor=pointer]:
+                            - /url: /financeiro/indicadores
+                        - listitem [ref=f7e96]:
+                          - link "Planejamento" [ref=f7e97] [cursor=pointer]:
+                            - /url: /financeiro/planejamento
+                  - listitem [ref=f7e99]:
+                    - link "Relatórios" [ref=f7e100] [cursor=pointer]:
+                      - /url: /financeiro/relatorios
+                  - listitem [ref=f7e102]:
+                    - link "Notas fiscais" [ref=f7e103] [cursor=pointer]:
+                      - /url: /faturamento/notas-fiscais
+              - listitem [ref=f7e105]:
+                - button "RH" [ref=f7e106]
+              - listitem [ref=f7e115]:
+                - button "Inteligência" [ref=f7e116]
+              - listitem [ref=f7e125]:
+                - link "Processos" [ref=f7e126] [cursor=pointer]:
+                  - /url: /processos
+              - listitem [ref=f7e132]:
+                - button "Patrimônio" [ref=f7e133]
+          - generic [ref=f7e147]:
+            - generic [ref=f7e148]: Destaque
+            - list [ref=f7e149]:
+              - listitem [ref=f7e150]:
+                - button "Universidade Acto" [ref=f7e151]
+              - listitem [ref=f7e158]:
+                - link "Hub de cadastros" [ref=f7e159] [cursor=pointer]:
+                  - /url: /cadastros
+              - listitem [ref=f7e165]:
+                - link "Organizações" [ref=f7e166] [cursor=pointer]:
+                  - /url: /organizacoes
+        - list [ref=f7e173]:
+          - listitem [ref=f7e174]:
+            - button "AS Admin Sistema" [ref=f7e175]:
+              - generic [ref=f7e176]: AS
+              - generic [ref=f7e178]: Admin Sistema
+        - button "Toggle sidebar" [ref=f7e183]
+      - main [ref=f7e184]:
+        - generic [ref=f7e186]:
+          - generic [ref=f7e188]:
+            - button "Alternar menu lateral" [ref=f7e189]
+            - navigation "breadcrumb" [ref=f7e191]:
+              - list [ref=f7e192]:
+                - listitem [ref=f7e193]:
+                  - link "Financeiro" [ref=f7e194] [cursor=pointer]:
+                    - /url: /financeiro
+                - listitem [ref=f7e195]
+                - listitem [ref=f7e198]:
+                  - link "Painel" [disabled] [ref=f7e199]
+          - button "Abrir busca global" [ref=f7e201]:
+            - generic [ref=f7e205]: Buscar no ERP…
+            - generic [ref=f7e206]:
+              - generic [ref=f7e207]: Ctrl
+              - generic [ref=f7e208]: K
+          - generic [ref=f7e211]:
+            - link "Caixa de entrada" [ref=f7e212] [cursor=pointer]:
+              - /url: /meu/caixa-entrada
+            - button "Notificações" [ref=f7e216] [cursor=pointer]
+            - generic [ref=f7e220]:
+              - 'button "Como usar: Painel Gerencial" [ref=f7e221] [cursor=pointer]'
+              - link "Documentação interna" [ref=f7e225] [cursor=pointer]:
+                - /url: /documentacao
+              - button "Pomodoro — método de foco" [ref=f7e228] [cursor=pointer]
+              - link "Configurar PIN de step-up" [ref=f7e232] [cursor=pointer]:
+                - /url: /settings/security
+        - generic [ref=f7e236]:
+          - generic [ref=f7e238]:
+            - heading "Painel Gerencial" [level=2] [ref=f7e239]
+            - paragraph [ref=f7e240]: Resultado consolidado e por centro de custo.
+          - generic [ref=f7e241]:
+            - generic [ref=f7e242]:
+              - button "Mês atual · Agosto" [ref=f7e243]
+              - button "Visão geral · Acumulado" [ref=f7e244]
+            - paragraph [ref=f7e245]: Período de Agosto / 2026
+          - generic [ref=f7e246]:
+            - generic [ref=f7e247]:
+              - generic [ref=f7e248]: Saldo Conciliado por Conta
+              - paragraph [ref=f7e249]: Saldo inicial + lançamentos classificados
+            - paragraph [ref=f7e251]: Cadastre contas bancárias da empresa para acompanhar saldos conciliados.
+          - generic [ref=f7e252]:
+            - generic [ref=f7e253]:
+              - generic [ref=f7e254]:
+                - generic [ref=f7e257]:
+                  - term [ref=f7e258]: "Receitas: Ago"
+                  - definition [ref=f7e260]: R$ 0,00
+                - 'button "Analisar gráfico Receitas: Ago no assistente" [ref=f7e261]': Analisar no assistente
+              - generic [ref=f7e262]: vs. julho
+            - generic [ref=f7e263]:
+              - generic [ref=f7e264]:
+                - generic [ref=f7e267]:
+                  - term [ref=f7e268]: "Despesas: Ago"
+                  - definition [ref=f7e270]: R$ 0,00
+                - 'button "Analisar gráfico Despesas: Ago no assistente" [ref=f7e271]': Analisar no assistente
+              - generic [ref=f7e272]: vs. julho
+            - generic [ref=f7e273]:
+              - generic [ref=f7e274]:
+                - generic [ref=f7e277]:
+                  - term [ref=f7e278]: Resultado Líquido
+                  - definition [ref=f7e280]: R$ 0,00
+                - button "Analisar gráfico Resultado Líquido no assistente" [ref=f7e281]: Analisar no assistente
+              - generic [ref=f7e282]: receitas − despesas (inclui impostos provisionados)
+            - generic [ref=f7e283]:
+              - generic [ref=f7e284]: Saldo Consolidado
+              - generic [ref=f7e286]:
+                - paragraph [ref=f7e287]: R$ 0,00
+                - text: 0 contas bancárias
+          - generic [ref=f7e288]:
+            - generic [ref=f7e290]:
+              - generic [ref=f7e291]:
+                - generic [ref=f7e292]: Impostos provisionados
+                - paragraph [ref=f7e293]: "Cálculo com base nas alíquotas configuradas: Período de Agosto / 2026"
+              - link "Configurar alíquotas" [ref=f7e294] [cursor=pointer]:
+                - /url: /financeiro/cadastros/aliquotas-imposto
+            - paragraph [ref=f7e296]: Nenhuma alíquota ativa com percentual maior que zero. Configure em Cadastros → Alíquotas de impostos para provisionar ISS, PIS, COFINS, CSLL, IRPJ e INSS.
+          - generic [ref=f7e297]:
+            - generic [ref=f7e298]:
+              - generic [ref=f7e299]:
+                - generic [ref=f7e300]: Planejamento × execução
+                - paragraph [ref=f7e301]: "Período de Agosto / 2026: previsto vs realizado"
+              - link "Abrir planejamento" [ref=f7e302] [cursor=pointer]:
+                - /url: /financeiro/planejamento
+            - paragraph [ref=f7e304]:
+              - text: Nenhum orçamento cadastrado para 2026. Defina valores previstos em
+              - link "Planejamento" [ref=f7e305] [cursor=pointer]:
+                - /url: /financeiro/planejamento
+              - text: .
+          - generic [ref=f7e306]:
+            - generic [ref=f7e307]:
+              - generic [ref=f7e308]:
+                - generic [ref=f7e309]: Recebíveis de contratos públicos
+                - paragraph [ref=f7e310]: "Posição consolidada: independente do período de caixa"
+              - generic [ref=f7e311]:
+                - link "Indicadores" [ref=f7e312] [cursor=pointer]:
+                  - /url: /financeiro/indicadores
+                - link "Contas a receber" [ref=f7e313] [cursor=pointer]:
+                  - /url: /financeiro-legado/contas-receber
+            - generic [ref=f7e314]:
+              - generic [ref=f7e315]:
+                - generic [ref=f7e316]:
+                  - generic [ref=f7e317]: Contratos ativos
+                  - generic [ref=f7e319]:
+                    - paragraph [ref=f7e320]: "2"
+                    - text: Contratos públicos vigentes
+                - generic [ref=f7e321]:
+                  - generic [ref=f7e322]: Valor recebido
+                  - generic [ref=f7e324]:
+                    - paragraph [ref=f7e325]: R$ 40.000,00
+                    - text: Entradas confirmadas nos contratos
+                - generic [ref=f7e326]:
+                  - generic [ref=f7e327]: Valor a receber
+                  - generic [ref=f7e329]:
+                    - paragraph [ref=f7e330]: R$ 80.000,00
+                    - text: Faturado − recebido
+                - generic [ref=f7e331]:
+                  - generic [ref=f7e332]: Valor previsível
+                  - generic [ref=f7e334]:
+                    - paragraph [ref=f7e335]: R$ 13.333,33
+                    - generic [ref=f7e336]: Previsão Set/2026 · regressão linear
+              - generic [ref=f7e337]:
+                - generic [ref=f7e338]:
+                  - generic [ref=f7e339]:
+                    - generic [ref=f7e340]:
+                      - paragraph [ref=f7e341]: Esperado × recebido
+                      - paragraph [ref=f7e342]: Faturado ao órgão vs recebido em caixa
+                    - generic [ref=f7e343]: 33% realizado
+                  - progressbar [ref=f7e344]
+                  - generic [ref=f7e346]:
+                    - paragraph [ref=f7e347]: "Esperado: R$ 120.000,00"
+                    - paragraph [ref=f7e348]: "Recebido: R$ 40.000,00"
+                    - paragraph [ref=f7e349]: "Diferença: R$ 80.000,00"
+                - generic [ref=f7e350]:
+                  - generic [ref=f7e351]:
+                    - paragraph [ref=f7e352]: Regressão temporal
+                    - paragraph [ref=f7e353]: Recebimentos mensais (12 meses) e tendência projetada
+                  - generic [ref=f7e354]:
+                    - application [ref=f7e358]:
+                      - generic [ref=f7e366]:
+                        - generic [ref=f7e367]:
+                          - generic [ref=f7e368]: Set
+                          - generic [ref=f7e370]: Out
+                          - generic [ref=f7e372]: Nov
+                          - generic [ref=f7e374]: Dez
+                          - generic [ref=f7e376]: Jan
+                          - generic [ref=f7e378]: Fev
+                          - generic [ref=f7e380]: Mar
+                          - generic [ref=f7e382]: Abr
+                          - generic [ref=f7e384]: Mai
+                          - generic [ref=f7e386]: Jun
+                          - generic [ref=f7e388]: Jul
+                          - generic [ref=f7e390]: Ago
+                        - generic [ref=f7e392]:
+                          - generic [ref=f7e393]: "0"
+                          - generic [ref=f7e395]: 10 mil
+                          - generic [ref=f7e397]: 20 mil
+                          - generic [ref=f7e399]: 30 mil
+                          - generic [ref=f7e401]: 40 mil
+                    - button "Analisar gráfico Regressão temporal de recebíveis no assistente" [ref=f7e403]: Analisar no assistente
+          - generic [ref=f7e404]:
+            - generic [ref=f7e405]:
+              - generic [ref=f7e406]:
+                - generic [ref=f7e407]: Evolução de Resultado
+                - paragraph [ref=f7e408]: Receitas, despesas, resultado, meta prevista e previsionado (Kalman) em 2026
+              - generic [ref=f7e409]:
+                - generic [ref=f7e410]:
+                  - application [ref=f7e414]:
+                    - generic [ref=f7e421]:
+                      - generic [ref=f7e422]: Ago
+                      - generic [ref=f7e425]:
+                        - generic [ref=f7e426]: "0"
+                        - generic [ref=f7e428]: "1"
+                        - generic [ref=f7e430]: "2"
+                        - generic [ref=f7e432]: "3"
+                        - generic [ref=f7e434]: "4"
+                  - button "Analisar gráfico Evolução de Resultado no assistente" [ref=f7e436]: Analisar no assistente
+                - paragraph [ref=f7e437]: "Previsionado (Kalman): Histórico insuficiente para previsão (mínimo 2 meses)."
+            - generic [ref=f7e438]:
+              - generic [ref=f7e439]:
+                - generic [ref=f7e440]: Completude da Classificação
+                - paragraph [ref=f7e441]: Período de Agosto / 2026
+              - generic [ref=f7e442]:
+                - generic [ref=f7e443]:
+                  - application [ref=f7e447]
+                  - button "Analisar gráfico Completude da Classificação no assistente" [ref=f7e448]: Analisar no assistente
+                - generic [ref=f7e449]:
+                  - paragraph [ref=f7e450]: 100%
+                  - paragraph [ref=f7e451]: classificado
+                - generic [ref=f7e452]:
+                  - generic [ref=f7e453]:
+                    - paragraph [ref=f7e454]: "0"
+                    - paragraph [ref=f7e455]: Classificados
+                  - generic [ref=f7e456]:
+                    - paragraph [ref=f7e457]: "0"
+                    - paragraph [ref=f7e458]: Pendentes
+          - generic [ref=f7e459]:
+            - generic [ref=f7e460]:
+              - generic [ref=f7e461]:
+                - generic [ref=f7e462]: Despesas por Categoria
+                - paragraph [ref=f7e463]: "Agosto / 2026: com drill-down"
+              - paragraph [ref=f7e465]: Sem despesas no período.
+            - generic [ref=f7e466]:
+              - generic [ref=f7e467]:
+                - generic [ref=f7e468]: Resultado por Centro de Custo
+                - paragraph [ref=f7e469]: Receitas alocadas − despesas alocadas
+              - table [ref=f7e473]:
+                - rowgroup [ref=f7e474]:
+                  - row [ref=f7e475]:
+                    - columnheader "Projeto" [ref=f7e476]
+                    - columnheader "Receita" [ref=f7e477]
+                    - columnheader "Despesa" [ref=f7e478]
+                    - columnheader "Resultado" [ref=f7e479]
+                - rowgroup [ref=f7e480]:
+                  - row [ref=f7e481]:
+                    - cell "CC-001 Operações" [ref=f7e482]:
+                      - generic [ref=f7e483]:
+                        - generic [ref=f7e484]: CC-001
+                        - generic [ref=f7e485]: Operações
+                    - cell "R$ 0,00" [ref=f7e486]
+                    - cell "R$ 0,00" [ref=f7e487]
+                    - cell "R$ 0,00" [ref=f7e488]
+                  - row [ref=f7e489]:
+                    - cell "CC-002 Tecnologia" [ref=f7e490]:
+                      - generic [ref=f7e491]:
+                        - generic [ref=f7e492]: CC-002
+                        - generic [ref=f7e493]: Tecnologia
+                    - cell "R$ 0,00" [ref=f7e494]
+                    - cell "R$ 0,00" [ref=f7e495]
+                    - cell "R$ 0,00" [ref=f7e496]
+          - generic [ref=f7e497]:
+            - generic [ref=f7e499]:
+              - generic [ref=f7e500]: Carteira de Contratos
+              - paragraph [ref=f7e501]: "Posição geral: independente de período"
+            - generic [ref=f7e505]:
+              - generic [ref=f7e506]:
+                - generic [ref=f7e507]:
+                  - paragraph [ref=f7e508]: Contratado
+                  - paragraph [ref=f7e509]: R$ 0,00
+                - generic [ref=f7e510]:
+                  - paragraph [ref=f7e511]: Medido / faturado
+                  - paragraph [ref=f7e512]: R$ 0,00
+                - generic [ref=f7e513]:
+                  - paragraph [ref=f7e514]: Backlog a medir
+                  - paragraph [ref=f7e515]: R$ 0,00
+              - paragraph [ref=f7e516]:
+                - text: "Contratos comerciais operacionais: detalhes em"
+                - link "Contratos & Projetos" [ref=f7e517] [cursor=pointer]:
+                  - /url: /financeiro/contratos-projetos
+                - text: .
+      - button "Abrir assistente de IA" [ref=f7e520]
+      - button "Abrir ferramentas Acto homologadas" [ref=f7e523]
+      - dialog [ref=f7e526]:
+        - generic [ref=f7e527]:
+          - generic [ref=f7e528]:
+            - generic [ref=f7e529]:
+              - paragraph [ref=f7e530]: Ferramentas Acto
+              - paragraph [ref=f7e531]: Ações rápidas do seu cargo e links homologados
+            - button [ref=f7e532]
+          - region [ref=f7e536]:
+            - generic [ref=f7e537]:
+              - link [ref=f7e538] [cursor=pointer]:
+                - /url: /documentacao
+                - generic [ref=f7e542]: Docs
+              - link [ref=f7e543] [cursor=pointer]:
+                - /url: https://canvas.acto.com.br/
+                - generic [ref=f7e550]: Canvas
+              - link [ref=f7e551] [cursor=pointer]:
+                - /url: https://chat.acto.com.br/
+                - generic [ref=f7e555]: Chat
+              - link [ref=f7e556] [cursor=pointer]:
+                - /url: https://projetos.acto.com.br/login?back_url=https%3A%2F%2Fprojetos.acto.com.br%2F
+                - generic [ref=f7e560]: Projetos
+    - region "Notifications alt+T"
+  - generic [ref=f7e561]: "1"

@@ -1,0 +1,35 @@
+- generic [ref=f14e2]:
+  - generic [ref=f14e3]:
+    - generic [ref=f14e5]:
+      - link [ref=f14e10] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=f14e18]: © 2026 ERP Acto
+    - generic [ref=f14e20]:
+      - generic [ref=f14e21]:
+        - heading "Entrar na sua conta" [level=1] [ref=f14e22]
+        - paragraph [ref=f14e23]: Escolha como deseja acessar o ERP Acto.
+      - generic [ref=f14e24]:
+        - link "Entrar com Google" [ref=f14e26] [cursor=pointer]:
+          - /url: /auth/google/redirect
+        - generic [ref=f14e27]: ou continue com e-mail
+        - generic [ref=f14e31]:
+          - generic [ref=f14e32]:
+            - generic [ref=f14e33]:
+              - generic [ref=f14e34]: E-mail
+              - textbox "E-mail" [ref=f14e35]:
+                - /placeholder: seu@email.com
+            - generic [ref=f14e36]:
+              - generic [ref=f14e37]:
+                - generic [ref=f14e38]: Senha
+                - link "Esqueceu a senha?" [ref=f14e39] [cursor=pointer]:
+                  - /url: /forgot-password
+              - generic [ref=f14e40]:
+                - textbox "Senha" [ref=f14e41]:
+                  - /placeholder: Sua senha
+                - button "Mostrar senha" [ref=f14e42]
+            - button "Entrar com e-mail" [ref=f14e46]
+          - generic [ref=f14e47]:
+            - text: Ainda não tem conta?
+            - link "Criar conta" [ref=f14e48] [cursor=pointer]:
+              - /url: /register
+  - region "Notifications alt+T"

@@ -1,0 +1,238 @@
+- generic [ref=f6e2]:
+  - generic [ref=f6e3]:
+    - generic [ref=f6e7]:
+      - link "ERP Acto" [ref=f6e9] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=f6e17]:
+        - generic [ref=f6e18]:
+          - generic [ref=f6e19]: Principal
+          - list [ref=f6e20]:
+            - listitem [ref=f6e21]:
+              - link "Dashboard" [ref=f6e22] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=f6e29]:
+              - button "Meu Espaço" [ref=f6e30]
+            - listitem [ref=f6e38]:
+              - button "Projetos" [ref=f6e39]
+            - listitem [ref=f6e45]:
+              - button "Comercial" [expanded] [ref=f6e46]
+              - list [ref=f6e54]:
+                - generic [ref=f6e55]:
+                  - listitem [ref=f6e56]:
+                    - link "Painel" [ref=f6e57] [cursor=pointer]:
+                      - /url: /crm
+                  - listitem [ref=f6e59]:
+                    - link "Funil" [ref=f6e60] [cursor=pointer]:
+                      - /url: /crm/funil
+                  - listitem [ref=f6e62]:
+                    - link "Oportunidades" [ref=f6e63] [cursor=pointer]:
+                      - /url: /crm/oportunidades
+                  - listitem [ref=f6e65]:
+                    - link "Parceiros comerciais" [ref=f6e66] [cursor=pointer]:
+                      - /url: /crm/parceiros
+                  - listitem [ref=f6e68]:
+                    - link "Atas de registro de preço" [ref=f6e69] [cursor=pointer]:
+                      - /url: /crm/atas
+                  - listitem [ref=f6e71]:
+                    - link "Comissões" [ref=f6e72] [cursor=pointer]:
+                      - /url: /crm/comissoes
+                  - listitem [ref=f6e74]:
+                    - link "Metas" [ref=f6e75] [cursor=pointer]:
+                      - /url: /crm/metas
+                  - listitem [ref=f6e77]:
+                    - link "Parâmetros" [ref=f6e78] [cursor=pointer]:
+                      - /url: /crm/parametros
+                  - listitem [ref=f6e80]:
+                    - link "Relatórios" [ref=f6e81] [cursor=pointer]:
+                      - /url: /crm/relatorios
+            - listitem [ref=f6e83]:
+              - link "Jurídico" [ref=f6e84] [cursor=pointer]:
+                - /url: /comercial/licitacoes
+            - listitem [ref=f6e90]:
+              - button "Financeiro" [ref=f6e91]
+            - listitem [ref=f6e98]:
+              - button "RH" [ref=f6e99]
+            - listitem [ref=f6e108]:
+              - button "Inteligência" [ref=f6e109]
+            - listitem [ref=f6e118]:
+              - link "Processos" [ref=f6e119] [cursor=pointer]:
+                - /url: /processos
+            - listitem [ref=f6e125]:
+              - button "Patrimônio" [ref=f6e126]
+        - generic [ref=f6e140]:
+          - generic [ref=f6e141]: Destaque
+          - list [ref=f6e142]:
+            - listitem [ref=f6e143]:
+              - button "Universidade Acto" [ref=f6e144]
+            - listitem [ref=f6e151]:
+              - link "Hub de cadastros" [ref=f6e152] [cursor=pointer]:
+                - /url: /cadastros
+            - listitem [ref=f6e158]:
+              - link "Organizações" [ref=f6e159] [cursor=pointer]:
+                - /url: /organizacoes
+      - list [ref=f6e166]:
+        - listitem [ref=f6e167]:
+          - button "AS Admin Sistema" [ref=f6e168]:
+            - generic [ref=f6e169]: AS
+            - generic [ref=f6e171]: Admin Sistema
+      - button "Toggle sidebar" [ref=f6e176]
+    - main [ref=f6e177]:
+      - generic [ref=f6e179]:
+        - generic [ref=f6e181]:
+          - button "Alternar menu lateral" [ref=f6e182]
+          - navigation "breadcrumb" [ref=f6e184]:
+            - list [ref=f6e185]:
+              - listitem [ref=f6e186]:
+                - link "CRM" [ref=f6e187] [cursor=pointer]:
+                  - /url: /crm
+              - listitem [ref=f6e188]
+              - listitem [ref=f6e191]:
+                - link "Painel" [disabled] [ref=f6e192]
+        - button "Abrir busca global" [ref=f6e194]:
+          - generic [ref=f6e198]: Buscar no ERP…
+          - generic [ref=f6e199]:
+            - generic [ref=f6e200]: Ctrl
+            - generic [ref=f6e201]: K
+        - generic [ref=f6e204]:
+          - link "Caixa de entrada" [ref=f6e205] [cursor=pointer]:
+            - /url: /meu/caixa-entrada
+          - button "Notificações" [ref=f6e209] [cursor=pointer]
+          - generic [ref=f6e213]:
+            - 'button "Como usar: Dashboard executivo CRM" [ref=f6e214] [cursor=pointer]'
+            - link "Documentação interna" [ref=f6e218] [cursor=pointer]:
+              - /url: /documentacao
+            - button "Pomodoro — método de foco" [ref=f6e221] [cursor=pointer]
+            - link "Configurar PIN de step-up" [ref=f6e225] [cursor=pointer]:
+              - /url: /settings/security
+      - generic [ref=f6e229]:
+        - generic [ref=f6e230]:
+          - generic [ref=f6e231]:
+            - heading "Painel CRM" [level=1] [ref=f6e232]
+            - paragraph [ref=f6e233]: "Visão geral do pipeline comercial: LDR, SDR, BDR e Closer."
+          - generic [ref=f6e234]:
+            - link "Abrir funil" [ref=f6e235] [cursor=pointer]:
+              - /url: /crm/funil
+            - link "Exportar relatório" [ref=f6e236] [cursor=pointer]:
+              - /url: /crm/relatorios
+            - link "Nova oportunidade" [ref=f6e237] [cursor=pointer]:
+              - /url: /crm/oportunidades/create
+        - generic [ref=f6e238]:
+          - generic [ref=f6e239]:
+            - generic "Visões do painel CRM" [ref=f6e241]:
+              - generic: Visão geral
+              - generic: Executivo
+              - tablist [ref=f6e242]:
+                - tab "Visão geral" [selected] [ref=f6e243]
+                - tab "Executivo" [ref=f6e245]
+            - generic [ref=f6e248]:
+              - generic [ref=f6e249]: "Período analítico: T3/2026"
+              - generic [ref=f6e250]:
+                - button "Mês atual" [ref=f6e251]
+                - button "Trimestre" [ref=f6e252]
+                - button "Ano" [ref=f6e253]
+                - button "Todo o período" [ref=f6e254]
+          - tabpanel [ref=f6e255]:
+            - generic [ref=f6e256]:
+              - generic [ref=f6e259]:
+                - generic [ref=f6e260]: R$ 0
+                - generic [ref=f6e261]: Valor do pipeline
+                - paragraph [ref=f6e262]: Soma das oportunidades ativas no funil comercial.
+              - generic [ref=f6e265]:
+                - generic [ref=f6e266]: "0"
+                - generic [ref=f6e267]: Oportunidades ativas
+                - paragraph [ref=f6e268]: Negócios em andamento entre LDR e Closer.
+              - generic [ref=f6e271]:
+                - generic [ref=f6e272]: 0°
+                - generic [ref=f6e273]: Temperatura média
+                - paragraph [ref=f6e274]: Engajamento médio das oportunidades abertas.
+              - generic [ref=f6e278]:
+                - generic [ref=f6e279]: 0%
+                - generic [ref=f6e280]: Win-rate
+                - paragraph [ref=f6e281]: Ganhos ÷ encerradas em T3/2026.
+            - generic [ref=f6e282]:
+              - article [ref=f6e283]:
+                - generic [ref=f6e284]:
+                  - generic [ref=f6e285]:
+                    - heading "Distribuição por estágio" [level=3] [ref=f6e286]
+                    - paragraph [ref=f6e287]: "Snapshot do pipeline aberto: volume, valor estimado e participação por estágio."
+                  - link "Abrir funil" [ref=f6e288] [cursor=pointer]:
+                    - /url: /crm/funil
+                - generic [ref=f6e289]:
+                  - generic [ref=f6e290]:
+                    - paragraph [ref=f6e291]: Oportunidades abertas
+                    - paragraph [ref=f6e292]: "0"
+                  - generic [ref=f6e293]:
+                    - paragraph [ref=f6e294]: Valor no pipeline
+                    - paragraph [ref=f6e295]: R$ 0
+                    - paragraph [ref=f6e296]: R$ 0,00
+                  - generic [ref=f6e297]:
+                    - paragraph [ref=f6e298]: Estágio com maior valor
+                    - paragraph [ref=f6e299]: —
+                - paragraph [ref=f6e300]: Nenhuma oportunidade aberta no pipeline. Cadastre deals ou abra o funil para movimentá-los.
+              - article [ref=f6e301]:
+                - generic [ref=f6e302]:
+                  - heading "Conversão do funil" [level=3] [ref=f6e303]
+                  - paragraph [ref=f6e304]: "Handoffs em T3/2026: taxa entre estágios adjacentes."
+                - list [ref=f6e305]:
+                  - listitem [ref=f6e306]:
+                    - generic [ref=f6e307]:
+                      - paragraph [ref=f6e308]: LeadQualificação
+                      - paragraph [ref=f6e311]: Nenhuma saída no período
+                    - generic [ref=f6e312]: —
+                  - listitem [ref=f6e313]:
+                    - generic [ref=f6e314]:
+                      - paragraph [ref=f6e315]: QualificaçãoDesenvolvimento
+                      - paragraph [ref=f6e318]: Nenhuma saída no período
+                    - generic [ref=f6e319]: —
+                  - listitem [ref=f6e320]:
+                    - generic [ref=f6e321]:
+                      - paragraph [ref=f6e322]: DesenvolvimentoNegociação
+                      - paragraph [ref=f6e325]: Nenhuma saída no período
+                    - generic [ref=f6e326]: —
+                - generic [ref=f6e327]:
+                  - heading "Tempo médio no estágio" [level=4] [ref=f6e328]
+                  - list [ref=f6e329]:
+                    - listitem [ref=f6e330]:
+                      - generic [ref=f6e331]: Lead
+                      - generic [ref=f6e332]: —
+                    - listitem [ref=f6e333]:
+                      - generic [ref=f6e334]: Qualificação
+                      - generic [ref=f6e335]: —
+                    - listitem [ref=f6e336]:
+                      - generic [ref=f6e337]: Desenvolvimento
+                      - generic [ref=f6e338]: —
+                    - listitem [ref=f6e339]:
+                      - generic [ref=f6e340]: Negociação
+                      - generic [ref=f6e341]: —
+                - link "Trabalhar no funil" [ref=f6e342] [cursor=pointer]:
+                  - /url: /crm/funil
+            - article [ref=f6e343]:
+              - generic [ref=f6e344]:
+                - heading "Insights estratégicos" [level=2] [ref=f6e345]
+                - paragraph [ref=f6e346]: Ainda não há oportunidades abertas. Comece cadastrando leads no funil.
+                - link "Aplicar recomendação" [ref=f6e347] [cursor=pointer]:
+                  - /url: /crm/funil
+    - button "Abrir assistente de IA" [ref=f6e350]
+    - button "Abrir ferramentas Acto homologadas" [ref=f6e353]
+    - dialog [ref=f6e356]:
+      - generic [ref=f6e357]:
+        - generic [ref=f6e358]:
+          - generic [ref=f6e359]:
+            - paragraph [ref=f6e360]: Ferramentas Acto
+            - paragraph [ref=f6e361]: Ações rápidas do seu cargo e links homologados
+          - button [ref=f6e362]
+        - region [ref=f6e366]:
+          - generic [ref=f6e367]:
+            - link [ref=f6e368] [cursor=pointer]:
+              - /url: /documentacao
+              - generic [ref=f6e372]: Docs
+            - link [ref=f6e373] [cursor=pointer]:
+              - /url: https://canvas.acto.com.br/
+              - generic [ref=f6e380]: Canvas
+            - link [ref=f6e381] [cursor=pointer]:
+              - /url: https://chat.acto.com.br/
+              - generic [ref=f6e385]: Chat
+            - link [ref=f6e386] [cursor=pointer]:
+              - /url: https://projetos.acto.com.br/login?back_url=https%3A%2F%2Fprojetos.acto.com.br%2F
+              - generic [ref=f6e390]: Projetos
+  - region "Notifications alt+T"

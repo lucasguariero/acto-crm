@@ -1,0 +1,239 @@
+- generic [ref=f8e2]:
+  - generic [ref=f8e3]:
+    - generic [ref=f8e7]:
+      - link "ERP Acto" [ref=f8e9] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=f8e17]:
+        - generic [ref=f8e18]:
+          - generic [ref=f8e19]: Principal
+          - list [ref=f8e20]:
+            - listitem [ref=f8e21]:
+              - link "Dashboard" [ref=f8e22] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=f8e29]:
+              - button "Meu Espaço" [ref=f8e30]
+            - listitem [ref=f8e38]:
+              - button "Projetos" [ref=f8e39]
+            - listitem [ref=f8e45]:
+              - button "Comercial" [expanded] [ref=f8e46]
+              - list [ref=f8e54]:
+                - generic [ref=f8e55]:
+                  - listitem [ref=f8e56]:
+                    - link "Painel" [ref=f8e57] [cursor=pointer]:
+                      - /url: /crm
+                  - listitem [ref=f8e59]:
+                    - link "Funil" [ref=f8e60] [cursor=pointer]:
+                      - /url: /crm/funil
+                  - listitem [ref=f8e62]:
+                    - link "Oportunidades" [ref=f8e63] [cursor=pointer]:
+                      - /url: /crm/oportunidades
+                  - listitem [ref=f8e65]:
+                    - link "Parceiros comerciais" [ref=f8e66] [cursor=pointer]:
+                      - /url: /crm/parceiros
+                  - listitem [ref=f8e68]:
+                    - link "Atas de registro de preço" [ref=f8e69] [cursor=pointer]:
+                      - /url: /crm/atas
+                  - listitem [ref=f8e71]:
+                    - link "Comissões" [ref=f8e72] [cursor=pointer]:
+                      - /url: /crm/comissoes
+                  - listitem [ref=f8e74]:
+                    - link "Metas" [ref=f8e75] [cursor=pointer]:
+                      - /url: /crm/metas
+                  - listitem [ref=f8e77]:
+                    - link "Parâmetros" [ref=f8e78] [cursor=pointer]:
+                      - /url: /crm/parametros
+                  - listitem [ref=f8e80]:
+                    - link "Relatórios" [ref=f8e81] [cursor=pointer]:
+                      - /url: /crm/relatorios
+            - listitem [ref=f8e83]:
+              - link "Jurídico" [ref=f8e84] [cursor=pointer]:
+                - /url: /comercial/licitacoes
+            - listitem [ref=f8e90]:
+              - button "Financeiro" [ref=f8e91]
+            - listitem [ref=f8e98]:
+              - button "RH" [ref=f8e99]
+            - listitem [ref=f8e108]:
+              - button "Inteligência" [ref=f8e109]
+            - listitem [ref=f8e118]:
+              - link "Processos" [ref=f8e119] [cursor=pointer]:
+                - /url: /processos
+            - listitem [ref=f8e125]:
+              - button "Patrimônio" [ref=f8e126]
+        - generic [ref=f8e140]:
+          - generic [ref=f8e141]: Destaque
+          - list [ref=f8e142]:
+            - listitem [ref=f8e143]:
+              - button "Universidade Acto" [ref=f8e144]
+            - listitem [ref=f8e151]:
+              - link "Hub de cadastros" [ref=f8e152] [cursor=pointer]:
+                - /url: /cadastros
+            - listitem [ref=f8e158]:
+              - link "Organizações" [ref=f8e159] [cursor=pointer]:
+                - /url: /organizacoes
+      - list [ref=f8e166]:
+        - listitem [ref=f8e167]:
+          - button "AS Admin Sistema" [ref=f8e168]:
+            - generic [ref=f8e169]: AS
+            - generic [ref=f8e171]: Admin Sistema
+      - button "Toggle sidebar" [ref=f8e176]
+    - main [ref=f8e177]:
+      - generic [ref=f8e179]:
+        - generic [ref=f8e181]:
+          - button "Alternar menu lateral" [ref=f8e182]
+          - navigation "breadcrumb" [ref=f8e184]:
+            - list [ref=f8e185]:
+              - listitem [ref=f8e186]:
+                - link "CRM" [ref=f8e187] [cursor=pointer]:
+                  - /url: /crm
+              - listitem [ref=f8e188]
+              - listitem [ref=f8e191]:
+                - link "Oportunidades" [disabled] [ref=f8e192]
+        - button "Abrir busca global" [ref=f8e194]:
+          - generic [ref=f8e198]: Buscar no ERP…
+          - generic [ref=f8e199]:
+            - generic [ref=f8e200]: Ctrl
+            - generic [ref=f8e201]: K
+        - generic [ref=f8e204]:
+          - link "Caixa de entrada" [ref=f8e205] [cursor=pointer]:
+            - /url: /meu/caixa-entrada
+          - button "Notificações" [ref=f8e209] [cursor=pointer]
+          - generic [ref=f8e213]:
+            - 'button "Como usar: Funil CRM" [ref=f8e214] [cursor=pointer]'
+            - link "Documentação interna" [ref=f8e218] [cursor=pointer]:
+              - /url: /documentacao
+            - button "Pomodoro — método de foco" [ref=f8e221] [cursor=pointer]
+            - link "Configurar PIN de step-up" [ref=f8e225] [cursor=pointer]:
+              - /url: /settings/security
+      - generic [ref=f8e229]:
+        - generic [ref=f8e230]:
+          - generic [ref=f8e231]:
+            - heading "Lista executiva de oportunidades" [level=2] [ref=f8e232]
+            - paragraph [ref=f8e233]: Visão comercial com origem, equipe, margem e próximo passo.
+          - generic [ref=f8e234]:
+            - link "Abrir funil" [ref=f8e235] [cursor=pointer]:
+              - /url: /crm/funil
+            - link "Nova oportunidade" [ref=f8e236] [cursor=pointer]:
+              - /url: /crm/oportunidades/create
+        - generic [ref=f8e237]:
+          - searchbox "Buscar por código ou título" [ref=f8e239]
+          - combobox [ref=f8e240]:
+            - option "Todos os estágios" [selected]
+            - option "Lead"
+            - option "Qualificação"
+            - option "Desenvolvimento"
+            - option "Negociação"
+            - option "Ganho"
+            - option "Perdido"
+          - combobox [ref=f8e241]:
+            - option "Todas as origens" [selected]
+            - option "Inbound"
+            - option "Outbound"
+            - option "Indicação"
+            - option "Indicação interna"
+            - option "Evento"
+            - option "Licitação Acto"
+            - option "Finder"
+            - option "Representante"
+            - option "Marketing"
+            - option "SDR"
+            - option "BDR"
+            - option "CEO"
+            - option "Cliente"
+            - option "Ata"
+            - option "Outro"
+          - combobox [ref=f8e242]:
+            - option "Qualquer participante" [selected]
+            - option "Com Finder"
+            - option "Com Representante"
+            - option "Com LDR"
+            - option "Com SDR"
+            - option "Com BDR"
+            - option "Com Closer"
+          - combobox [ref=f8e243]:
+            - option "Todas as categorias" [selected]
+            - option "Pipeline"
+            - option "Upside"
+            - option "Commit"
+          - combobox [ref=f8e244]:
+            - option "Qualquer dependência" [selected]
+            - option "Depende da Acto"
+            - option "Não depende da Acto"
+          - generic [ref=f8e245]:
+            - text: Previsão até
+            - textbox "Previsão até" [ref=f8e246]
+          - combobox [ref=f8e247]:
+            - 'option "Ordenar: Mais recentes" [selected]'
+            - 'option "Ordenar: Próximo passo"'
+            - 'option "Ordenar: Receita ponderada"'
+          - generic [ref=f8e248]:
+            - checkbox "Apenas próximo passo vencido" [ref=f8e249]
+            - generic [ref=f8e250]: Apenas próximo passo vencido
+        - generic [ref=f8e251]:
+          - table [ref=f8e255]:
+            - rowgroup [ref=f8e256]:
+              - row [ref=f8e257]:
+                - columnheader "Oportunidade" [ref=f8e258]
+                - columnheader "Organização" [ref=f8e259]
+                - columnheader "Origem" [ref=f8e260]
+                - columnheader "Finder" [ref=f8e261]
+                - columnheader "Rep." [ref=f8e262]
+                - columnheader "LDR" [ref=f8e263]
+                - columnheader "SDR" [ref=f8e264]
+                - columnheader "BDR" [ref=f8e265]
+                - columnheader "Closer" [ref=f8e266]
+                - columnheader "Margem" [ref=f8e267]
+                - columnheader "Próximo passo" [ref=f8e268]
+                - columnheader "Último contato" [ref=f8e269]
+                - columnheader "Estágio" [ref=f8e270]
+                - columnheader "Forecast" [ref=f8e271]
+                - columnheader "Fechamento" [ref=f8e272]
+                - columnheader "Dep. Acto" [ref=f8e273]
+                - columnheader "Receita pond." [ref=f8e274]
+            - rowgroup [ref=f8e275]:
+              - row [ref=f8e276]:
+                - cell [ref=f8e277]:
+                  - link "CRM-PI38ZW Teste" [ref=f8e278] [cursor=pointer]:
+                    - /url: /crm/oportunidades/1
+                    - text: CRM-PI38ZW
+                    - generic [ref=f8e279]: Teste
+                - cell "Acto" [ref=f8e280]
+                - cell "Outbound" [ref=f8e282]
+                - cell "-" [ref=f8e283]
+                - cell "-" [ref=f8e284]
+                - cell "-" [ref=f8e285]
+                - cell "-" [ref=f8e286]
+                - cell "-" [ref=f8e287]
+                - cell "-" [ref=f8e288]
+                - cell "100%" [ref=f8e289]
+                - cell "-" [ref=f8e290]
+                - cell "Sem contato" [ref=f8e291]
+                - cell "Qualificação" [ref=f8e292]
+                - cell "Pipeline" [ref=f8e293]
+                - cell "-" [ref=f8e294]
+                - cell "Não" [ref=f8e295]
+                - cell "R$ 0,00" [ref=f8e296]
+          - paragraph [ref=f8e298]: Mostrando 1 de 1 oportunidades
+    - button "Abrir assistente de IA" [ref=f8e301]
+    - button "Abrir ferramentas Acto homologadas" [ref=f8e304]
+    - dialog [ref=f8e307]:
+      - generic [ref=f8e308]:
+        - generic [ref=f8e309]:
+          - generic [ref=f8e310]:
+            - paragraph [ref=f8e311]: Ferramentas Acto
+            - paragraph [ref=f8e312]: Ações rápidas do seu cargo e links homologados
+          - button [ref=f8e313]
+        - region [ref=f8e317]:
+          - generic [ref=f8e318]:
+            - link [ref=f8e319] [cursor=pointer]:
+              - /url: /documentacao
+              - generic [ref=f8e323]: Docs
+            - link [ref=f8e324] [cursor=pointer]:
+              - /url: https://canvas.acto.com.br/
+              - generic [ref=f8e331]: Canvas
+            - link [ref=f8e332] [cursor=pointer]:
+              - /url: https://chat.acto.com.br/
+              - generic [ref=f8e336]: Chat
+            - link [ref=f8e337] [cursor=pointer]:
+              - /url: https://projetos.acto.com.br/login?back_url=https%3A%2F%2Fprojetos.acto.com.br%2F
+              - generic [ref=f8e341]: Projetos
+  - region "Notifications alt+T"

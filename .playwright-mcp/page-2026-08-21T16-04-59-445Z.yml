@@ -1,0 +1,176 @@
+- generic [active] [ref=f10e1]:
+  - generic [ref=f10e2]:
+    - complementary [ref=f10e3]:
+      - generic [ref=f10e4]:
+        - link "🖥️ ERP Acto" [ref=f10e6] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=f10e7]: 🖥️
+          - generic [ref=f10e8]: ERP Acto
+        - generic [ref=f10e9]:
+          - paragraph [ref=f10e10]: Principal
+          - navigation [ref=f10e11]:
+            - link "📊 Dashboard" [ref=f10e12] [cursor=pointer]:
+              - /url: /dashboard
+              - generic [ref=f10e13]: 📊
+              - generic [ref=f10e14]: Dashboard
+            - link "👤 Meu Espaço" [ref=f10e15] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f10e16]: 👤
+              - generic [ref=f10e17]: Meu Espaço
+            - link "📁 Projetos" [ref=f10e18] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f10e19]: 📁
+              - generic [ref=f10e20]: Projetos
+            - link "💼 Comercial" [ref=f10e21] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f10e22]: 💼
+              - generic [ref=f10e23]: Comercial
+            - link "⚖️ Jurídico" [ref=f10e24] [cursor=pointer]:
+              - /url: /comercial/licitacoes
+              - generic [ref=f10e25]: ⚖️
+              - generic [ref=f10e26]: Jurídico
+            - link "💰 Financeiro" [ref=f10e27] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f10e28]: 💰
+              - generic [ref=f10e29]: Financeiro
+            - link "👥 RH" [ref=f10e30] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f10e31]: 👥
+              - generic [ref=f10e32]: RH
+            - link "🧠 Inteligência" [ref=f10e33] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f10e34]: 🧠
+              - generic [ref=f10e35]: Inteligência
+            - link "📋 Processos" [ref=f10e36] [cursor=pointer]:
+              - /url: /processos
+              - generic [ref=f10e37]: 📋
+              - generic [ref=f10e38]: Processos
+            - link "🏢 Patrimônio" [ref=f10e39] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f10e40]: 🏢
+              - generic [ref=f10e41]: Patrimônio
+          - paragraph [ref=f10e42]: Destaque
+          - navigation [ref=f10e43]:
+            - link "🎓 Universidade Acto" [ref=f10e44] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f10e45]: 🎓
+              - generic [ref=f10e46]: Universidade Acto
+            - link "🔗 Hub de cadastros" [ref=f10e47] [cursor=pointer]:
+              - /url: /cadastros
+              - generic [ref=f10e48]: 🔗
+              - generic [ref=f10e49]: Hub de cadastros
+            - link "🏛️ Organizações" [ref=f10e50] [cursor=pointer]:
+              - /url: /organizacoes
+              - generic [ref=f10e51]: 🏛️
+              - generic [ref=f10e52]: Organizações
+        - button "AS Admin Sistema" [ref=f10e54]:
+          - generic [ref=f10e55]: AS
+          - generic [ref=f10e56]: Admin Sistema
+        - button "←" [ref=f10e57]
+    - generic [ref=f10e58]:
+      - banner [ref=f10e59]:
+        - generic [ref=f10e60]:
+          - button "☰" [ref=f10e61]
+          - navigation [ref=f10e62]:
+            - generic [ref=f10e63]: Dashboard
+        - generic [ref=f10e64]:
+          - button "🔍 Buscar no ERP… Ctrl K" [ref=f10e65]:
+            - generic [ref=f10e66]: 🔍
+            - generic [ref=f10e67]: Buscar no ERP…
+            - generic [ref=f10e68]: Ctrl K
+          - button "📬 Caixa de entrada" [ref=f10e69]:
+            - generic [ref=f10e70]: 📬
+            - generic [ref=f10e71]: Caixa de entrada
+          - button "🔔" [ref=f10e72]
+          - button "❓" [ref=f10e74]
+          - button "🍅" [ref=f10e76]
+      - main [ref=f10e78]:
+        - generic [ref=f10e79]:
+          - generic [ref=f10e80]:
+            - heading "Olá, Admin Sistema" [level=1] [ref=f10e81]
+            - paragraph [ref=f10e82]: Resumo adaptado ao seu cargo e à sua rotina de uso.
+          - generic [ref=f10e83]:
+            - generic [ref=f10e84]:
+              - generic [ref=f10e85]:
+                - heading "Comunicação RH" [level=3] [ref=f10e87]
+                - generic [ref=f10e88]:
+                  - paragraph [ref=f10e89]: Nenhum comunicado no ar
+                  - paragraph [ref=f10e90]: Avisos institucionais publicados pelo RH aparecem aqui para toda a equipe.
+                  - button "Criar comunicado →" [ref=f10e91]
+              - generic [ref=f10e92]:
+                - heading "Seu dia" [level=3] [ref=f10e94]
+                - generic [ref=f10e95]:
+                  - paragraph [ref=f10e96]: sexta-feira, 21 de agosto
+                  - generic [ref=f10e97]:
+                    - paragraph [ref=f10e98]: Nada pendente por aqui
+                    - paragraph [ref=f10e99]: Você está em dia com aprovações e solicitações.
+              - generic [ref=f10e100]:
+                - generic [ref=f10e101]:
+                  - heading "Aniversariantes de agosto" [level=3] [ref=f10e102]
+                  - generic [ref=f10e103]: "5"
+                - generic [ref=f10e104]:
+                  - generic [ref=f10e105]:
+                    - generic [ref=f10e106]: EO
+                    - generic [ref=f10e107]:
+                      - paragraph [ref=f10e108]: Elena Product Owner
+                      - paragraph [ref=f10e109]: 22 de agosto · amanhã · Engenharia
+                    - generic [ref=f10e110]:
+                      - button "🎈" [ref=f10e111]
+                      - button "💬" [ref=f10e112]
+                  - generic [ref=f10e113]:
+                    - generic [ref=f10e114]: IR
+                    - generic [ref=f10e115]:
+                      - paragraph [ref=f10e116]: Isabela RH
+                      - paragraph [ref=f10e117]: 28 de agosto · em 7 dias · Engenharia
+                    - generic [ref=f10e118]:
+                      - button "🎈" [ref=f10e119]
+                      - button "💬" [ref=f10e120]
+                  - button "Parabenizar todos (4)" [ref=f10e121]
+              - generic [ref=f10e122]:
+                - generic [ref=f10e123]:
+                  - heading "Mural de novidades" [level=3] [ref=f10e124]
+                  - generic [ref=f10e125]: "0"
+                - generic [ref=f10e126]:
+                  - button "💬 Compartilhe uma novidade com o time..." [ref=f10e127]:
+                    - generic [ref=f10e128]: 💬
+                    - text: Compartilhe uma novidade com o time...
+                  - generic [ref=f10e129]:
+                    - paragraph [ref=f10e130]: Nenhuma novidade ainda
+                    - paragraph [ref=f10e131]: Seja o primeiro a compartilhar algo com o time.
+            - generic [ref=f10e132]:
+              - generic [ref=f10e133]:
+                - generic [ref=f10e134]:
+                  - heading "Processos pendentes" [level=3] [ref=f10e135]
+                  - button "Ocultar" [ref=f10e136]
+                - generic [ref=f10e137]:
+                  - paragraph [ref=f10e138]: Filas de aprovação aguardando sua ação.
+                  - link "Solicitações de centro de custo Aprovação do gestor e do RH para viagens, equipamentos e capacitação. 0" [ref=f10e139] [cursor=pointer]:
+                    - /url: /backoffice/solicitacoes-centro-custo
+                    - paragraph [ref=f10e140]: Solicitações de centro de custo
+                    - paragraph [ref=f10e141]: Aprovação do gestor e do RH para viagens, equipamentos e capacitação.
+                    - generic [ref=f10e142]: "0"
+                  - link "Solicitações de recesso Recessos de prestadores PJ aguardando análise. 0" [ref=f10e143] [cursor=pointer]:
+                    - /url: /backoffice/solicitacoes-recesso
+                    - paragraph [ref=f10e144]: Solicitações de recesso
+                    - paragraph [ref=f10e145]: Recessos de prestadores PJ aguardando análise.
+                    - generic [ref=f10e146]: "0"
+                  - link "Substituições staffing Troca de colaboradores em contratos de outsourcing. 0" [ref=f10e147] [cursor=pointer]:
+                    - /url: /backoffice/substituicoes-colaborador
+                    - paragraph [ref=f10e148]: Substituições staffing
+                    - paragraph [ref=f10e149]: Troca de colaboradores em contratos de outsourcing.
+                    - generic [ref=f10e150]: "0"
+                  - link "Ver processos →" [ref=f10e151] [cursor=pointer]:
+                    - /url: /processos
+              - generic [ref=f10e152]:
+                - heading "Fila de notas fiscais" [level=3] [ref=f10e154]
+                - generic [ref=f10e155]:
+                  - paragraph [ref=f10e156]: "0"
+                  - paragraph [ref=f10e157]: nota(s) aguardando análise
+                  - button "Abrir →" [ref=f10e158]
+              - generic [ref=f10e159]:
+                - heading "Projetos em risco" [level=3] [ref=f10e161]
+                - generic [ref=f10e162]:
+                  - paragraph [ref=f10e163]: "0"
+                  - paragraph [ref=f10e164]: projeto(s) com risco elevado
+                  - button "Abrir →" [ref=f10e165]
+  - button "Open Next.js Dev Tools" [ref=f10e171] [cursor=pointer]
