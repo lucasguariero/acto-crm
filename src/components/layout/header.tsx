@@ -20,7 +20,7 @@ const PanelLeftOpenIcon = () => (
 
 interface HeaderProps {
   onToggleSidebar: () => void;
-  collapsed: boolean;
+  collapsed?: boolean;
 }
 
 // SVG icons do CRM original
@@ -74,7 +74,7 @@ const Icons = {
 
 interface HeaderProps {
   onToggleSidebar: () => void;
-  collapsed: boolean;
+  collapsed?: boolean;
 }
 
 export function Header({ onToggleSidebar, collapsed }: HeaderProps) {

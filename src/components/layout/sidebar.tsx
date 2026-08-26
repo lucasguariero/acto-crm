@@ -27,9 +27,18 @@ import {
   Bell,
   MagnifyingGlass,
   Question,
-  PenLine,
+  PenNib,
   Lightning,
 } from "@phosphor-icons/react";
+
+interface MenuItem {
+  title: string;
+  href?: string;
+  icon?: React.ComponentType<{ size?: number; className?: string; weight?: string | number }>;
+  submenu?: MenuItem[];
+  isSubmenu?: boolean;
+  isText?: boolean;
+}
 
 const principalMenu = [
   { title: "Dashboard", href: "/dashboard", icon: House },
@@ -149,7 +158,7 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
   };
 
   const isActive = (href: string) => pathname === href;
-  const isParentActive = (submenu?: { title: string; href: string }[]) =>
+  const isParentActive = (submenu?: MenuItem[]) =>
     submenu?.some((item) => pathname === item.href);
 
   return (
@@ -187,7 +196,7 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
         )}
         <nav className="space-y-0.5 px-3">
           {principalMenu.map((item) => {
-            const Icon = item.icon;
+            const Icon = item.icon as React.ComponentType<{ size?: number; className?: string; weight?: string | number }> | undefined;
             const hasSubmenu = item.submenu && item.submenu.length > 0;
             const isExpanded = expandedMenus.includes(item.title);
             const active = isActive(item.href || "") || isParentActive(item.submenu);
@@ -204,13 +213,15 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
                         : "text-gray-600 hover:bg-gray-100"
                     )}
                   >
-                    <Icon
-                      size={20}
-                      className={cn(
-                        "flex-shrink-0",
-                        active || isExpanded ? "text-[#2563EB]" : "text-gray-400"
-                      )}
-                    />
+                    {Icon && (
+                      <Icon
+                        size={20}
+                        className={cn(
+                          "flex-shrink-0",
+                          active || isExpanded ? "text-[#2563EB]" : "text-gray-400"
+                        )}
+                      />
+                    )}
                     {!collapsed && (
                       <>
                         <span className="flex-1 text-left">{item.title}</span>
@@ -234,13 +245,15 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
                         : "text-gray-600 hover:bg-gray-100"
                     )}
                   >
-                    <Icon
-                      size={20}
-                      className={cn(
-                        "flex-shrink-0",
-                        active ? "text-[#2563EB]" : "text-gray-400"
-                      )}
-                    />
+                    {Icon && (
+                      <Icon
+                        size={20}
+                        className={cn(
+                          "flex-shrink-0",
+                          active ? "text-[#2563EB]" : "text-gray-400"
+                        )}
+                      />
+                    )}
                     {!collapsed && <span className="flex-1">{item.title}</span>}
                   </Link>
                 )}
@@ -248,51 +261,55 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
                 {/* Submenu */}
                 {!collapsed && hasSubmenu && isExpanded && (
                   <div className="ml-6 mt-1 space-y-0.5">
-                    {item.submenu?.map((sub, idx) =>
-                      sub.isText ? (
+                    {item.submenu?.map((sub, idx) => {
+                      const menuSub = sub as MenuItem;
+                      return menuSub.isText ? (
                         <span
-                          key={sub.title}
+                          key={menuSub.title}
                           className="flex items-center gap-2 rounded-md px-3 py-1.5 text-sm text-gray-400 cursor-default"
                         >
-                          {sub.title}
+                          {menuSub.title}
                         </span>
-                      ) : sub.isSubmenu ? (
-                        <div key={sub.title} className="mt-2">
+                      ) : menuSub.isSubmenu ? (
+                        <div key={menuSub.title} className="mt-2">
                           <span className="flex items-center gap-2 rounded-md px-3 py-1.5 text-xs font-semibold text-gray-500 uppercase">
-                            {sub.title}
+                            {menuSub.title}
                           </span>
                           <div className="ml-2 mt-1 space-y-0.5 border-l-2 border-gray-100 pl-3">
-                            {sub.submenu?.map((innerSub) => (
-                              <Link
-                                key={innerSub.title}
-                                href={innerSub.href || "#"}
-                                className={cn(
-                                  "flex items-center gap-2 rounded-md px-3 py-1.5 text-sm transition-colors",
-                                  pathname === innerSub.href
-                                    ? "text-[#2563EB] font-medium"
-                                    : "text-gray-500 hover:bg-gray-100 hover:text-gray-900"
-                                )}
-                              >
-                                {innerSub.title}
-                              </Link>
-                            ))}
+                            {menuSub.submenu?.map((innerSub) => {
+                              const innerItem = innerSub as MenuItem;
+                              return (
+                                <Link
+                                  key={innerItem.title}
+                                  href={innerItem.href || "#"}
+                                  className={cn(
+                                    "flex items-center gap-2 rounded-md px-3 py-1.5 text-sm transition-colors",
+                                    pathname === innerItem.href
+                                      ? "text-[#2563EB] font-medium"
+                                      : "text-gray-500 hover:bg-gray-100 hover:text-gray-900"
+                                  )}
+                                >
+                                  {innerItem.title}
+                                </Link>
+                              );
+                            })}
                           </div>
                         </div>
                       ) : (
                         <Link
-                          key={sub.title}
-                          href={sub.href || "#"}
+                          key={menuSub.title}
+                          href={menuSub.href || "#"}
                           className={cn(
                             "flex items-center gap-2 rounded-md px-3 py-1.5 text-sm transition-colors",
-                            pathname === sub.href
+                            pathname === menuSub.href
                               ? "text-[#2563EB] font-medium"
                               : "text-gray-500 hover:bg-gray-100 hover:text-gray-900"
                           )}
                         >
-                          {sub.title}
+                          {menuSub.title}
                         </Link>
-                      )
-                    )}
+                      );
+                    })}
                   </div>
                 )}
               </div>
@@ -308,7 +325,7 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
             </p>
             <nav className="space-y-0.5 px-3">
               {destaqueMenu.map((item) => {
-                const Icon = item.icon;
+                const Icon = item.icon as React.ComponentType<{ size?: number; className?: string; weight?: string | number }> | undefined;
                 const active = item.href ? isActive(item.href) : false;
                 if (item.isButton) {
                   return (
@@ -338,13 +355,15 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
                         : "text-gray-600 hover:bg-gray-100"
                     )}
                   >
-                    <Icon
-                      size={20}
-                      className={cn(
-                        "flex-shrink-0",
-                        active ? "text-[#2563EB]" : "text-gray-400"
-                      )}
-                    />
+                    {Icon && (
+                      <Icon
+                        size={20}
+                        className={cn(
+                          "flex-shrink-0",
+                          active ? "text-[#2563EB]" : "text-gray-400"
+                        )}
+                      />
+                    )}
                     <span className="flex-1">{item.title}</span>
                   </Link>
                 );

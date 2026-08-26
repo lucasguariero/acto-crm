@@ -1,0 +1,154 @@
+- generic [ref=f5e2]:
+  - generic [ref=f5e3]:
+    - generic [ref=f5e7]:
+      - link "ERP Acto" [ref=f5e9] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=f5e17]:
+        - generic [ref=f5e18]:
+          - generic [ref=f5e19]: Principal
+          - list [ref=f5e20]:
+            - listitem [ref=f5e21]:
+              - link "Dashboard" [ref=f5e22] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=f5e29]:
+              - button "Meu Espaço" [ref=f5e30]
+            - listitem [ref=f5e38]:
+              - button "Projetos" [ref=f5e39]
+            - listitem [ref=f5e45]:
+              - button "Comercial" [expanded] [ref=f5e46]
+              - list [ref=f5e54]:
+                - generic [ref=f5e55]:
+                  - listitem [ref=f5e56]:
+                    - link "Painel" [ref=f5e57] [cursor=pointer]:
+                      - /url: /crm
+                  - listitem [ref=f5e59]:
+                    - link "Funil" [ref=f5e60] [cursor=pointer]:
+                      - /url: /crm/funil
+                  - listitem [ref=f5e62]:
+                    - link "Oportunidades" [ref=f5e63] [cursor=pointer]:
+                      - /url: /crm/oportunidades
+                  - listitem [ref=f5e65]:
+                    - link "Parceiros comerciais" [ref=f5e66] [cursor=pointer]:
+                      - /url: /crm/parceiros
+                  - listitem [ref=f5e68]:
+                    - link "Atas de registro de preço" [ref=f5e69] [cursor=pointer]:
+                      - /url: /crm/atas
+                  - listitem [ref=f5e71]:
+                    - link "Comissões" [ref=f5e72] [cursor=pointer]:
+                      - /url: /crm/comissoes
+                  - listitem [ref=f5e74]:
+                    - link "Metas" [ref=f5e75] [cursor=pointer]:
+                      - /url: /crm/metas
+                  - listitem [ref=f5e77]:
+                    - link "Parâmetros" [ref=f5e78] [cursor=pointer]:
+                      - /url: /crm/parametros
+                  - listitem [ref=f5e80]:
+                    - link "Relatórios" [ref=f5e81] [cursor=pointer]:
+                      - /url: /crm/relatorios
+            - listitem [ref=f5e83]:
+              - link "Jurídico" [ref=f5e84] [cursor=pointer]:
+                - /url: /comercial/licitacoes
+            - listitem [ref=f5e90]:
+              - button "Financeiro" [ref=f5e91]
+            - listitem [ref=f5e98]:
+              - button "RH" [ref=f5e99]
+            - listitem [ref=f5e108]:
+              - button "Inteligência" [ref=f5e109]
+            - listitem [ref=f5e118]:
+              - link "Processos" [ref=f5e119] [cursor=pointer]:
+                - /url: /processos
+            - listitem [ref=f5e125]:
+              - button "Patrimônio" [ref=f5e126]
+        - generic [ref=f5e140]:
+          - generic [ref=f5e141]: Destaque
+          - list [ref=f5e142]:
+            - listitem [ref=f5e143]:
+              - button "Universidade Acto" [ref=f5e144]
+            - listitem [ref=f5e151]:
+              - link "Hub de cadastros" [ref=f5e152] [cursor=pointer]:
+                - /url: /cadastros
+            - listitem [ref=f5e158]:
+              - link "Organizações" [ref=f5e159] [cursor=pointer]:
+                - /url: /organizacoes
+      - list [ref=f5e166]:
+        - listitem [ref=f5e167]:
+          - button "AS Admin Sistema" [ref=f5e168]:
+            - generic [ref=f5e169]: AS
+            - generic [ref=f5e171]: Admin Sistema
+      - button "Toggle sidebar" [ref=f5e176]
+    - main [ref=f5e177]:
+      - generic [ref=f5e179]:
+        - generic [ref=f5e181]:
+          - button "Alternar menu lateral" [ref=f5e182]
+          - navigation "breadcrumb" [ref=f5e184]:
+            - list [ref=f5e185]:
+              - listitem [ref=f5e186]:
+                - link "CRM" [ref=f5e187] [cursor=pointer]:
+                  - /url: /crm
+              - listitem [ref=f5e188]
+              - listitem [ref=f5e191]:
+                - link "Parceiros" [disabled] [ref=f5e192]
+        - button "Abrir busca global" [ref=f5e194]:
+          - generic [ref=f5e198]: Buscar no ERP…
+          - generic [ref=f5e199]:
+            - generic [ref=f5e200]: Ctrl
+            - generic [ref=f5e201]: K
+        - generic [ref=f5e204]:
+          - link "Caixa de entrada" [ref=f5e205] [cursor=pointer]:
+            - /url: /meu/caixa-entrada
+          - button "Notificações" [ref=f5e209] [cursor=pointer]
+          - generic [ref=f5e213]:
+            - 'button "Como usar: Parceiros comerciais" [ref=f5e214] [cursor=pointer]'
+            - link "Documentação interna" [ref=f5e218] [cursor=pointer]:
+              - /url: /documentacao
+            - button "Pomodoro — método de foco" [ref=f5e221] [cursor=pointer]
+            - link "Configurar PIN de step-up" [ref=f5e225] [cursor=pointer]:
+              - /url: /settings/security
+      - generic [ref=f5e229]:
+        - generic [ref=f5e230]:
+          - generic [ref=f5e231]:
+            - heading "Finders e representantes" [level=2] [ref=f5e232]
+            - paragraph [ref=f5e233]: Cadastro de parceiros comerciais externos com percentuais e região de atuação.
+          - link "Novo parceiro" [ref=f5e235] [cursor=pointer]:
+            - /url: /crm/parceiros/create
+        - generic [ref=f5e236]:
+          - searchbox "Buscar por nome ou código" [ref=f5e238]
+          - combobox [ref=f5e239]:
+            - option "Todos os papéis" [selected]
+            - option "Finder"
+            - option "Representante"
+          - combobox [ref=f5e240]:
+            - option "Todos os status" [selected]
+            - option "Ativo"
+            - option "Em desenvolvimento"
+            - option "Inativo"
+        - generic [ref=f5e241]:
+          - paragraph [ref=f5e242]: Nenhum parceiro encontrado
+          - paragraph [ref=f5e243]: Cadastre finders e representantes para comissionamento externo.
+        - paragraph [ref=f5e245]: Mostrando 0 de 0 parceiros
+        - link "Voltar ao funil" [ref=f5e246] [cursor=pointer]:
+          - /url: /crm/funil
+    - button "Abrir assistente de IA" [ref=f5e249]
+    - button "Abrir ferramentas Acto homologadas" [ref=f5e252]
+    - dialog [ref=f5e255]:
+      - generic [ref=f5e256]:
+        - generic [ref=f5e257]:
+          - generic [ref=f5e258]:
+            - paragraph [ref=f5e259]: Ferramentas Acto
+            - paragraph [ref=f5e260]: Ações rápidas do seu cargo e links homologados
+          - button [ref=f5e261]
+        - region [ref=f5e265]:
+          - generic [ref=f5e266]:
+            - link [ref=f5e267] [cursor=pointer]:
+              - /url: /documentacao
+              - generic [ref=f5e271]: Docs
+            - link [ref=f5e272] [cursor=pointer]:
+              - /url: https://canvas.acto.com.br/
+              - generic [ref=f5e279]: Canvas
+            - link [ref=f5e280] [cursor=pointer]:
+              - /url: https://chat.acto.com.br/
+              - generic [ref=f5e284]: Chat
+            - link [ref=f5e285] [cursor=pointer]:
+              - /url: https://projetos.acto.com.br/login?back_url=https%3A%2F%2Fprojetos.acto.com.br%2F
+              - generic [ref=f5e289]: Projetos
+  - region "Notifications alt+T"
