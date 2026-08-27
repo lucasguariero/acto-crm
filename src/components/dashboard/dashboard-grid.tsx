@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -13,6 +14,8 @@ import {
   CaretRight,
   WarningDiamond,
   X,
+  CaretDown,
+  CaretUp,
 } from "@phosphor-icons/react";
 
 // Icons do Lucide (SVG inline)
@@ -109,33 +112,90 @@ const passedBirthdays = [
   },
 ];
 
-const processItems = [
-  {
-    title: "Solicitações de centro de custo",
-    desc: "Aprovação do gestor e do RH para viagens, equipamentos e capacitação.",
-    count: 0,
-    href: "/backoffice/solicitacoes-centro-custo",
-  },
-  {
-    title: "Solicitações de recesso",
-    desc: "Recessos de prestadores PJ aguardando análise.",
-    count: 0,
-    href: "/backoffice/solicitacoes-recesso",
-  },
-  {
-    title: "Substituições staffing",
-    desc: "Troca de colaboradores em contratos de outsourcing.",
-    count: 0,
-    href: "/backoffice/substituicoes-colaborador",
-  },
-];
-
 export function DashboardGrid() {
   const today = new Date().toLocaleDateString("pt-BR", {
     weekday: "long",
     day: "numeric",
     month: "long",
   }).replace(/^\w/, (c) => c.toUpperCase());
+
+  // Estado para collapse das seções
+  const [showPassedBirthdays, setShowPassedBirthdays] = useState(false);
+  const [showAllComunicados, setShowAllComunicados] = useState(false);
+
+  // Dados de exemplo - comunicados
+  const comunicados = [
+    {
+      id: 1,
+      titulo: "Nova política de viagens corporativas",
+      descricao: "Comunicamos que a partir de agora as viagens corporativas precisam ser aprovadas com antecedência mínima de 5 dias úteis.",
+      data: "27 ago",
+      autor: "RH",
+    },
+    {
+      id: 2,
+      titulo: "Manutenção sistemas sábado",
+      descricao: "Manutenção programada nos sistemas no próximo sábado das 22h às 02h. Serviços podem ficar indisponíveis.",
+      data: "26 ago",
+      autor: "TI",
+    },
+    {
+      id: 3,
+      titulo: "Feriado Dia do Cliente",
+      descricao: "Lembramos que dia 15/09 não haverá atendimento ao público em razão do Dia do Cliente.",
+      data: "25 ago",
+      autor: "Comercial",
+    },
+    {
+      id: 4,
+      titulo: "Treinamento segurança do trabalho",
+      descricao: "Novo treinamento obrigatório para todos os colaboradores. Acessem a Universidade Acto.",
+      data: "24 ago",
+      autor: "RH",
+    },
+  ];
+
+  const comunicadosExibir = showAllComunicados ? comunicados : comunicados.slice(0, 2);
+
+  // Dados de exemplo - projetos em risco
+  const projetosRisco = [
+    {
+      id: 1,
+      nome: "Projeto Alpha",
+      cliente: "Empresa X",
+      risco: "Alto",
+      diasAtraso: 15,
+    },
+    {
+      id: 2,
+      nome: "Portal Y",
+      cliente: "Empresa Y",
+      risco: "Alto",
+      diasAtraso: 8,
+    },
+  ];
+
+  // Dados de exemplo - processos pendentes (versão curta)
+  const processItems = [
+    {
+      title: "Centro de custo",
+      desc: "Aprovação para viagens, equipamentos e capacitação.",
+      count: 0,
+      href: "/backoffice/solicitacoes-centro-custo",
+    },
+    {
+      title: "Recesso",
+      desc: "Recessos de prestadores PJ.",
+      count: 0,
+      href: "/backoffice/solicitacoes-recesso",
+    },
+    {
+      title: "Substituições",
+      desc: "Troca de colaboradores em contratos.",
+      count: 0,
+      href: "/backoffice/substituicoes-colaborador",
+    },
+  ];
 
   return (
     <div className="space-y-6">
@@ -165,19 +225,49 @@ export function DashboardGrid() {
                 </div>
               </CardHeader>
               <CardContent className="pt-0">
-                <div className="rounded-lg border border-dashed border-[#CBD5E1] bg-[#F8FAFC] p-4">
-                  <p className="text-[14px] text-[#64748B]">Nenhum comunicado no ar</p>
-                  <p className="mt-1 text-[12px] text-[#94A3B8]">
-                    Avisos institucionais publicados pelo RH aparecem aqui para toda a equipe.
-                  </p>
-                  <Link
-                    href="/destaques-rh/create"
-                    className="inline-flex items-center mt-2 text-[14px] text-[#2563EB] hover:underline font-medium"
-                  >
-                    <Plus size={14} weight="bold" className="mr-1" />
-                    Criar comunicado
-                  </Link>
-                </div>
+                {comunicados.length === 0 ? (
+                  <div className="rounded-lg border border-dashed border-[#CBD5E1] bg-[#F8FAFC] p-4">
+                    <p className="text-[14px] text-[#64748B]">Nenhum comunicado no ar</p>
+                    <p className="mt-1 text-[12px] text-[#94A3B8]">
+                      Avisos institucionais publicados pelo RH aparecem aqui para toda a equipe.
+                    </p>
+                    <Link
+                      href="/destaques-rh/create"
+                      className="inline-flex items-center mt-2 text-[14px] text-[#2563EB] hover:underline font-medium"
+                    >
+                      <Plus size={14} weight="bold" className="mr-1" />
+                      Criar comunicado
+                    </Link>
+                  </div>
+                ) : (
+                  <div className="space-y-3">
+                    {comunicadosExibir.map((item) => (
+                      <div key={item.id} className="rounded-lg border border-[#E2E8F0] p-3 hover:bg-[#F8FAFC] transition-colors">
+                        <div className="flex items-start justify-between gap-2">
+                          <p className="text-[14px] font-medium text-[#1E293B]">{item.titulo}</p>
+                          <span className="text-[12px] text-[#94A3B8] whitespace-nowrap">{item.data}</span>
+                        </div>
+                        <p className="text-[12px] text-[#64748B] mt-1 line-clamp-2">{item.descricao}</p>
+                        <p className="text-[11px] text-[#94A3B8] mt-2">Por {item.autor}</p>
+                      </div>
+                    ))}
+                    {comunicados.length > 2 && (
+                      <button
+                        onClick={() => setShowAllComunicados(!showAllComunicados)}
+                        className="text-[14px] text-[#2563EB] hover:underline font-medium w-full text-center py-2"
+                      >
+                        {showAllComunicados ? "Ver menos" : `Ver todos (${comunicados.length})`}
+                      </button>
+                    )}
+                    <Link
+                      href="/destaques-rh"
+                      className="inline-flex items-center text-[14px] text-[#2563EB] hover:underline font-medium"
+                    >
+                      <Plus size={14} weight="bold" className="mr-1" />
+                      Criar comunicado
+                    </Link>
+                  </div>
+                )}
               </CardContent>
             </Card>
 
@@ -300,63 +390,69 @@ export function DashboardGrid() {
                 </div>
               </div>
 
-              {/* Já passou */}
+              {/* Já passou - com collapse */}
               <div>
-                <p className="mb-3 text-[12px] font-medium text-[#64748B] uppercase">
-                  Já passou
-                </p>
-                <div className="space-y-2">
-                  {passedBirthdays.map((person, index) => (
-                    <div
-                      key={`passed-${index}`}
-                      className="flex items-center gap-3 rounded-lg border border-[#E2E8F0] p-3"
-                    >
-                      {person.name === "Vinicius" ? (
-                        <Avatar className="h-10 w-10">
-                          <AvatarImage src="" alt="Vinicius" />
-                          <AvatarFallback className="bg-[#F1F5F9] text-[#64748B] text-[12px]">
-                            Vinicius
-                          </AvatarFallback>
-                        </Avatar>
-                      ) : person.name === "Rodrigo Subtil" ? (
-                        <Avatar className="h-10 w-10">
-                          <AvatarImage src="" alt="Rodrigo" />
-                          <AvatarFallback className="bg-[#F1F5F9] text-[#64748B] text-[12px]">
-                            RS
-                          </AvatarFallback>
-                        </Avatar>
-                      ) : (
-                        <div className="h-10 w-10 rounded-full bg-[#F1F5F9] flex items-center justify-center text-[#64748B] text-[14px] font-semibold">
-                          {person.initials}
+                <button
+                  onClick={() => setShowPassedBirthdays(!showPassedBirthdays)}
+                  className="mb-3 text-[12px] font-medium text-[#64748B] uppercase flex items-center gap-1 hover:text-[#2563EB] transition-colors"
+                >
+                  {showPassedBirthdays ? <CaretUp size={12} /> : <CaretDown size={12} />}
+                  Já passou ({passedBirthdays.length})
+                </button>
+                {showPassedBirthdays && (
+                  <div className="space-y-2">
+                    {passedBirthdays.map((person, index) => (
+                      <div
+                        key={`passed-${index}`}
+                        className="flex items-center gap-3 rounded-lg border border-[#E2E8F0] p-3"
+                      >
+                        {person.name === "Vinicius" ? (
+                          <Avatar className="h-10 w-10">
+                            <AvatarImage src={undefined} alt="Vinicius" />
+                            <AvatarFallback className="bg-[#F1F5F9] text-[#64748B] text-[12px]">
+                              Vinicius
+                            </AvatarFallback>
+                          </Avatar>
+                        ) : person.name === "Rodrigo Subtil" ? (
+                          <Avatar className="h-10 w-10">
+                            <AvatarImage src={undefined} alt="Rodrigo" />
+                            <AvatarFallback className="bg-[#F1F5F9] text-[#64748B] text-[12px]">
+                              RS
+                            </AvatarFallback>
+                          </Avatar>
+                        ) : (
+                          <div className="h-10 w-10 rounded-full bg-[#F1F5F9] flex items-center justify-center text-[#64748B] text-[14px] font-semibold">
+                            {person.initials}
+                          </div>
+                        )}
+                        <div className="flex-1">
+                          <p className="text-[14px] font-medium text-[#1E293B]">
+                            {person.name}
+                          </p>
+                          <p className="text-[12px] text-[#64748B]">
+                            {person.date} · {person.subDate} · {person.area}
+                          </p>
                         </div>
-                      )}
-                      <div className="flex-1">
-                        <p className="text-[14px] font-medium text-[#1E293B]">
-                          {person.name}
-                        </p>
-                        <p className="text-[12px] text-[#64748B]">
-                          {person.date} · {person.subDate} · {person.area}
-                        </p>
+                        <div className="flex gap-1">
+                          <Button
+                            variant="outline"
+                            size="icon-sm"
+                            className="h-8 w-8 border-[#E2E8F0] hover:bg-[#F1F5F9]"
+                          >
+                            <Balloon size={16} className="text-[#64748B]" />
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="icon-sm"
+                            className="h-8 w-8 border-[#E2E8F0] hover:bg-[#F1F5F9]"
+                          >
+                            <ChatCircle size={16} className="text-[#64748B]" />
+                          </Button>
+                        </div>
                       </div>
-                      <div className="flex gap-1">
-                        <Button
-                          variant="outline"
-                          size="icon-sm"
-                          className="h-8 w-8 border-[#E2E8F0] hover:bg-[#F1F5F9]"
-                        >
-                          <Balloon size={16} className="text-[#64748B]" />
-                        </Button>
-                        <Button
-                          variant="outline"
-                          size="icon-sm"
-                          className="h-8 w-8 border-[#E2E8F0] hover:bg-[#F1F5F9]"
-                        >
-                          <ChatCircle size={16} className="text-[#64748B]" />
-                        </Button>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                )}
               </div>
 
               <Button
@@ -380,9 +476,9 @@ export function DashboardGrid() {
               <span className="text-[14px] font-medium text-[#64748B]">0</span>
             </CardHeader>
             <CardContent className="pt-0 space-y-3">
-              {/* Input */}
-              <div className="flex items-center gap-2 rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] px-3 py-2">
-                <div className="h-6 w-6 rounded-full bg-[#2563EB] flex items-center justify-center text-white text-[10px] font-semibold">
+              {/* Input - mais compacto */}
+              <div className="flex items-center gap-2 rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] px-3 py-1.5">
+                <div className="h-6 w-6 rounded-full bg-[#2563EB] flex items-center justify-center text-white text-[10px] font-semibold shrink-0">
                   AS
                 </div>
                 <input
@@ -500,32 +596,45 @@ export function DashboardGrid() {
               </p>
             </CardHeader>
             <CardContent className="pt-0">
-              <div className="rounded-lg border border-dashed border-[#FCD34D] bg-[#FFFBEB] p-6 text-center">
-                <WarningDiamond
-                  size={32}
-                  className="mx-auto text-[#F59E0B]"
-                  weight="fill"
-                />
-                <p className="text-[32px] font-bold text-[#1E293B] mt-2">0</p>
-                <p className="text-[12px] text-[#B45309] mt-1">
-                  projeto(s) com risco elevado
-                </p>
-                <Link
-                  href="/projetos"
-                  className="inline-flex items-center mt-3 text-[14px] text-[#2563EB] hover:underline font-medium"
-                >
-                  Abrir <CaretRight size={14} weight="bold" className="ml-1" />
-                </Link>
-              </div>
+              {projetosRisco.length === 0 ? (
+                <div className="rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-6 text-center">
+                  <WarningDiamond
+                    size={32}
+                    className="mx-auto text-[#22C55E]"
+                    weight="fill"
+                  />
+                  <p className="text-[32px] font-bold text-[#1E293B] mt-2">0</p>
+                  <p className="text-[12px] text-[#64748B] mt-1">
+                    Nenhum projeto em risco
+                  </p>
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  {projetosRisco.map((projeto) => (
+                    <Link
+                      key={projeto.id}
+                      href="/projetos"
+                      className="block rounded-lg border border-[#FECACA] bg-[#FEF2F2] p-3 hover:bg-[#FEE2E2] transition-colors"
+                    >
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <p className="text-[14px] font-medium text-[#1E293B]">{projeto.nome}</p>
+                          <p className="text-[12px] text-[#64748B]">{projeto.cliente}</p>
+                        </div>
+                        <div className="text-right">
+                          <Badge className="bg-[#FEE2E2] text-[#DC2626] text-[10px]">{projeto.risco}</Badge>
+                          <p className="text-[11px] text-[#DC2626] mt-1">{projeto.diasAtraso} dias</p>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              )}
             </CardContent>
           </Card>
         </div>
       </div>
 
-      {/* Hint */}
-      <p className="text-[12px] text-[#94A3B8] text-center">
-        Pressione e segure por 2 segundos em um bloco para reorganizar (estilo iPhone).
-      </p>
     </div>
   );
 }

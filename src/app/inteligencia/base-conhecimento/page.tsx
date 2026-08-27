@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Sidebar } from "@/components/layout/sidebar";
-import { Header } from "@/components/layout/header";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -112,7 +110,6 @@ const categorias = [
 ];
 
 export default function BaseConhecimentoPage() {
-  const [collapsed, setCollapsed] = useState(false);
   const [busca, setBusca] = useState("");
 
   const documentosFiltrados = documentos.filter((doc) =>
@@ -121,14 +118,7 @@ export default function BaseConhecimentoPage() {
   );
 
   return (
-    <div className="min-h-screen bg-[#F1F5F9]">
-      <Sidebar collapsed={collapsed} onToggle={() => setCollapsed(!collapsed)} />
-      <div
-        className="transition-all duration-300"
-        style={{ marginLeft: collapsed ? '72px' : '260px' }}
-      >
-        <Header onToggleSidebar={() => setCollapsed(!collapsed)} />
-        <main className="p-6">
+    <>
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
             <Link href="/dashboard" className="hover:text-gray-700">Início</Link>
@@ -309,8 +299,6 @@ export default function BaseConhecimentoPage() {
               </Card>
             </div>
           </div>
-        </main>
-      </div>
-    </div>
+    </>
   );
 }

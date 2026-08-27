@@ -115,10 +115,10 @@ const principalMenu = [
     title: "Inteligência",
     icon: Brain,
     submenu: [
-      { title: "Modo Agente", href: "/ia/agente" },
-      { title: "Base de Conhecimento", href: "/ia/conhecimento" },
-      { title: "Meus agentes", href: "/ia/agentes-userspace" },
-      { title: "Análise de Dados", href: "/ia/analise-dados" },
+      { title: "Modo Agente", href: "/inteligencia" },
+      { title: "Base de Conhecimento", href: "/inteligencia/base-conhecimento" },
+      { title: "Meus agentes", href: "/inteligencia/agentes" },
+      { title: "Análise de Dados", href: "/inteligencia/analise" },
     ],
   },
   {
@@ -137,7 +137,7 @@ const principalMenu = [
 ];
 
 const destaqueMenu = [
-  { title: "Universidade Acto", isButton: true },
+  { title: "Universidade Acto", href: "/universidade", icon: GraduationCap },
   { title: "Hub de cadastros", href: "/cadastros", icon: LinkIcon },
   { title: "Organizações", href: "/organizacoes", icon: Buildings },
 ];
@@ -327,23 +327,6 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
               {destaqueMenu.map((item) => {
                 const Icon = item.icon as React.ComponentType<{ size?: number; className?: string; weight?: string | number }> | undefined;
                 const active = item.href ? isActive(item.href) : false;
-                if (item.isButton) {
-                  return (
-                    <button
-                      key={item.title}
-                      className={cn(
-                        "w-full flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
-                        "text-gray-600 hover:bg-gray-100"
-                      )}
-                    >
-                      <GraduationCap
-                        size={20}
-                        className="flex-shrink-0 text-gray-400"
-                      />
-                      <span className="flex-1">{item.title}</span>
-                    </button>
-                  );
-                }
                 return (
                   <Link
                     key={item.title}

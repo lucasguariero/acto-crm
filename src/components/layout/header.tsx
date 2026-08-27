@@ -1,5 +1,7 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const PanelLeftCloseIcon = () => (
@@ -78,6 +80,34 @@ interface HeaderProps {
 }
 
 export function Header({ onToggleSidebar, collapsed }: HeaderProps) {
+  const pathname = usePathname();
+
+  // Gera breadcrumb baseado na rota
+  const getBreadcrumb = () => {
+    const paths = pathname.split("/").filter(Boolean);
+    if (paths.length === 0 || pathname === "/") {
+      return [{ label: "Dashboard", href: "/dashboard" }];
+    }
+
+    const crumbs = [{ label: "Início", href: "/dashboard" }];
+    let currentPath = "";
+
+    paths.forEach((segment) => {
+      currentPath += `/${segment}`;
+      // Formata o label: snake_case ou camelCase -> Título
+      const label = segment
+        .replace(/-/g, " ")
+        .replace(/([a-z])([A-Z])/g, "$1 $2")
+        .replace(/^\w/, (c) => c.toUpperCase());
+      crumbs.push({ label, href: currentPath });
+    });
+
+    return crumbs;
+  };
+
+  const breadcrumbs = getBreadcrumb();
+  const currentPage = breadcrumbs[breadcrumbs.length - 1];
+
   return (
     <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border-[#E2E8F0] bg-white px-4">
       {/* Left side - Sidebar toggle + Breadcrumb */}
@@ -91,7 +121,18 @@ export function Header({ onToggleSidebar, collapsed }: HeaderProps) {
           {collapsed ? <PanelLeftOpenIcon /> : <PanelLeftCloseIcon />}
         </Button>
         <nav className="flex items-center gap-1 text-sm">
-          <span className="text-[#0b0809] font-semibold">Dashboard</span>
+          {breadcrumbs.map((crumb, index) => (
+            <span key={crumb.href} className="flex items-center gap-1">
+              {index > 0 && <span className="text-gray-400 mx-1">/</span>}
+              {index === breadcrumbs.length - 1 ? (
+                <span className="text-[#0b0809] font-semibold">{crumb.label}</span>
+              ) : (
+                <Link href={crumb.href} className="text-gray-500 hover:text-gray-700">
+                  {crumb.label}
+                </Link>
+              )}
+            </span>
+          ))}
         </nav>
       </div>
 

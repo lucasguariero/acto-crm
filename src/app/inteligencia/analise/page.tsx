@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Sidebar } from "@/components/layout/sidebar";
-import { Header } from "@/components/layout/header";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -136,20 +134,11 @@ const tendenciaIcon = (tendencia: string) => {
 };
 
 export default function AnalisePage() {
-  const [collapsed, setCollapsed] = useState(false);
-
   const relatoriosAtivos = relatorios.filter((r) => r.status === "ativo").length;
   const totalVisualizacoes = relatorios.reduce((acc, r) => acc + r.visualizacoes, 0);
 
   return (
-    <div className="min-h-screen bg-[#F1F5F9]">
-      <Sidebar collapsed={collapsed} onToggle={() => setCollapsed(!collapsed)} />
-      <div
-        className="transition-all duration-300"
-        style={{ marginLeft: collapsed ? '72px' : '260px' }}
-      >
-        <Header onToggleSidebar={() => setCollapsed(!collapsed)} />
-        <main className="p-6">
+    <>
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
             <Link href="/dashboard" className="hover:text-gray-700">Início</Link>
@@ -347,8 +336,6 @@ export default function AnalisePage() {
               </CardContent>
             </Card>
           </div>
-        </main>
-      </div>
-    </div>
+    </>
   );
 }

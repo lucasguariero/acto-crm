@@ -19,7 +19,7 @@ export default function DashboardLayout({
         style={{ marginLeft: collapsed ? '72px' : '260px' }}
       >
         <Header onToggleSidebar={() => setCollapsed(!collapsed)} collapsed={collapsed} />
-        <main className="pt-16">
+        <main>
           {children}
         </main>
       </div>

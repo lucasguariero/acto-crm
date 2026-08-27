@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Sidebar } from "@/components/layout/sidebar";
 import { Header } from "@/components/layout/header";
 
-export default function CRMLayout({
+export default function UniversidadeLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -19,7 +19,7 @@ export default function CRMLayout({
         style={{ marginLeft: collapsed ? '72px' : '260px' }}
       >
         <Header onToggleSidebar={() => setCollapsed(!collapsed)} collapsed={collapsed} />
-        <main>
+        <main className="pt-6 px-6">
           {children}
         </main>
       </div>
