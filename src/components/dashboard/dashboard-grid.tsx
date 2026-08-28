@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import { Plus, CaretRight, Warning, FileText, Users, Megaphone, Calendar, ClipboardText } from "@phosphor-icons/react";
+import { Plus, CaretRight, Warning, FileText, Users, Megaphone, Calendar, ClipboardText, Heart, Confetti } from "@phosphor-icons/react";
 
 // Icons
 const ClipboardListIcon = () => (
@@ -282,7 +282,7 @@ export function DashboardGrid() {
           <div className="grid grid-cols-2 gap-4">
 
             {/* Micro-widget: Aniversariantes */}
-            <Card className="border-[#E2E8F0]">
+            <Card className={`border-[#E2E8F0] ${aniversarioHoje ? 'border-2 border-[#2563EB] bg-[#EBF5FF]' : ''}`}>
               <CardHeader className="pb-2">
                 <div className="flex items-center gap-2">
                   <Users size={16} className="text-[#64748B]" />
@@ -292,18 +292,45 @@ export function DashboardGrid() {
                 </div>
               </CardHeader>
               <CardContent className="pt-0">
-                <div className="text-center py-2">
-                  <div className="h-10 w-10 rounded-full bg-[#2563EB] flex items-center justify-center text-white text-[14px] font-semibold mx-auto mb-2">
-                    BF
+                {aniversarioHoje ? (
+                  /* Aniversariante do dia - estilo especial */
+                  <div className="space-y-3">
+                    <div className={`rounded-lg p-3 ${aniversarioHoje ? 'bg-[#EBF5FF] border-2 border-[#2563EB]' : ''}`}>
+                      <div className="flex items-start gap-3">
+                        {/* Avatar com anel azul */}
+                        <div className="h-12 w-12 rounded-full ring-4 ring-[#2563EB] ring-offset-2 bg-[#2563EB] flex items-center justify-center text-white text-[14px] font-semibold shrink-0">
+                          BF
+                        </div>
+                        <div className="flex-1">
+                          <p className="text-[14px] font-bold text-[#1E293B]">
+                            {aniversarioHoje.nome}
+                          </p>
+                          <p className="text-[12px] text-[#64748B]">{aniversarioHoje.area}</p>
+                          <Badge className="bg-[#2563EB] text-white text-[10px] px-2 py-0.5 h-5 mt-1 flex items-center gap-1">
+                            <Confetti size={12} weight="fill" />
+                            É HOJE
+                          </Badge>
+                        </div>
+                      </div>
+                    </div>
+                    {/* Botões de ação */}
+                    <div className="flex gap-2">
+                      <Button variant="outline" size="sm" className="flex-1 text-[12px] h-8 border-[#E2E8F0] hover:bg-[#F1F5F9]">
+                        <span className="text-[#22C55E] mr-1">●</span>
+                        Enviar balão
+                      </Button>
+                      <Button variant="outline" size="sm" className="flex-1 text-[12px] h-8 border-[#E2E8F0] hover:bg-[#F1F5F9]">
+                        <Heart size={14} className="text-[#EF4444] mr-1" weight="fill" />
+                        Enviar mensagem
+                      </Button>
+                    </div>
                   </div>
-                  <p className="text-[14px] font-medium text-[#1E293B]">
-                    {aniversarioHoje.nome}
-                  </p>
-                  <p className="text-[12px] text-[#64748B]">{aniversarioHoje.area}</p>
-                  <Badge className="bg-[#FEF3C7] text-[#B45309] text-[10px] px-2 py-0 h-5 mt-2">
-                    É hoje
-                  </Badge>
-                </div>
+                ) : (
+                  /* Sem aniversariante hoje - visualização padrão */
+                  <div className="text-center py-2">
+                    <p className="text-[14px] text-[#64748B]">Nenhum aniversariante hoje</p>
+                  </div>
+                )}
               </CardContent>
             </Card>
 
