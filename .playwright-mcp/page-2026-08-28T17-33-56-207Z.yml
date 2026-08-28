@@ -1,0 +1,123 @@
+- generic [ref=f12e2]:
+  - generic [ref=f12e3]:
+    - generic [ref=f12e7]:
+      - link "ERP Acto" [ref=f12e9] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=f12e17]:
+        - generic [ref=f12e18]:
+          - generic [ref=f12e19]: Principal
+          - list [ref=f12e20]:
+            - listitem [ref=f12e21]:
+              - link "Dashboard" [ref=f12e22] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=f12e29]:
+              - button "Meu Espaço" [expanded] [ref=f12e30]
+              - list [ref=f12e39]:
+                - generic [ref=f12e40]:
+                  - listitem [ref=f12e41]:
+                    - link "Caixa de entrada" [ref=f12e42] [cursor=pointer]:
+                      - /url: /meu/caixa-entrada
+                  - listitem [ref=f12e44]:
+                    - link "Minhas notas fiscais" [ref=f12e45] [cursor=pointer]:
+                      - /url: /meu/notas-fiscais
+                  - listitem [ref=f12e47]:
+                    - link "Meu perfil" [ref=f12e48] [cursor=pointer]:
+                      - /url: /meu/perfil
+                  - listitem [ref=f12e50]:
+                    - link "Solicitações" [ref=f12e51] [cursor=pointer]:
+                      - /url: /meu/solicitacoes
+                  - listitem [ref=f12e53]:
+                    - link "Terceirizados e outsourcing" [ref=f12e54] [cursor=pointer]:
+                      - /url: /meu/fornecedor-staffing
+            - listitem [ref=f12e56]:
+              - button "Projetos" [ref=f12e57]
+            - listitem [ref=f12e63]:
+              - button "Comercial" [ref=f12e64]
+            - listitem [ref=f12e71]:
+              - link "Jurídico" [ref=f12e72] [cursor=pointer]:
+                - /url: /comercial/licitacoes
+            - listitem [ref=f12e78]:
+              - button "Financeiro" [ref=f12e79]
+            - listitem [ref=f12e86]:
+              - button "RH" [ref=f12e87]
+            - listitem [ref=f12e96]:
+              - button "Inteligência" [ref=f12e97]
+            - listitem [ref=f12e106]:
+              - link "Processos" [ref=f12e107] [cursor=pointer]:
+                - /url: /processos
+            - listitem [ref=f12e113]:
+              - button "Patrimônio" [ref=f12e114]
+        - generic [ref=f12e128]:
+          - generic [ref=f12e129]: Destaque
+          - list [ref=f12e130]:
+            - listitem [ref=f12e131]:
+              - button "Universidade Acto" [ref=f12e132]
+            - listitem [ref=f12e139]:
+              - link "Hub de cadastros" [ref=f12e140] [cursor=pointer]:
+                - /url: /cadastros
+            - listitem [ref=f12e146]:
+              - link "Organizações" [ref=f12e147] [cursor=pointer]:
+                - /url: /organizacoes
+      - list [ref=f12e154]:
+        - listitem [ref=f12e155]:
+          - button "AS Admin Sistema" [ref=f12e156]:
+            - generic [ref=f12e157]: AS
+            - generic [ref=f12e159]: Admin Sistema
+      - button "Toggle sidebar" [ref=f12e164]
+    - main [ref=f12e165]:
+      - generic [ref=f12e167]:
+        - generic [ref=f12e169]:
+          - button "Alternar menu lateral" [ref=f12e170]
+          - navigation "breadcrumb" [ref=f12e172]:
+            - list [ref=f12e173]:
+              - listitem [ref=f12e174]:
+                - link "Meu" [ref=f12e175] [cursor=pointer]:
+                  - /url: /meu
+              - listitem [ref=f12e176]
+              - listitem [ref=f12e179]:
+                - link "Equipe terceirizada" [disabled] [ref=f12e180]
+        - button "Abrir busca global" [ref=f12e182]:
+          - generic [ref=f12e186]: Buscar no ERP…
+          - generic [ref=f12e187]:
+            - generic [ref=f12e188]: Ctrl
+            - generic [ref=f12e189]: K
+        - generic [ref=f12e192]:
+          - link "Caixa de entrada" [ref=f12e193] [cursor=pointer]:
+            - /url: /meu/caixa-entrada
+          - button "Notificações" [ref=f12e197] [cursor=pointer]
+          - generic [ref=f12e201]:
+            - 'button "Como usar: Equipe terceirizada e outsourcing" [ref=f12e202] [cursor=pointer]'
+            - link "Documentação interna" [ref=f12e206] [cursor=pointer]:
+              - /url: /documentacao
+            - button "Pomodoro — método de foco" [ref=f12e209] [cursor=pointer]
+            - link "Configurar PIN de step-up" [ref=f12e213] [cursor=pointer]:
+              - /url: /settings/security
+      - generic [ref=f12e217]:
+        - generic [ref=f12e219]:
+          - heading "Equipe terceirizada e outsourcing" [level=2] [ref=f12e220]
+          - paragraph [ref=f12e221]: Painel consolidado para gestores de equipes terceirizadas e de outsourcing.
+        - paragraph [ref=f12e222]: Você não possui colaboradores terceirizados ou de outsourcing sob sua gestão ou não tem permissão de aprovação de processos.
+    - button "Abrir assistente de IA" [ref=f12e225]
+    - button "Abrir ferramentas Acto homologadas" [ref=f12e228]
+    - dialog [ref=f12e231]:
+      - generic [ref=f12e232]:
+        - generic [ref=f12e233]:
+          - generic [ref=f12e234]:
+            - paragraph [ref=f12e235]: Ferramentas Acto
+            - paragraph [ref=f12e236]: Ações rápidas do seu cargo e links homologados
+          - button [ref=f12e237]
+        - region [ref=f12e241]:
+          - generic [ref=f12e242]:
+            - link [ref=f12e243] [cursor=pointer]:
+              - /url: /documentacao
+              - generic [ref=f12e247]: Docs
+            - link [ref=f12e248] [cursor=pointer]:
+              - /url: https://canvas.acto.com.br/
+              - generic [ref=f12e255]: Canvas
+            - link [ref=f12e256] [cursor=pointer]:
+              - /url: https://chat.acto.com.br/
+              - generic [ref=f12e260]: Chat
+            - link [ref=f12e261] [cursor=pointer]:
+              - /url: https://projetos.acto.com.br/login?back_url=https%3A%2F%2Fprojetos.acto.com.br%2F
+              - generic [ref=f12e265]: Projetos
+  - region "Notifications alt+T"

@@ -19,7 +19,7 @@ const modulos = [
     descricao: "Visualize e gerencie suas notas fiscais",
     href: "/meu-espaco/notas-fiscais",
     icon: Receipt,
-    cor: "bg-blue-50 text-blue-600",
+    cor: "bg-white text-blue-600",
   },
   {
     titulo: "Meu Perfil",
@@ -48,7 +48,7 @@ export default function MeuEspacoPage() {
   const [collapsed, setCollapsed] = useState(false)
 
   return (
-    <div className="min-h-screen bg-[#F1F5F9]">
+    <div className="min-h-screen bg-white">
       <Sidebar collapsed={collapsed} onToggle={() => setCollapsed(!collapsed)} />
       <div
         className="transition-all duration-300"
@@ -98,3 +98,4 @@ export default function MeuEspacoPage() {
     </div>
   )
 }
+

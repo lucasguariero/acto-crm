@@ -1,0 +1,191 @@
+- generic [ref=f6e2]:
+  - generic [ref=f6e3]:
+    - generic [ref=f6e7]:
+      - link "ERP Acto" [ref=f6e9] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=f6e17]:
+        - generic [ref=f6e18]:
+          - generic [ref=f6e19]: Principal
+          - list [ref=f6e20]:
+            - listitem [ref=f6e21]:
+              - link "Dashboard" [ref=f6e22] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=f6e29]:
+              - button "Meu Espaço" [ref=f6e30]
+            - listitem [ref=f6e38]:
+              - button "Projetos" [ref=f6e39]
+            - listitem [ref=f6e45]:
+              - button "Comercial" [expanded] [ref=f6e46]
+              - list [ref=f6e54]:
+                - generic [ref=f6e55]:
+                  - listitem [ref=f6e56]:
+                    - link "Painel" [ref=f6e57] [cursor=pointer]:
+                      - /url: /crm
+                  - listitem [ref=f6e59]:
+                    - link "Funil" [ref=f6e60] [cursor=pointer]:
+                      - /url: /crm/funil
+                  - listitem [ref=f6e62]:
+                    - link "Oportunidades" [ref=f6e63] [cursor=pointer]:
+                      - /url: /crm/oportunidades
+                  - listitem [ref=f6e65]:
+                    - link "Parceiros comerciais" [ref=f6e66] [cursor=pointer]:
+                      - /url: /crm/parceiros
+                  - listitem [ref=f6e68]:
+                    - link "Atas de registro de preço" [ref=f6e69] [cursor=pointer]:
+                      - /url: /crm/atas
+                  - listitem [ref=f6e71]:
+                    - link "Comissões" [ref=f6e72] [cursor=pointer]:
+                      - /url: /crm/comissoes
+                  - listitem [ref=f6e74]:
+                    - link "Metas" [ref=f6e75] [cursor=pointer]:
+                      - /url: /crm/metas
+                  - listitem [ref=f6e77]:
+                    - link "Parâmetros" [ref=f6e78] [cursor=pointer]:
+                      - /url: /crm/parametros
+                  - listitem [ref=f6e80]:
+                    - link "Relatórios" [ref=f6e81] [cursor=pointer]:
+                      - /url: /crm/relatorios
+            - listitem [ref=f6e83]:
+              - link "Jurídico" [ref=f6e84] [cursor=pointer]:
+                - /url: /comercial/licitacoes
+            - listitem [ref=f6e90]:
+              - button "Financeiro" [ref=f6e91]
+            - listitem [ref=f6e98]:
+              - button "RH" [ref=f6e99]
+            - listitem [ref=f6e108]:
+              - button "Inteligência" [ref=f6e109]
+            - listitem [ref=f6e118]:
+              - link "Processos" [ref=f6e119] [cursor=pointer]:
+                - /url: /processos
+            - listitem [ref=f6e125]:
+              - button "Patrimônio" [ref=f6e126]
+        - generic [ref=f6e140]:
+          - generic [ref=f6e141]: Destaque
+          - list [ref=f6e142]:
+            - listitem [ref=f6e143]:
+              - button "Universidade Acto" [ref=f6e144]
+            - listitem [ref=f6e151]:
+              - link "Hub de cadastros" [ref=f6e152] [cursor=pointer]:
+                - /url: /cadastros
+            - listitem [ref=f6e158]:
+              - link "Organizações" [ref=f6e159] [cursor=pointer]:
+                - /url: /organizacoes
+      - list [ref=f6e166]:
+        - listitem [ref=f6e167]:
+          - button "AS Admin Sistema" [ref=f6e168]:
+            - generic [ref=f6e169]: AS
+            - generic [ref=f6e171]: Admin Sistema
+      - button "Toggle sidebar" [ref=f6e176]
+    - main [ref=f6e177]:
+      - generic [ref=f6e179]:
+        - generic [ref=f6e181]:
+          - button "Alternar menu lateral" [ref=f6e182]
+          - navigation "breadcrumb" [ref=f6e184]:
+            - list [ref=f6e185]:
+              - listitem [ref=f6e186]:
+                - link "CRM" [ref=f6e187] [cursor=pointer]:
+                  - /url: /crm
+              - listitem [ref=f6e188]
+              - listitem [ref=f6e191]:
+                - link "Parâmetros" [disabled] [ref=f6e192]
+        - button "Abrir busca global" [ref=f6e194]:
+          - generic [ref=f6e198]: Buscar no ERP…
+          - generic [ref=f6e199]:
+            - generic [ref=f6e200]: Ctrl
+            - generic [ref=f6e201]: K
+        - generic [ref=f6e204]:
+          - link "Caixa de entrada" [ref=f6e205] [cursor=pointer]:
+            - /url: /meu/caixa-entrada
+          - button "Notificações" [ref=f6e209] [cursor=pointer]
+          - generic [ref=f6e213]:
+            - button "Nenhum guia para esta tela" [disabled]
+            - link "Documentação interna" [ref=f6e214] [cursor=pointer]:
+              - /url: /documentacao
+            - button "Pomodoro — método de foco" [ref=f6e217] [cursor=pointer]
+            - link "Configurar PIN de step-up" [ref=f6e221] [cursor=pointer]:
+              - /url: /settings/security
+      - generic [ref=f6e225]:
+        - generic [ref=f6e227]:
+          - heading "Parâmetros de comissão" [level=2] [ref=f6e228]
+          - paragraph [ref=f6e229]: Percentuais e tetos globais usados no cálculo automático de comissões.
+        - generic [ref=f6e230]:
+          - generic [ref=f6e231]:
+            - generic [ref=f6e233]:
+              - generic [ref=f6e234]: BDR padrão
+              - paragraph [ref=f6e235]: bdr_padrao
+            - generic [ref=f6e237]:
+              - paragraph [ref=f6e238]: 0,005percentual
+              - button "Editar" [ref=f6e239]
+          - generic [ref=f6e240]:
+            - generic [ref=f6e242]:
+              - generic [ref=f6e243]: Closer padrão
+              - paragraph [ref=f6e244]: closer_padrao
+            - generic [ref=f6e246]:
+              - paragraph [ref=f6e247]: 0,01percentual
+              - button "Editar" [ref=f6e248]
+          - generic [ref=f6e249]:
+            - generic [ref=f6e251]:
+              - generic [ref=f6e252]: Finder padrão
+              - paragraph [ref=f6e253]: finder_padrao
+            - generic [ref=f6e255]:
+              - paragraph [ref=f6e256]: 0,02percentual
+              - button "Editar" [ref=f6e257]
+          - generic [ref=f6e258]:
+            - generic [ref=f6e260]:
+              - generic [ref=f6e261]: Finder qualificado
+              - paragraph [ref=f6e262]: finder_qualificado
+            - generic [ref=f6e264]:
+              - paragraph [ref=f6e265]: 0,03percentual
+              - button "Editar" [ref=f6e266]
+          - generic [ref=f6e267]:
+            - generic [ref=f6e269]:
+              - generic [ref=f6e270]: Representante máximo
+              - paragraph [ref=f6e271]: representante_maximo
+            - generic [ref=f6e273]:
+              - paragraph [ref=f6e274]: 0,08percentual
+              - button "Editar" [ref=f6e275]
+          - generic [ref=f6e276]:
+            - generic [ref=f6e278]:
+              - generic [ref=f6e279]: Representante mínimo
+              - paragraph [ref=f6e280]: representante_minimo
+            - generic [ref=f6e282]:
+              - paragraph [ref=f6e283]: 0,05percentual
+              - button "Editar" [ref=f6e284]
+          - generic [ref=f6e285]:
+            - generic [ref=f6e287]:
+              - generic [ref=f6e288]: Teto comissão sobre margem bruta
+              - paragraph [ref=f6e289]: teto_margem_bruta
+            - generic [ref=f6e291]:
+              - paragraph [ref=f6e292]: 0,2percentual
+              - button "Editar" [ref=f6e293]
+          - generic [ref=f6e294]:
+            - generic [ref=f6e296]:
+              - generic [ref=f6e297]: Teto comissão sobre receita líquida
+              - paragraph [ref=f6e298]: teto_receita_liquida
+            - generic [ref=f6e300]:
+              - paragraph [ref=f6e301]: 0,08percentual
+              - button "Editar" [ref=f6e302]
+    - button "Abrir assistente de IA" [ref=f6e305]
+    - button "Abrir ferramentas Acto homologadas" [ref=f6e308]
+    - dialog [ref=f6e311]:
+      - generic [ref=f6e312]:
+        - generic [ref=f6e313]:
+          - generic [ref=f6e314]:
+            - paragraph [ref=f6e315]: Ferramentas Acto
+            - paragraph [ref=f6e316]: Ações rápidas do seu cargo e links homologados
+          - button [ref=f6e317]
+        - region [ref=f6e321]:
+          - generic [ref=f6e322]:
+            - link [ref=f6e323] [cursor=pointer]:
+              - /url: /documentacao
+              - generic [ref=f6e327]: Docs
+            - link [ref=f6e328] [cursor=pointer]:
+              - /url: https://canvas.acto.com.br/
+              - generic [ref=f6e335]: Canvas
+            - link [ref=f6e336] [cursor=pointer]:
+              - /url: https://chat.acto.com.br/
+              - generic [ref=f6e340]: Chat
+            - link [ref=f6e341] [cursor=pointer]:
+              - /url: https://projetos.acto.com.br/login?back_url=https%3A%2F%2Fprojetos.acto.com.br%2F
+              - generic [ref=f6e345]: Projetos
+  - region "Notifications alt+T"

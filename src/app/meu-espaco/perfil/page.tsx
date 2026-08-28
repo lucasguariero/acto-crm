@@ -37,7 +37,7 @@ export default function PerfilPage() {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#F1F5F9]">
+    <div className="min-h-screen bg-white">
       <Sidebar collapsed={collapsed} onToggle={() => setCollapsed(!collapsed)} />
       <div
         className="transition-all duration-300"
@@ -309,7 +309,7 @@ export default function PerfilPage() {
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
-                      <div className="p-4 bg-blue-50 rounded-lg">
+                      <div className="p-4 bg-white rounded-lg">
                         <div className="flex items-center gap-3">
                           <div className="h-10 w-10 rounded-full bg-[#2563EB] flex items-center justify-center">
                             <User size={20} className="text-white" />
@@ -362,3 +362,4 @@ export default function PerfilPage() {
     </div>
   );
 }
+

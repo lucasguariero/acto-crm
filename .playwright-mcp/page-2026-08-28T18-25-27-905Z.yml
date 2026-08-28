@@ -1,0 +1,274 @@
+- generic [ref=f4e2]:
+  - generic [ref=f4e3]:
+    - generic [ref=f4e7]:
+      - link "ERP Acto" [ref=f4e9] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=f4e17]:
+        - generic [ref=f4e18]:
+          - generic [ref=f4e19]: Principal
+          - list [ref=f4e20]:
+            - listitem [ref=f4e21]:
+              - link "Dashboard" [ref=f4e22] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=f4e29]:
+              - button "Meu Espaço" [ref=f4e30]
+            - listitem [ref=f4e38]:
+              - button "Projetos" [ref=f4e39]
+            - listitem [ref=f4e45]:
+              - button "Comercial" [ref=f4e46]
+            - listitem [ref=f4e53]:
+              - link "Jurídico" [ref=f4e54] [cursor=pointer]:
+                - /url: /comercial/licitacoes
+            - listitem [ref=f4e60]:
+              - button "Financeiro" [ref=f4e61]
+            - listitem [ref=f4e68]:
+              - button "RH" [ref=f4e69]
+            - listitem [ref=f4e78]:
+              - button "Inteligência" [ref=f4e79]
+            - listitem [ref=f4e88]:
+              - link "Processos" [ref=f4e89] [cursor=pointer]:
+                - /url: /processos
+            - listitem [ref=f4e95]:
+              - button "Patrimônio" [ref=f4e96]
+        - generic [ref=f4e110]:
+          - generic [ref=f4e111]: Destaque
+          - list [ref=f4e112]:
+            - listitem [ref=f4e113]:
+              - button "Universidade Acto" [ref=f4e114]
+            - listitem [ref=f4e121]:
+              - link "Hub de cadastros" [ref=f4e122] [cursor=pointer]:
+                - /url: /cadastros
+            - listitem [ref=f4e128]:
+              - link "Organizações" [ref=f4e129] [cursor=pointer]:
+                - /url: /organizacoes
+      - list [ref=f4e136]:
+        - listitem [ref=f4e137]:
+          - button "AS Admin Sistema" [ref=f4e138]:
+            - generic [ref=f4e139]: AS
+            - generic [ref=f4e141]: Admin Sistema
+      - button "Toggle sidebar" [ref=f4e146]
+    - main [ref=f4e147]:
+      - generic [ref=f4e149]:
+        - generic [ref=f4e151]:
+          - button "Alternar menu lateral" [ref=f4e152]
+          - navigation "breadcrumb" [ref=f4e154]:
+            - list [ref=f4e155]:
+              - listitem [ref=f4e156]:
+                - link "Dashboard" [disabled] [ref=f4e157]
+        - button "Abrir busca global" [ref=f4e159]:
+          - generic [ref=f4e163]: Buscar no ERP…
+          - generic [ref=f4e164]:
+            - generic [ref=f4e165]: Ctrl
+            - generic [ref=f4e166]: K
+        - generic [ref=f4e169]:
+          - link "Caixa de entrada" [ref=f4e170] [cursor=pointer]:
+            - /url: /meu/caixa-entrada
+          - button "Notificações" [ref=f4e174] [cursor=pointer]
+          - generic [ref=f4e178]:
+            - 'button "Como usar: Painel principal" [ref=f4e179] [cursor=pointer]'
+            - link "Documentação interna" [ref=f4e183] [cursor=pointer]:
+              - /url: /documentacao
+            - button "Pomodoro — método de foco" [ref=f4e186] [cursor=pointer]
+            - link "Configurar PIN de step-up" [ref=f4e190] [cursor=pointer]:
+              - /url: /settings/security
+      - generic [ref=f4e194]:
+        - generic [ref=f4e196]:
+          - heading "Olá, Admin Sistema" [level=2] [ref=f4e197]
+          - paragraph [ref=f4e198]: Resumo adaptado ao seu cargo e à sua rotina de uso.
+        - generic [ref=f4e199]:
+          - generic [ref=f4e200]:
+            - generic [ref=f4e201]:
+              - generic [ref=f4e205]:
+                - paragraph [ref=f4e209]: Nenhum comunicado no ar
+                - paragraph [ref=f4e210]: Avisos institucionais publicados pelo RH aparecem aqui para toda a equipe.
+                - link "Criar comunicado" [ref=f4e211] [cursor=pointer]:
+                  - /url: /destaques-rh/create
+              - region "Seu dia" [ref=f4e212]:
+                - paragraph [ref=f4e217]: sexta-feira, 28 de agosto
+                - generic [ref=f4e218]:
+                  - paragraph [ref=f4e222]: Nada pendente por aqui
+                  - paragraph [ref=f4e223]: Você está em dia com aprovações e solicitações.
+            - generic [ref=f4e224]:
+              - generic [ref=f4e225]:
+                - generic [ref=f4e226]:
+                  - generic [ref=f4e227]: Aniversariantes de agosto
+                  - generic [ref=f4e232]: "7"
+                - generic [ref=f4e234]:
+                  - generic [ref=f4e237]:
+                    - generic [ref=f4e238]: LA
+                    - generic [ref=f4e240]:
+                      - generic [ref=f4e241]: É hoje
+                      - paragraph [ref=f4e242]: Leticia Araujo
+                      - paragraph [ref=f4e243]: Engenharia · Rh
+                    - generic [ref=f4e244]:
+                      - button "Enviar balão" [ref=f4e245]
+                      - button "Enviar mensagem" [ref=f4e246]
+                  - generic [ref=f4e247]:
+                    - paragraph [ref=f4e248]: Já passou
+                    - list [ref=f4e249]:
+                      - listitem [ref=f4e250]:
+                        - generic [ref=f4e251]: SV
+                        - generic [ref=f4e253]:
+                          - paragraph [ref=f4e255]: Sabrina Viana
+                          - paragraph [ref=f4e256]: 10 de agosto · há 18 dias · Engenharia · Diretor
+                        - generic [ref=f4e257]:
+                          - button "Enviar balão" [ref=f4e258]
+                          - button "Enviar mensagem" [ref=f4e259]
+                      - listitem [ref=f4e260]:
+                        - generic [ref=f4e261]: RA
+                        - generic [ref=f4e263]:
+                          - paragraph [ref=f4e265]: Rayane Albuquerque
+                          - paragraph [ref=f4e266]: 12 de agosto · há 16 dias · Engenharia · Rh
+                        - generic [ref=f4e267]:
+                          - button "Enviar balão" [ref=f4e268]
+                          - button "Enviar mensagem" [ref=f4e269]
+                      - listitem [ref=f4e270]:
+                        - img "Vinicius" [ref=f4e272]
+                        - generic [ref=f4e273]:
+                          - paragraph [ref=f4e275]: Vinicius
+                          - paragraph [ref=f4e276]: 15 de agosto · há 13 dias · Engenharia · Desenvolvedor
+                        - generic [ref=f4e277]:
+                          - button "Enviar balão" [ref=f4e278]
+                          - button "Enviar mensagem" [ref=f4e279]
+                      - listitem [ref=f4e280]:
+                        - generic [ref=f4e281]: RS
+                        - generic [ref=f4e283]:
+                          - paragraph [ref=f4e285]: Rodrigo Subtil
+                          - paragraph [ref=f4e286]: 18 de agosto · há 10 dias · Engenharia · Desenvolvedor
+                        - generic [ref=f4e287]:
+                          - button "Enviar balão" [ref=f4e288]
+                          - button "Enviar mensagem" [ref=f4e289]
+                      - listitem [ref=f4e290]:
+                        - generic [ref=f4e291]: L
+                        - generic [ref=f4e293]:
+                          - paragraph [ref=f4e295]: Luciana
+                          - paragraph [ref=f4e296]: 20 de agosto · há 8 dias · Engenharia · Financeiro
+                        - generic [ref=f4e297]:
+                          - button "Enviar balão" [ref=f4e298]
+                          - button "Enviar mensagem" [ref=f4e299]
+                      - listitem [ref=f4e300]:
+                        - generic [ref=f4e301]: BF
+                        - generic [ref=f4e303]:
+                          - paragraph [ref=f4e305]: Benigno Fialho
+                          - paragraph [ref=f4e306]: 24 de agosto · há 4 dias · Engenharia · Diretor
+                        - generic [ref=f4e307]:
+                          - button "Enviar balão" [ref=f4e308]
+                          - button "Enviar mensagem" [ref=f4e309]
+                  - button "Parabenizar todos (7)" [ref=f4e310]
+              - generic [ref=f4e311]:
+                - generic [ref=f4e312]:
+                  - generic [ref=f4e313]: Mural de novidades
+                  - generic [ref=f4e318]: "0"
+                - generic [ref=f4e319]:
+                  - button "AS Compartilhe uma novidade com o time..." [ref=f4e320]:
+                    - generic [ref=f4e321]: AS
+                    - generic [ref=f4e323]: Compartilhe uma novidade com o time...
+                  - generic [ref=f4e325]:
+                    - paragraph [ref=f4e326]: Nenhuma novidade ainda
+                    - paragraph [ref=f4e327]: Seja o primeiro a compartilhar algo com o time.
+          - generic [ref=f4e329]:
+            - paragraph [ref=f4e330]: Pressione e segure por 2 segundos em um bloco para reorganizar (estilo iPhone).
+            - generic [ref=f4e332]:
+              - generic [ref=f4e335]:
+                - generic [ref=f4e336]:
+                  - generic [ref=f4e337]:
+                    - generic [ref=f4e338]: Processos pendentes
+                    - paragraph [ref=f4e342]: Filas de aprovação aguardando sua ação.
+                  - generic [ref=f4e343]:
+                    - generic [ref=f4e344]: "0"
+                    - button "Ocultar" [ref=f4e345]
+                - generic [ref=f4e346]:
+                  - link "Solicitações de centro de custo Aprovação do gestor e do RH para viagens, equipamentos e capacitação. 0" [ref=f4e347] [cursor=pointer]:
+                    - /url: /backoffice/solicitacoes-centro-custo
+                    - generic [ref=f4e348]:
+                      - paragraph [ref=f4e349]: Solicitações de centro de custo
+                      - paragraph [ref=f4e350]: Aprovação do gestor e do RH para viagens, equipamentos e capacitação.
+                    - generic [ref=f4e351]: "0"
+                  - link "Solicitações de recesso Recessos de prestadores PJ aguardando análise. 0" [ref=f4e352] [cursor=pointer]:
+                    - /url: /backoffice/solicitacoes-recesso
+                    - generic [ref=f4e353]:
+                      - paragraph [ref=f4e354]: Solicitações de recesso
+                      - paragraph [ref=f4e355]: Recessos de prestadores PJ aguardando análise.
+                    - generic [ref=f4e356]: "0"
+                  - link "Substituições staffing Troca de colaboradores em contratos de outsourcing. 0" [ref=f4e357] [cursor=pointer]:
+                    - /url: /backoffice/substituicoes-colaborador
+                    - generic [ref=f4e358]:
+                      - paragraph [ref=f4e359]: Substituições staffing
+                      - paragraph [ref=f4e360]: Troca de colaboradores em contratos de outsourcing.
+                    - generic [ref=f4e361]: "0"
+                  - link "Ver processos" [ref=f4e362] [cursor=pointer]:
+                    - /url: /processos
+              - generic [ref=f4e368]:
+                - generic [ref=f4e369]:
+                  - generic [ref=f4e370]:
+                    - generic [ref=f4e371]: Fila de notas fiscais
+                    - paragraph [ref=f4e372]: Notas fiscais aguardando análise no financeiro.
+                  - button "Ocultar" [ref=f4e373]
+                - generic [ref=f4e374]:
+                  - paragraph [ref=f4e375]: 0nota(s)
+                  - paragraph [ref=f4e376]: Notas aguardando análise
+                  - link "Abrir" [ref=f4e377] [cursor=pointer]:
+                    - /url: /faturamento/notas-fiscais
+              - generic [ref=f4e383]:
+                - generic [ref=f4e384]:
+                  - generic [ref=f4e385]:
+                    - generic [ref=f4e386]: Projetos em risco
+                    - paragraph [ref=f4e387]: Projetos com score de risco elevado.
+                  - button "Ocultar" [ref=f4e388]
+                - generic [ref=f4e389]:
+                  - paragraph [ref=f4e390]: 0projeto(s)
+                  - paragraph [ref=f4e391]: Projetos com risco elevado
+                  - link "Abrir" [ref=f4e392] [cursor=pointer]:
+                    - /url: /projetos
+    - button "Abrir assistente de IA" [ref=f4e398]
+    - button "Abrir ferramentas Acto homologadas" [ref=f4e401]
+    - dialog [ref=f4e404]:
+      - generic [ref=f4e405]:
+        - generic [ref=f4e406]:
+          - generic [ref=f4e407]:
+            - paragraph [ref=f4e408]: Ferramentas Acto
+            - paragraph [ref=f4e409]: Ações rápidas do seu cargo e links homologados
+          - button [ref=f4e410]
+        - region [ref=f4e414]:
+          - paragraph [ref=f4e415]: Ações rápidas
+          - generic [ref=f4e416]:
+            - link [ref=f4e417] [cursor=pointer]:
+              - /url: /financeiro
+              - generic [ref=f4e422]: Painel Gerencial
+            - link [ref=f4e423] [cursor=pointer]:
+              - /url: /processos
+              - generic [ref=f4e428]: Processos pendentes
+            - link [ref=f4e429] [cursor=pointer]:
+              - /url: /projetos
+              - generic [ref=f4e433]: Projetos
+            - link [ref=f4e434] [cursor=pointer]:
+              - /url: /crm/oportunidades
+              - generic [ref=f4e441]: CRM
+            - link [ref=f4e442] [cursor=pointer]:
+              - /url: /cadastros
+              - generic [ref=f4e448]: Cadastros
+            - link [ref=f4e449] [cursor=pointer]:
+              - /url: /meu/perfil
+              - generic [ref=f4e455]: Meu perfil
+            - link [ref=f4e456] [cursor=pointer]:
+              - /url: /meu/notas-fiscais
+              - generic [ref=f4e461]: Minhas notas fiscais
+            - link [ref=f4e462] [cursor=pointer]:
+              - /url: /settings/profile
+              - generic [ref=f4e467]: Configurações
+        - region [ref=f4e468]:
+          - paragraph [ref=f4e469]: Ferramentas
+          - generic [ref=f4e470]:
+            - link [ref=f4e471] [cursor=pointer]:
+              - /url: /documentacao
+              - generic [ref=f4e475]: Docs
+            - link [ref=f4e476] [cursor=pointer]:
+              - /url: https://canvas.acto.com.br/
+              - generic [ref=f4e483]: Canvas
+            - link [ref=f4e484] [cursor=pointer]:
+              - /url: https://chat.acto.com.br/
+              - generic [ref=f4e488]: Chat
+            - link [ref=f4e489] [cursor=pointer]:
+              - /url: https://projetos.acto.com.br/login?back_url=https%3A%2F%2Fprojetos.acto.com.br%2F
+              - generic [ref=f4e493]: Projetos
+  - region "Notifications alt+T"

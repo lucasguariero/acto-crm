@@ -1,0 +1,200 @@
+- generic [ref=f7e2]:
+  - generic [ref=f7e3]:
+    - generic [ref=f7e7]:
+      - link "ERP Acto" [ref=f7e9] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=f7e17]:
+        - generic [ref=f7e18]:
+          - generic [ref=f7e19]: Principal
+          - list [ref=f7e20]:
+            - listitem [ref=f7e21]:
+              - link "Dashboard" [ref=f7e22] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=f7e29]:
+              - button "Meu Espaço" [ref=f7e30]
+            - listitem [ref=f7e38]:
+              - button "Projetos" [ref=f7e39]
+            - listitem [ref=f7e45]:
+              - button "Comercial" [expanded] [ref=f7e46]
+              - list [ref=f7e54]:
+                - generic [ref=f7e55]:
+                  - listitem [ref=f7e56]:
+                    - link "Painel" [ref=f7e57] [cursor=pointer]:
+                      - /url: /crm
+                  - listitem [ref=f7e59]:
+                    - link "Funil" [ref=f7e60] [cursor=pointer]:
+                      - /url: /crm/funil
+                  - listitem [ref=f7e62]:
+                    - link "Oportunidades" [ref=f7e63] [cursor=pointer]:
+                      - /url: /crm/oportunidades
+                  - listitem [ref=f7e65]:
+                    - link "Parceiros comerciais" [ref=f7e66] [cursor=pointer]:
+                      - /url: /crm/parceiros
+                  - listitem [ref=f7e68]:
+                    - link "Atas de registro de preço" [ref=f7e69] [cursor=pointer]:
+                      - /url: /crm/atas
+                  - listitem [ref=f7e71]:
+                    - link "Comissões" [ref=f7e72] [cursor=pointer]:
+                      - /url: /crm/comissoes
+                  - listitem [ref=f7e74]:
+                    - link "Metas" [ref=f7e75] [cursor=pointer]:
+                      - /url: /crm/metas
+                  - listitem [ref=f7e77]:
+                    - link "Parâmetros" [ref=f7e78] [cursor=pointer]:
+                      - /url: /crm/parametros
+                  - listitem [ref=f7e80]:
+                    - link "Relatórios" [ref=f7e81] [cursor=pointer]:
+                      - /url: /crm/relatorios
+            - listitem [ref=f7e83]:
+              - link "Jurídico" [ref=f7e84] [cursor=pointer]:
+                - /url: /comercial/licitacoes
+            - listitem [ref=f7e90]:
+              - button "Financeiro" [ref=f7e91]
+            - listitem [ref=f7e98]:
+              - button "RH" [ref=f7e99]
+            - listitem [ref=f7e108]:
+              - button "Inteligência" [ref=f7e109]
+            - listitem [ref=f7e118]:
+              - link "Processos" [ref=f7e119] [cursor=pointer]:
+                - /url: /processos
+            - listitem [ref=f7e125]:
+              - button "Patrimônio" [ref=f7e126]
+        - generic [ref=f7e140]:
+          - generic [ref=f7e141]: Destaque
+          - list [ref=f7e142]:
+            - listitem [ref=f7e143]:
+              - button "Universidade Acto" [ref=f7e144]
+            - listitem [ref=f7e151]:
+              - link "Hub de cadastros" [ref=f7e152] [cursor=pointer]:
+                - /url: /cadastros
+            - listitem [ref=f7e158]:
+              - link "Organizações" [ref=f7e159] [cursor=pointer]:
+                - /url: /organizacoes
+      - list [ref=f7e166]:
+        - listitem [ref=f7e167]:
+          - button "AS Admin Sistema" [ref=f7e168]:
+            - generic [ref=f7e169]: AS
+            - generic [ref=f7e171]: Admin Sistema
+      - button "Toggle sidebar" [ref=f7e176]
+    - main [ref=f7e177]:
+      - generic [ref=f7e179]:
+        - generic [ref=f7e181]:
+          - button "Alternar menu lateral" [ref=f7e182]
+          - navigation "breadcrumb" [ref=f7e184]:
+            - list [ref=f7e185]:
+              - listitem [ref=f7e186]:
+                - link "CRM" [ref=f7e187] [cursor=pointer]:
+                  - /url: /crm
+              - listitem [ref=f7e188]
+              - listitem [ref=f7e191]:
+                - link "Relatórios" [disabled] [ref=f7e192]
+        - button "Abrir busca global" [ref=f7e194]:
+          - generic [ref=f7e198]: Buscar no ERP…
+          - generic [ref=f7e199]:
+            - generic [ref=f7e200]: Ctrl
+            - generic [ref=f7e201]: K
+        - generic [ref=f7e204]:
+          - link "Caixa de entrada" [ref=f7e205] [cursor=pointer]:
+            - /url: /meu/caixa-entrada
+          - button "Notificações" [ref=f7e209] [cursor=pointer]
+          - generic [ref=f7e213]:
+            - button "Nenhum guia para esta tela" [disabled]
+            - link "Documentação interna" [ref=f7e214] [cursor=pointer]:
+              - /url: /documentacao
+            - button "Pomodoro — método de foco" [ref=f7e217] [cursor=pointer]
+            - link "Configurar PIN de step-up" [ref=f7e221] [cursor=pointer]:
+              - /url: /settings/security
+      - generic [ref=f7e225]:
+        - generic [ref=f7e227]:
+          - heading "Relatórios comerciais" [level=2] [ref=f7e228]
+          - paragraph [ref=f7e229]: Analytics de pipeline, temperatura, win-rate, SLA e relatórios executivos indexados.
+        - generic [ref=f7e231]:
+          - generic [ref=f7e232]: Relatórios executivos
+          - generic [ref=f7e234]:
+            - generic [ref=f7e235]:
+              - generic [ref=f7e236]:
+                - text: Tipo
+                - combobox [ref=f7e237]:
+                  - generic: Semanal
+              - generic [ref=f7e238]:
+                - text: Estrutura (opcional)
+                - combobox [ref=f7e239]:
+                  - generic: Corporativo
+              - generic [ref=f7e240]:
+                - text: Referência
+                - textbox [ref=f7e241]
+              - button "Gerar rascunho" [ref=f7e243]
+            - generic [ref=f7e244]:
+              - paragraph [ref=f7e245]: Escopos automáticos
+              - generic [ref=f7e246]:
+                - combobox [ref=f7e247]:
+                  - generic: Estrutura
+                - combobox [ref=f7e248]:
+                  - generic: Semanal
+                - button "Salvar escopo" [ref=f7e249]
+              - paragraph [ref=f7e250]: Nenhum escopo configurado. Sem escopos, o job gera o relatório corporativo.
+            - paragraph [ref=f7e251]: Nenhum relatório executivo gerado ainda.
+        - generic [ref=f7e252]:
+          - button [ref=f7e253]:
+            - paragraph [ref=f7e254]: Pipeline por estágio
+            - paragraph [ref=f7e255]: Quantidade e valor estimado por estágio aberto.
+          - button [ref=f7e256]:
+            - paragraph [ref=f7e257]: Temperatura do funil
+            - paragraph [ref=f7e258]: Temperatura média e distribuição das oportunidades abertas.
+          - button [ref=f7e259]:
+            - paragraph [ref=f7e260]: Win-rate
+            - paragraph [ref=f7e261]: Taxa de ganho sobre oportunidades encerradas.
+          - button [ref=f7e262]:
+            - paragraph [ref=f7e263]: SLA de handoff
+            - paragraph [ref=f7e264]: Tempo médio (dias) entre handoffs por transição.
+        - generic [ref=f7e265]:
+          - generic [ref=f7e266]:
+            - generic [ref=f7e267]: Resultado
+            - button "Exportar CSV" [ref=f7e268]
+          - table [ref=f7e271]:
+            - rowgroup [ref=f7e272]:
+              - row [ref=f7e273]:
+                - columnheader "estagio" [ref=f7e274]
+                - columnheader "quantidade" [ref=f7e275]
+                - columnheader "valor_estimado" [ref=f7e276]
+            - rowgroup [ref=f7e277]:
+              - row [ref=f7e278]:
+                - cell "Lead" [ref=f7e279]
+                - cell "0" [ref=f7e280]
+                - cell "0,00" [ref=f7e281]
+              - row [ref=f7e282]:
+                - cell "Qualificação" [ref=f7e283]
+                - cell "0" [ref=f7e284]
+                - cell "0,00" [ref=f7e285]
+              - row [ref=f7e286]:
+                - cell "Desenvolvimento" [ref=f7e287]
+                - cell "0" [ref=f7e288]
+                - cell "0,00" [ref=f7e289]
+              - row [ref=f7e290]:
+                - cell "Negociação" [ref=f7e291]
+                - cell "0" [ref=f7e292]
+                - cell "0,00" [ref=f7e293]
+    - button "Abrir assistente de IA" [ref=f7e296]
+    - button "Abrir ferramentas Acto homologadas" [ref=f7e299]
+    - dialog [ref=f7e302]:
+      - generic [ref=f7e303]:
+        - generic [ref=f7e304]:
+          - generic [ref=f7e305]:
+            - paragraph [ref=f7e306]: Ferramentas Acto
+            - paragraph [ref=f7e307]: Ações rápidas do seu cargo e links homologados
+          - button [ref=f7e308]
+        - region [ref=f7e312]:
+          - generic [ref=f7e313]:
+            - link [ref=f7e314] [cursor=pointer]:
+              - /url: /documentacao
+              - generic [ref=f7e318]: Docs
+            - link [ref=f7e319] [cursor=pointer]:
+              - /url: https://canvas.acto.com.br/
+              - generic [ref=f7e326]: Canvas
+            - link [ref=f7e327] [cursor=pointer]:
+              - /url: https://chat.acto.com.br/
+              - generic [ref=f7e331]: Chat
+            - link [ref=f7e332] [cursor=pointer]:
+              - /url: https://projetos.acto.com.br/login?back_url=https%3A%2F%2Fprojetos.acto.com.br%2F
+              - generic [ref=f7e336]: Projetos
+  - region "Notifications alt+T"

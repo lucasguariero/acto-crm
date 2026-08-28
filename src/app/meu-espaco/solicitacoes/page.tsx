@@ -19,7 +19,7 @@ export default function MinhasSolicitacoesPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#F1F5F9]">
+    <div className="min-h-screen bg-white">
       <Sidebar collapsed={collapsed} onToggle={() => setCollapsed(!collapsed)} />
       <div
         className="transition-all duration-300"
@@ -71,3 +71,4 @@ export default function MinhasSolicitacoesPage() {
     </div>
   )
 }
+

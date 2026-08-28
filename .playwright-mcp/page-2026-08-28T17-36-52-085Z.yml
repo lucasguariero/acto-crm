@@ -1,0 +1,159 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e7]:
+      - link "ERP Acto" [ref=e9] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: Principal
+          - list [ref=e20]:
+            - listitem [ref=e21]:
+              - link "Dashboard" [ref=e22] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e29]:
+              - button "Meu Espaço" [ref=e30]
+            - listitem [ref=e38]:
+              - button "Projetos" [expanded] [ref=e39]
+              - list [ref=e46]:
+                - generic [ref=e47]:
+                  - listitem [ref=e48]:
+                    - link "Meu trabalho" [ref=e49] [cursor=pointer]:
+                      - /url: /projetos/meu-trabalho
+                  - listitem [ref=e51]:
+                    - link "Governança" [ref=e52] [cursor=pointer]:
+                      - /url: /projetos
+            - listitem [ref=e54]:
+              - button "Comercial" [ref=e55]
+            - listitem [ref=e62]:
+              - link "Jurídico" [ref=e63] [cursor=pointer]:
+                - /url: /comercial/licitacoes
+            - listitem [ref=e69]:
+              - button "Financeiro" [ref=e70]
+            - listitem [ref=e77]:
+              - button "RH" [ref=e78]
+            - listitem [ref=e87]:
+              - button "Inteligência" [ref=e88]
+            - listitem [ref=e97]:
+              - link "Processos" [ref=e98] [cursor=pointer]:
+                - /url: /processos
+            - listitem [ref=e104]:
+              - button "Patrimônio" [ref=e105]
+        - generic [ref=e119]:
+          - generic [ref=e120]: Destaque
+          - list [ref=e121]:
+            - listitem [ref=e122]:
+              - button "Universidade Acto" [ref=e123]
+            - listitem [ref=e130]:
+              - link "Hub de cadastros" [ref=e131] [cursor=pointer]:
+                - /url: /cadastros
+            - listitem [ref=e137]:
+              - link "Organizações" [ref=e138] [cursor=pointer]:
+                - /url: /organizacoes
+      - list [ref=e145]:
+        - listitem [ref=e146]:
+          - button "AS Admin Sistema" [ref=e147]:
+            - generic [ref=e148]: AS
+            - generic [ref=e150]: Admin Sistema
+      - button "Toggle sidebar" [ref=e155]
+    - main [ref=e156]:
+      - generic [ref=e158]:
+        - generic [ref=e160]:
+          - button "Alternar menu lateral" [ref=e161]
+          - navigation "breadcrumb" [ref=e163]:
+            - list [ref=e164]:
+              - listitem [ref=e165]:
+                - link "Projetos" [ref=e166] [cursor=pointer]:
+                  - /url: /projetos
+              - listitem [ref=e167]
+              - listitem [ref=e170]:
+                - link "Meu trabalho" [disabled] [ref=e171]
+        - button "Abrir busca global" [ref=e173]:
+          - generic [ref=e177]: Buscar no ERP…
+          - generic [ref=e178]:
+            - generic [ref=e179]: Ctrl
+            - generic [ref=e180]: K
+        - generic [ref=e183]:
+          - link "Caixa de entrada" [ref=e184] [cursor=pointer]:
+            - /url: /meu/caixa-entrada
+          - button "Notificações" [ref=e188] [cursor=pointer]
+          - generic [ref=e192]:
+            - 'button "Como usar: Projetos, quadro, documentação e agenda" [ref=e193] [cursor=pointer]'
+            - link "Documentação interna" [ref=e197] [cursor=pointer]:
+              - /url: /documentacao
+            - button "Pomodoro — método de foco" [ref=e200] [cursor=pointer]
+            - link "Configurar PIN de step-up" [ref=e204] [cursor=pointer]:
+              - /url: /settings/security
+      - generic [ref=e208]:
+        - generic [ref=e210]:
+          - heading "Meu trabalho" [level=2] [ref=e211]
+          - paragraph [ref=e212]: Acompanhe cards e projetos sob sua responsabilidade em um só lugar.
+        - generic [ref=e213]:
+          - tablist [ref=e214]:
+            - tab "Resumo" [selected] [ref=e215]
+            - tab "Atribuídos a mim" [ref=e216]
+            - tab "Histórico de atividades" [ref=e217]
+          - tabpanel [ref=e218]:
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - generic [ref=e221]:
+                  - heading "Visão geral" [level=2] [ref=e222]
+                  - paragraph [ref=e223]: Cards e projetos em que você é responsável.
+                - generic [ref=e224]:
+                  - generic [ref=e225]:
+                    - generic [ref=e226]: Cards atribuídos
+                    - generic [ref=e228]:
+                      - paragraph [ref=e229]: "0"
+                      - paragraph [ref=e230]: Cards abertos sob sua responsabilidade
+                  - generic [ref=e231]:
+                    - generic [ref=e232]: Projetos atribuídos
+                    - generic [ref=e234]:
+                      - paragraph [ref=e235]: "0"
+                      - paragraph [ref=e236]: Projetos com cards abertos atribuídos a você
+              - generic [ref=e237]:
+                - generic [ref=e238]:
+                  - heading "Status dos cards" [level=2] [ref=e239]
+                  - paragraph [ref=e240]: Distribuição dos seus cards abertos pelo estágio no quadro.
+                - generic [ref=e241]:
+                  - generic [ref=e242]:
+                    - generic [ref=e243]: Não iniciados
+                    - paragraph [ref=e246]: "0"
+                  - generic [ref=e247]:
+                    - generic [ref=e248]: Em andamento
+                    - paragraph [ref=e251]: "0"
+                  - generic [ref=e252]:
+                    - generic [ref=e253]: Em QA
+                    - paragraph [ref=e256]: "0"
+                  - generic [ref=e257]:
+                    - generic [ref=e258]: Bloqueados
+                    - paragraph [ref=e261]: "0"
+              - generic [ref=e262]:
+                - generic [ref=e263]:
+                  - heading "Distribuição" [level=2] [ref=e264]
+                  - paragraph [ref=e265]: Prioridade e progresso dos cards atribuídos a você.
+                - generic [ref=e266]:
+                  - paragraph [ref=e267]: Nenhum card atribuído
+                  - paragraph [ref=e268]: Quando houver cards sob sua responsabilidade, os gráficos de prioridade e status aparecem aqui.
+    - button "Abrir assistente de IA" [ref=e271]
+    - button "Abrir ferramentas Acto homologadas" [ref=e274]
+    - dialog [ref=e277]:
+      - generic [ref=e278]:
+        - generic [ref=e279]:
+          - generic [ref=e280]:
+            - paragraph [ref=e281]: Ferramentas Acto
+            - paragraph [ref=e282]: Ações rápidas do seu cargo e links homologados
+          - button [ref=e283]
+        - region [ref=e287]:
+          - generic [ref=e288]:
+            - link [ref=e289] [cursor=pointer]:
+              - /url: /documentacao
+              - generic [ref=e293]: Docs
+            - link [ref=e294] [cursor=pointer]:
+              - /url: https://canvas.acto.com.br/
+              - generic [ref=e301]: Canvas
+            - link [ref=e302] [cursor=pointer]:
+              - /url: https://chat.acto.com.br/
+              - generic [ref=e306]: Chat
+            - link [ref=e307] [cursor=pointer]:
+              - /url: https://projetos.acto.com.br/login?back_url=https%3A%2F%2Fprojetos.acto.com.br%2F
+              - generic [ref=e311]: Projetos
+  - region "Notifications alt+T"

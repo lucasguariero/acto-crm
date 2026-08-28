@@ -1,243 +1,123 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Plus,
-  Funnel,
-  MagnifyingGlass,
-  FolderSimple,
-  Clock,
-  CheckCircle,
-  WarningDiamond,
-  CaretRight,
-  DotsThree,
-} from "@phosphor-icons/react";
+import { useState } from "react"
+import { Sidebar } from "@/components/layout/sidebar"
+import { Header } from "@/components/layout/header"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 
 const projetos = [
   {
     id: 1,
-    nome: "Modernização ERP",
-    cliente: "ACTO Soluções",
-    status: "em_andamento",
-    progresso: 65,
-    responsavel: "Maria Silva",
-    inicio: "15/01/2024",
-    prazo: "30/06/2024",
-    orcamento: "R$ 180.000",
-    risco: "baixo",
+    codigo: "PRJ-0001",
+    nome: "teste",
+    saude: "Saudável",
+    situacao: "Planejado",
+    prazo: "Sem prazo",
+    gerente: null,
   },
-  {
-    id: 2,
-    nome: "Portal do Cliente v2",
-    cliente: "PW Labs",
-    status: "em_andamento",
-    progresso: 42,
-    responsavel: "João Santos",
-    inicio: "01/03/2024",
-    prazo: "15/09/2024",
-    orcamento: "R$ 95.000",
-    risco: "medio",
-  },
-  {
-    id: 3,
-    nome: "App Mobile - Entregas",
-    cliente: "Logística Express",
-    status: "planejamento",
-    progresso: 15,
-    responsavel: "Ana Costa",
-    inicio: "01/08/2024",
-    prazo: "31/12/2024",
-    orcamento: "R$ 250.000",
-    risco: "alto",
-  },
-  {
-    id: 4,
-    nome: "Migração Cloud",
-    cliente: "TechCorp",
-    status: "concluido",
-    progresso: 100,
-    responsavel: "Pedro Lima",
-    inicio: "10/10/2023",
-    prazo: "28/02/2024",
-    orcamento: "R$ 320.000",
-    risco: "baixo",
-  },
-];
-
-function getStatusBadge(status: string) {
-  switch (status) {
-    case "em_andamento":
-      return <Badge className="bg-blue-100 text-blue-700">Em Andamento</Badge>;
-    case "planejamento":
-      return <Badge className="bg-yellow-100 text-yellow-700">Planejamento</Badge>;
-    case "concluido":
-      return <Badge className="bg-green-100 text-green-700">Concluído</Badge>;
-    default:
-      return <Badge>{status}</Badge>;
-  }
-}
-
-function getRiscoBadge(risco: string) {
-  switch (risco) {
-    case "baixo":
-      return <Badge className="bg-green-100 text-green-700">Baixo</Badge>;
-    case "medio":
-      return <Badge className="bg-yellow-100 text-yellow-700">Médio</Badge>;
-    case "alto":
-      return <Badge className="bg-red-100 text-red-700">Alto</Badge>;
-    default:
-      return <Badge>{risco}</Badge>;
-  }
-}
+]
 
 export default function ProjetosPage() {
+  const [collapsed, setCollapsed] = useState(false)
+
   return (
-    <main className="p-6">
-      <div className="space-y-6">
-        <nav className="flex items-center gap-1 text-sm">
-          <Link href="/dashboard" className="text-[#64748B] hover:text-[#1E293B]">
-            Início
-          </Link>
-          <CaretRight size={14} className="text-[#94A3B8]" />
-          <span className="text-[#1E293B] font-medium">Projetos</span>
-        </nav>
-
-        <div className="flex items-center justify-between">
-          <div>
-            <h1 className="text-[24px] font-bold text-[#1E293B]">Governança de Projetos</h1>
-            <p className="text-[14px] text-[#64748B] mt-1">
-              Gerencie e acompanhe todos os projetos da organização
-            </p>
+    <div className="min-h-screen bg-white">
+      <Sidebar collapsed={collapsed} onToggle={() => setCollapsed(!collapsed)} />
+      <div
+        className="transition-all duration-300"
+        style={{ marginLeft: collapsed ? '72px' : '260px' }}
+      >
+        <Header onToggleSidebar={() => setCollapsed(!collapsed)} />
+        <main className="p-6">
+          {/* Header da página */}
+          <div className="mb-6">
+            <h1 className="text-2xl font-semibold text-gray-900">Governança de Projetos</h1>
+            <p className="text-gray-500 mt-1">Gestão centralizada de iniciativas corporativas. Acompanhe a saúde, prazos e a conformidade dos projetos com os marcos estratégicos da organização.</p>
           </div>
-          <Button className="bg-[#2563EB] hover:bg-[#1D4ED8]">
-            <Plus size={18} weight="bold" className="mr-2" />
-            Novo Projeto
-          </Button>
-        </div>
 
-        <div className="flex items-center gap-3">
-          <div className="relative flex-1 max-w-md">
-            <MagnifyingGlass size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#94A3B8]" />
+          {/* Botão novo */}
+          <div className="mb-6">
+            <Button className="bg-[#0F4C81] hover:bg-[#0d3d6b]">
+              Novo projeto
+            </Button>
+          </div>
+
+          {/* Filtros */}
+          <div className="flex gap-4 mb-6">
             <Input
-              placeholder="Buscar projetos..."
-              className="pl-10 border-[#E2E8F0] bg-white"
+              placeholder="Buscar por código ou nome..."
+              className="max-w-md"
             />
+            <select className="px-3 py-2 border border-gray-300 rounded-lg text-sm bg-white">
+              <option>Situação: Todas</option>
+              <option>Planejado</option>
+              <option>Em andamento</option>
+              <option>Pausado</option>
+              <option>Concluído</option>
+              <option>Cancelado</option>
+            </select>
+            <select className="px-3 py-2 border border-gray-300 rounded-lg text-sm bg-white">
+              <option>Saúde: Todas</option>
+              <option>Saudável</option>
+              <option>Atenção</option>
+              <option>Crítico</option>
+            </select>
           </div>
-          <Button variant="outline" className="border-[#E2E8F0] text-[#64748B]">
-            <Funnel size={18} className="mr-2" />
-            Filtrar
-          </Button>
-        </div>
 
-        <Tabs defaultValue="todos" className="w-full">
-          <TabsList className="bg-[#F1F5F9] border border-[#E2E8F0]">
-            <TabsTrigger value="todos" className="data-[state=active]:bg-white">Todos (4)</TabsTrigger>
-            <TabsTrigger value="em_andamento" className="data-[state=active]:bg-white">Em Andamento (2)</TabsTrigger>
-            <TabsTrigger value="planejamento" className="data-[state=active]:bg-white">Planejamento (1)</TabsTrigger>
-            <TabsTrigger value="concluidos" className="data-[state=active]:bg-white">Concluídos (1)</TabsTrigger>
-          </TabsList>
+          {/* Tabela */}
+          <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+            <table className="w-full">
+              <thead className="bg-gray-50 border-b border-gray-200">
+                <tr>
+                  <th className="text-left px-4 py-3 text-sm font-medium text-gray-600">Código</th>
+                  <th className="text-left px-4 py-3 text-sm font-medium text-gray-600">Nome do projeto</th>
+                  <th className="text-left px-4 py-3 text-sm font-medium text-gray-600">Saúde</th>
+                  <th className="text-left px-4 py-3 text-sm font-medium text-gray-600">Situação</th>
+                  <th className="text-left px-4 py-3 text-sm font-medium text-gray-600">Prazo alvo</th>
+                  <th className="text-left px-4 py-3 text-sm font-medium text-gray-600">Gerente</th>
+                  <th className="text-left px-4 py-3 text-sm font-medium text-gray-600">Ações</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {projetos.map((projeto) => (
+                  <tr key={projeto.id} className="hover:bg-gray-50">
+                    <td className="px-4 py-3 text-sm text-gray-900">{projeto.codigo}</td>
+                    <td className="px-4 py-3 text-sm">
+                      <a href={`/projetos/${projeto.id}`} className="text-[#0F4C81] hover:underline">
+                        {projeto.nome}
+                      </a>
+                    </td>
+                    <td className="px-4 py-3 text-sm">
+                      <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">
+                        {projeto.saude}
+                      </span>
+                    </td>
+                    <td className="px-4 py-3 text-sm text-gray-600">{projeto.situacao}</td>
+                    <td className="px-4 py-3 text-sm text-gray-600">{projeto.prazo}</td>
+                    <td className="px-4 py-3 text-sm text-gray-600">
+                      {projeto.gerente ? projeto.gerente : 'Sem gerente'}
+                    </td>
+                    <td className="px-4 py-3 text-sm">
+                      <button className="p-1.5 hover:bg-gray-100 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="currentColor">
+                          <path d="M224,48V96a8,8,0,0,1-8,8H168" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+                          <path d="M168,168H40a8,8,0,0,1-8-8V96a8,8,0,0,1,8-8H88" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+                          <path d="M88,168h80a8,8,0,0,0,8-8V96a8,8,0,0,0-8-8H88" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
 
-          <TabsContent value="todos" className="mt-4">
-            <Card className="border-[#E2E8F0]">
-              <CardContent className="p-0">
-                <Table>
-                  <TableHeader>
-                    <TableRow className="bg-[#F8FAFC] hover:bg-[#F8FAFC]">
-                      <TableHead className="text-[#64748B] font-medium">Projeto</TableHead>
-                      <TableHead className="text-[#64748B] font-medium">Status</TableHead>
-                      <TableHead className="text-[#64748B] font-medium">Progresso</TableHead>
-                      <TableHead className="text-[#64748B] font-medium">Responsável</TableHead>
-                      <TableHead className="text-[#64748B] font-medium">Prazo</TableHead>
-                      <TableHead className="text-[#64748B] font-medium">Risco</TableHead>
-                      <TableHead className="text-[#64748B] font-medium"></TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {projetos.map((projeto) => (
-                      <TableRow key={projeto.id} className="hover:bg-[#F8FAFC]">
-                        <TableCell>
-                          <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center">
-                              <FolderSimple size={20} className="text-[#2563EB]" weight="duotone" />
-                            </div>
-                            <div>
-                              <p className="font-medium text-[#1E293B]">{projeto.nome}</p>
-                              <p className="text-[12px] text-[#64748B]">{projeto.cliente}</p>
-                            </div>
-                          </div>
-                        </TableCell>
-                        <TableCell>{getStatusBadge(projeto.status)}</TableCell>
-                        <TableCell>
-                          <div className="flex items-center gap-2 w-32">
-                            <div className="flex-1 h-2 bg-[#E2E8F0] rounded-full overflow-hidden">
-                              <div
-                                className="h-full bg-[#2563EB] rounded-full"
-                                style={{ width: `${projeto.progresso}%` }}
-                              />
-                            </div>
-                            <span className="text-[12px] text-[#64748B]">{projeto.progresso}%</span>
-                          </div>
-                        </TableCell>
-                        <TableCell className="text-[#64748B]">{projeto.responsavel}</TableCell>
-                        <TableCell className="text-[#64748B]">{projeto.prazo}</TableCell>
-                        <TableCell>{getRiscoBadge(projeto.risco)}</TableCell>
-                        <TableCell>
-                          <Button variant="ghost" size="icon-sm" className="h-8 w-8">
-                            <DotsThree size={20} className="text-[#64748B]" />
-                          </Button>
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-              </CardContent>
-            </Card>
-          </TabsContent>
-
-          <TabsContent value="em_andamento" className="mt-4">
-            <Card className="border-[#E2E8F0]">
-              <CardContent className="p-6">
-                <p className="text-[14px] text-[#64748B]">
-                  Exibindo projetos em andamento...
-                </p>
-              </CardContent>
-            </Card>
-          </TabsContent>
-
-          <TabsContent value="planejamento" className="mt-4">
-            <Card className="border-[#E2E8F0]">
-              <CardContent className="p-6">
-                <p className="text-[14px] text-[#64748B]">
-                  Exibindo projetos em planejamento...
-                </p>
-              </CardContent>
-            </Card>
-          </TabsContent>
-
-          <TabsContent value="concluidos" className="mt-4">
-            <Card className="border-[#E2E8F0]">
-              <CardContent className="p-6">
-                <p className="text-[14px] text-[#64748B]">
-                  Exibindo projetos concluídos...
-                </p>
-              </CardContent>
-            </Card>
-          </TabsContent>
-        </Tabs>
+          {/* Contador */}
+          <p className="text-sm text-gray-500 mt-4">Mostrando {projetos.length} de {projetos.length} projetos</p>
+        </main>
       </div>
-    </main>
-  );
+    </div>
+  )
 }
+

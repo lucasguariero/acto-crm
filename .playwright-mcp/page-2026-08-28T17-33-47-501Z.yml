@@ -1,0 +1,123 @@
+- generic [ref=f11e2]:
+  - generic [ref=f11e3]:
+    - generic [ref=f11e7]:
+      - link "ERP Acto" [ref=f11e9] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=f11e17]:
+        - generic [ref=f11e18]:
+          - generic [ref=f11e19]: Principal
+          - list [ref=f11e20]:
+            - listitem [ref=f11e21]:
+              - link "Dashboard" [ref=f11e22] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=f11e29]:
+              - button "Meu Espaço" [expanded] [ref=f11e30]
+              - list [ref=f11e39]:
+                - generic [ref=f11e40]:
+                  - listitem [ref=f11e41]:
+                    - link "Caixa de entrada" [ref=f11e42] [cursor=pointer]:
+                      - /url: /meu/caixa-entrada
+                  - listitem [ref=f11e44]:
+                    - link "Minhas notas fiscais" [ref=f11e45] [cursor=pointer]:
+                      - /url: /meu/notas-fiscais
+                  - listitem [ref=f11e47]:
+                    - link "Meu perfil" [ref=f11e48] [cursor=pointer]:
+                      - /url: /meu/perfil
+                  - listitem [ref=f11e50]:
+                    - link "Solicitações" [ref=f11e51] [cursor=pointer]:
+                      - /url: /meu/solicitacoes
+                  - listitem [ref=f11e53]:
+                    - link "Terceirizados e outsourcing" [ref=f11e54] [cursor=pointer]:
+                      - /url: /meu/fornecedor-staffing
+            - listitem [ref=f11e56]:
+              - button "Projetos" [ref=f11e57]
+            - listitem [ref=f11e63]:
+              - button "Comercial" [ref=f11e64]
+            - listitem [ref=f11e71]:
+              - link "Jurídico" [ref=f11e72] [cursor=pointer]:
+                - /url: /comercial/licitacoes
+            - listitem [ref=f11e78]:
+              - button "Financeiro" [ref=f11e79]
+            - listitem [ref=f11e86]:
+              - button "RH" [ref=f11e87]
+            - listitem [ref=f11e96]:
+              - button "Inteligência" [ref=f11e97]
+            - listitem [ref=f11e106]:
+              - link "Processos" [ref=f11e107] [cursor=pointer]:
+                - /url: /processos
+            - listitem [ref=f11e113]:
+              - button "Patrimônio" [ref=f11e114]
+        - generic [ref=f11e128]:
+          - generic [ref=f11e129]: Destaque
+          - list [ref=f11e130]:
+            - listitem [ref=f11e131]:
+              - button "Universidade Acto" [ref=f11e132]
+            - listitem [ref=f11e139]:
+              - link "Hub de cadastros" [ref=f11e140] [cursor=pointer]:
+                - /url: /cadastros
+            - listitem [ref=f11e146]:
+              - link "Organizações" [ref=f11e147] [cursor=pointer]:
+                - /url: /organizacoes
+      - list [ref=f11e154]:
+        - listitem [ref=f11e155]:
+          - button "AS Admin Sistema" [ref=f11e156]:
+            - generic [ref=f11e157]: AS
+            - generic [ref=f11e159]: Admin Sistema
+      - button "Toggle sidebar" [ref=f11e164]
+    - main [ref=f11e165]:
+      - generic [ref=f11e167]:
+        - generic [ref=f11e169]:
+          - button "Alternar menu lateral" [ref=f11e170]
+          - navigation "breadcrumb" [ref=f11e172]:
+            - list [ref=f11e173]:
+              - listitem [ref=f11e174]:
+                - link "Meu" [ref=f11e175] [cursor=pointer]:
+                  - /url: /meu
+              - listitem [ref=f11e176]
+              - listitem [ref=f11e179]:
+                - link "Solicitações" [disabled] [ref=f11e180]
+        - button "Abrir busca global" [ref=f11e182]:
+          - generic [ref=f11e186]: Buscar no ERP…
+          - generic [ref=f11e187]:
+            - generic [ref=f11e188]: Ctrl
+            - generic [ref=f11e189]: K
+        - generic [ref=f11e192]:
+          - link "Caixa de entrada" [ref=f11e193] [cursor=pointer]:
+            - /url: /meu/caixa-entrada
+          - button "Notificações" [ref=f11e197] [cursor=pointer]
+          - generic [ref=f11e201]:
+            - 'button "Como usar: Minhas solicitações" [ref=f11e202] [cursor=pointer]'
+            - link "Documentação interna" [ref=f11e206] [cursor=pointer]:
+              - /url: /documentacao
+            - button "Pomodoro — método de foco" [ref=f11e209] [cursor=pointer]
+            - link "Configurar PIN de step-up" [ref=f11e213] [cursor=pointer]:
+              - /url: /settings/security
+      - generic [ref=f11e217]:
+        - generic [ref=f11e219]:
+          - heading "Minhas solicitações" [level=2] [ref=f11e220]
+          - paragraph [ref=f11e221]: Solicite centro de custo, recesso e outros pedidos do portal.
+        - generic [ref=f11e222]: Sua conta ainda não está vinculada a um cadastro de prestador PJ. Entre em contato com o RH para concluir o vínculo.
+    - button "Abrir assistente de IA" [ref=f11e226]
+    - button "Abrir ferramentas Acto homologadas" [ref=f11e229]
+    - dialog [ref=f11e232]:
+      - generic [ref=f11e233]:
+        - generic [ref=f11e234]:
+          - generic [ref=f11e235]:
+            - paragraph [ref=f11e236]: Ferramentas Acto
+            - paragraph [ref=f11e237]: Ações rápidas do seu cargo e links homologados
+          - button [ref=f11e238]
+        - region [ref=f11e242]:
+          - generic [ref=f11e243]:
+            - link [ref=f11e244] [cursor=pointer]:
+              - /url: /documentacao
+              - generic [ref=f11e248]: Docs
+            - link [ref=f11e249] [cursor=pointer]:
+              - /url: https://canvas.acto.com.br/
+              - generic [ref=f11e256]: Canvas
+            - link [ref=f11e257] [cursor=pointer]:
+              - /url: https://chat.acto.com.br/
+              - generic [ref=f11e261]: Chat
+            - link [ref=f11e262] [cursor=pointer]:
+              - /url: https://projetos.acto.com.br/login?back_url=https%3A%2F%2Fprojetos.acto.com.br%2F
+              - generic [ref=f11e266]: Projetos
+  - region "Notifications alt+T"

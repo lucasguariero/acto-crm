@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
 import { Sidebar } from "@/components/layout/sidebar"
 import { Header } from "@/components/layout/header"
 
@@ -9,7 +8,7 @@ export default function FornecedorStaffingPage() {
   const [collapsed, setCollapsed] = useState(false)
 
   return (
-    <div className="min-h-screen bg-[#F1F5F9]">
+    <div className="min-h-screen bg-white">
       <Sidebar collapsed={collapsed} onToggle={() => setCollapsed(!collapsed)} />
       <div
         className="transition-all duration-300"
@@ -17,24 +16,21 @@ export default function FornecedorStaffingPage() {
       >
         <Header onToggleSidebar={() => setCollapsed(!collapsed)} />
         <main className="p-6">
-          <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
-            <Link href="/dashboard" className="hover:text-gray-700">Início</Link>
-            <span>/</span>
-            <Link href="/meu-espaco" className="hover:text-gray-700">Meu Espaço</Link>
-            <span>/</span>
-            <span className="text-gray-900 font-medium">Equipe terceirizada</span>
-          </nav>
-
+          {/* Header da página */}
           <div className="mb-6">
             <h1 className="text-2xl font-semibold text-gray-900">Equipe terceirizada e outsourcing</h1>
-            <p className="text-gray-500 mt-1">Gerencie sua equipe terceirizada</p>
+            <p className="text-gray-500 mt-1">Painel consolidado para gestores de equipes terceirizadas e de outsourcing.</p>
           </div>
 
-          <div className="bg-white rounded-lg border border-gray-200 p-6">
-            <p className="text-gray-500 text-center py-12">Equipe terceirizada</p>
+          {/* Estado vazio */}
+          <div className="bg-white rounded-lg border border-gray-200 p-6 text-center">
+            <p className="text-gray-600">
+              Você não possui colaboradores terceirizados ou de outsourcing sob sua gestão ou não tem permissão de aprovação de processos.
+            </p>
           </div>
         </main>
       </div>
     </div>
   )
 }
+

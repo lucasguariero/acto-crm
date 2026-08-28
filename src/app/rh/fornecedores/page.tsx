@@ -18,7 +18,7 @@ export default function FornecedoresPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#F1F5F9]">
+    <div className="min-h-screen bg-white">
       <Sidebar collapsed={collapsed} onToggle={() => setCollapsed(!collapsed)} />
       <div className="transition-all duration-300" style={{ marginLeft: collapsed ? '72px' : '260px' }}>
         <Header onToggleSidebar={() => setCollapsed(!collapsed)} />
@@ -70,3 +70,4 @@ export default function FornecedoresPage() {
     </div>
   )
 }
+
