@@ -137,8 +137,8 @@ export function Header({ onToggleSidebar, collapsed }: HeaderProps) {
       </div>
 
       {/* Center - Search */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-        <button className="flex items-center gap-2 rounded-lg border border-[#E2E8F0] bg-white px-3 h-9 w-[512px] shadow-sm hover:bg-[#F8FAFC] transition-colors">
+      <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <button className="flex items-center gap-2 rounded-lg border border-[#E2E8F0] bg-white px-3 h-9 w-[400px] lg:w-[512px] shadow-sm hover:bg-[#F8FAFC] transition-colors">
           <Icons.Search />
           <span className="text-sm text-[#64748B]">Buscar no ERP...</span>
           <kbd className="inline-flex h-5 items-center gap-1 rounded border border-[#E2E8F0] bg-[#F8FAFC] px-1.5 text-[10px] text-[#94A3B8] font-medium ml-auto">
