@@ -283,54 +283,55 @@ export function DashboardGrid() {
           <div className="grid grid-cols-2 gap-4">
 
             {/* Micro-widget: Aniversariantes */}
-            <Card className={`border ${aniversarioHoje ? 'border-blue-500 bg-blue-50' : 'border-border'}`}>
-              <CardHeader className="pb-2">
+            <Card className={`border overflow-hidden ${aniversarioHoje ? 'border-orange-400 bg-gradient-to-br from-orange-50 to-yellow-50' : 'border-border'}`}>
+              <CardHeader className="pb-2 bg-white/50">
                 <div className="flex items-center gap-2">
-                  <Users size={16} className="text-muted-foreground" />
-                  <CardTitle className="text-sm font-semibold">
+                  <Confetti size={16} className="text-orange-500" weight="fill" />
+                  <CardTitle className="text-sm font-semibold text-orange-800">
                     Aniversariantes
                   </CardTitle>
                 </div>
               </CardHeader>
-              <CardContent className="pt-0">
+              <CardContent className="pt-3">
                 {aniversarioHoje ? (
-                  /* Aniversariante do dia - estilo especial */
+                  /* Aniversariante do dia - estilo festivo */
                   <div className="space-y-3">
-                    <div className="rounded-lg bg-white p-3 border-2 border-blue-500 shadow-sm">
-                      <div className="flex items-start gap-3">
-                        <Avatar className="h-12 w-12 ring-4 ring-blue-500 ring-offset-2">
-                          <AvatarFallback className="bg-blue-500 text-white font-semibold">
+                    <div className="text-center space-y-2">
+                      <div className="relative inline-block">
+                        <Avatar className="h-16 w-16 ring-4 ring-orange-400 ring-offset-4 ring-offset-orange-50">
+                          <AvatarFallback className="bg-gradient-to-br from-orange-400 to-yellow-400 text-white text-xl font-bold">
                             BF
                           </AvatarFallback>
                         </Avatar>
-                        <div className="flex-1">
-                          <p className="text-sm font-bold text-foreground">
-                            {aniversarioHoje.nome}
-                          </p>
-                          <p className="text-xs text-muted-foreground">{aniversarioHoje.area}</p>
-                          <Badge className="bg-blue-500 text-white text-[10px] px-2 py-0.5 h-5 mt-1 flex items-center gap-1">
-                            <Confetti size={12} weight="fill" />
-                            É HOJE
-                          </Badge>
-                        </div>
+                        <div className="absolute -top-1 -right-1 text-2xl">🎉</div>
                       </div>
+                      <div>
+                        <p className="text-base font-bold text-orange-900">
+                          {aniversarioHoje.nome}
+                        </p>
+                        <p className="text-xs text-orange-600">{aniversarioHoje.area}</p>
+                      </div>
+                      <Badge className="bg-orange-500 text-white text-[10px] px-3 py-1">
+                        PARABÉNS! 🎂
+                      </Badge>
                     </div>
-                    {/* Botões de ação - vertical */}
-                    <div className="flex flex-col gap-2">
-                      <Button variant="outline" size="sm" className="w-full text-xs h-8 justify-start hover:bg-green-50 hover:border-green-200">
-                        <span className="text-green-500 mr-2">●</span>
+                    {/* Botões de ação */}
+                    <div className="flex gap-2 pt-2">
+                      <Button className="flex-1 bg-green-500 hover:bg-green-600 text-white text-xs h-9">
+                        <span className="mr-1">🎈</span>
                         Enviar balão
                       </Button>
-                      <Button variant="outline" size="sm" className="w-full text-xs h-8 justify-start hover:bg-red-50 hover:border-red-200">
-                        <Heart size={14} className="text-red-500 mr-2" weight="fill" />
-                        Enviar mensagem
+                      <Button className="flex-1 bg-pink-500 hover:bg-pink-600 text-white text-xs h-9">
+                        <span className="mr-1">❤️</span>
+                        Mensagem
                       </Button>
                     </div>
                   </div>
                 ) : (
                   /* Sem aniversariante hoje - visualização padrão */
-                  <div className="text-center py-2">
-                    <p className="text-sm text-muted-foreground">Nenhum aniversariante hoje</p>
+                  <div className="text-center py-4">
+                    <div className="text-3xl mb-2">🎂</div>
+                    <p className="text-sm text-orange-600">Nenhum aniversariante hoje</p>
                   </div>
                 )}
               </CardContent>
