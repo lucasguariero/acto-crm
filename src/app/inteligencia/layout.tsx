@@ -15,8 +15,7 @@ export default function InteligenciaLayout({
     <div className="min-h-screen bg-white">
       <Sidebar collapsed={collapsed} onToggle={() => setCollapsed(!collapsed)} />
       <div
-        className="transition-all duration-300"
-        style={{ marginLeft: collapsed ? '72px' : '260px' }}
+        className="transition-all duration-300 ml-0 md:ml-[72px] lg:ml-[260px]"
       >
         <Header onToggleSidebar={() => setCollapsed(!collapsed)} collapsed={collapsed} />
         <main className="bg-white pt-6 px-6">
