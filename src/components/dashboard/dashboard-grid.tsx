@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import Link from "next/link";
 import { Plus, CaretRight, Warning, FileText, Users, Megaphone, Calendar, ClipboardText, Heart, Confetti } from "@phosphor-icons/react";
 
@@ -282,11 +283,11 @@ export function DashboardGrid() {
           <div className="grid grid-cols-2 gap-4">
 
             {/* Micro-widget: Aniversariantes */}
-            <Card className={`border-[#E2E8F0] ${aniversarioHoje ? 'border-2 border-[#2563EB] bg-[#EBF5FF]' : ''}`}>
+            <Card className={`border ${aniversarioHoje ? 'border-blue-500 bg-blue-50' : 'border-border'}`}>
               <CardHeader className="pb-2">
                 <div className="flex items-center gap-2">
-                  <Users size={16} className="text-[#64748B]" />
-                  <CardTitle className="text-[14px] font-semibold text-[#1E293B]">
+                  <Users size={16} className="text-muted-foreground" />
+                  <CardTitle className="text-sm font-semibold">
                     Aniversariantes
                   </CardTitle>
                 </div>
@@ -295,18 +296,19 @@ export function DashboardGrid() {
                 {aniversarioHoje ? (
                   /* Aniversariante do dia - estilo especial */
                   <div className="space-y-3">
-                    <div className={`rounded-lg p-3 ${aniversarioHoje ? 'bg-[#EBF5FF] border-2 border-[#2563EB]' : ''}`}>
+                    <div className="rounded-lg bg-white p-3 border-2 border-blue-500 shadow-sm">
                       <div className="flex items-start gap-3">
-                        {/* Avatar com anel azul */}
-                        <div className="h-12 w-12 rounded-full ring-4 ring-[#2563EB] ring-offset-2 bg-[#2563EB] flex items-center justify-center text-white text-[14px] font-semibold shrink-0">
-                          BF
-                        </div>
+                        <Avatar className="h-12 w-12 ring-4 ring-blue-500 ring-offset-2">
+                          <AvatarFallback className="bg-blue-500 text-white font-semibold">
+                            BF
+                          </AvatarFallback>
+                        </Avatar>
                         <div className="flex-1">
-                          <p className="text-[14px] font-bold text-[#1E293B]">
+                          <p className="text-sm font-bold text-foreground">
                             {aniversarioHoje.nome}
                           </p>
-                          <p className="text-[12px] text-[#64748B]">{aniversarioHoje.area}</p>
-                          <Badge className="bg-[#2563EB] text-white text-[10px] px-2 py-0.5 h-5 mt-1 flex items-center gap-1">
+                          <p className="text-xs text-muted-foreground">{aniversarioHoje.area}</p>
+                          <Badge className="bg-blue-500 text-white text-[10px] px-2 py-0.5 h-5 mt-1 flex items-center gap-1">
                             <Confetti size={12} weight="fill" />
                             É HOJE
                           </Badge>
@@ -315,14 +317,12 @@ export function DashboardGrid() {
                     </div>
                     {/* Botões de ação - vertical */}
                     <div className="flex flex-col gap-2">
-                      <Button variant="outline" size="sm" className="w-full text-[12px] h-8 border-[#E2E8F0] hover:bg-[#F1F5F9] justify-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-[#22C55E] mr-2">
-                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                        </svg>
+                      <Button variant="outline" size="sm" className="w-full text-xs h-8 justify-start hover:bg-green-50 hover:border-green-200">
+                        <span className="text-green-500 mr-2">●</span>
                         Enviar balão
                       </Button>
-                      <Button variant="outline" size="sm" className="w-full text-[12px] h-8 border-[#E2E8F0] hover:bg-[#F1F5F9] justify-start">
-                        <Heart size={14} className="text-[#EF4444] mr-2" weight="fill" />
+                      <Button variant="outline" size="sm" className="w-full text-xs h-8 justify-start hover:bg-red-50 hover:border-red-200">
+                        <Heart size={14} className="text-red-500 mr-2" weight="fill" />
                         Enviar mensagem
                       </Button>
                     </div>
@@ -330,7 +330,7 @@ export function DashboardGrid() {
                 ) : (
                   /* Sem aniversariante hoje - visualização padrão */
                   <div className="text-center py-2">
-                    <p className="text-[14px] text-[#64748B]">Nenhum aniversariante hoje</p>
+                    <p className="text-sm text-muted-foreground">Nenhum aniversariante hoje</p>
                   </div>
                 )}
               </CardContent>
